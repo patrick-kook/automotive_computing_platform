@@ -1,0 +1,122 @@
+#include <tee_internal_api.h>
+#include <tee_internal_api_extensions.h>
+#include "ta.h"
+#include <string.h>
+
+
+TEE_Result generate_public_key(TEE_Param params[4])
+{
+    TEE_ObjectHandle obj;
+    TEE_ObjectInfo object_info;
+    
+    unsigned char *private_key;
+    unsigned char *public_key;
+    size_t key_len = 2;
+    public_key = TEE_Malloc(key_len, 0);
+    
+    TEE_OpenPersistentObject(TEE_STORAGE_PRIVATE,
+                                   "private_key", strlen("private_key"),
+                                   TEE_DATA_FLAG_ACCESS_READ,
+                                   &obj);
+    TEE_GetObjectInfo1(obj, &object_info);
+
+    private_key = TEE_Malloc(object_info.dataSize, 0);
+    size_t bytes_read = 0;
+    TEE_ReadObjectData(obj, private_key, object_info.dataSize, &bytes_read);
+
+    for (int i = 0; i < key_len; i++) {
+        public_key[i] = private_key[i] ^ 0xA5;
+    }
+
+    TEE_MemMove(params[0].memref.buffer, public_key, object_info.dataSize);
+    params[0].memref.size = key_len;
+
+    TEE_CloseObject(obj);
+    TEE_Free(private_key);
+    TEE_Free(public_key);
+    return TEE_SUCCESS;
+}
+
+void mini_hash(const unsigned char *data, size_t len, unsigned char hash[3]) {
+    unsigned int h = (hash[0] << 16) | (hash[1] << 8) | hash[2];
+
+    for (size_t i = 0; i < len; i++) {
+        h ^= (data[i] + i * 13);
+        h = (h << 5) | (h >> (27));
+    }
+
+    h &= 0xFFFFFF;
+    hash[0] = (h >> 16) & 0xFF;
+    hash[1] = (h >> 8) & 0xFF;
+    hash[2] = h & 0xFF;
+}
+
+TEE_Result micro_sign(TEE_Param params[4]) {
+    TEE_ObjectHandle obj;
+    TEE_ObjectInfo object_info;
+
+    unsigned char *message = params[0].memref.buffer;
+    size_t msg_len = params[0].memref.size;
+
+    unsigned char *hash = params[1].memref.buffer;
+    size_t hash_len = params[1].memref.size;
+
+    unsigned char private_key[2];
+    unsigned char signature[3];
+
+    TEE_OpenPersistentObject(TEE_STORAGE_PRIVATE,
+                                   "private_key", strlen("private_key"),
+                                   TEE_DATA_FLAG_ACCESS_READ,
+                                   &obj);
+    TEE_GetObjectInfo1(obj, &object_info);
+
+    size_t bytes_read = 0;
+    TEE_ReadObjectData(obj, private_key, object_info.dataSize, &bytes_read);
+
+
+    unsigned char buffer[64];
+    TEE_MemMove(buffer, message, msg_len);
+    TEE_MemMove(buffer + msg_len, private_key, 2);
+
+    mini_hash(buffer, msg_len + 2, hash);
+    TEE_MemMove(signature, hash, 3);
+
+    TEE_MemMove(params[2].memref.buffer, signature, 3);
+    params[2].memref.size = 3;
+
+    TEE_CloseObject(obj);
+    return TEE_SUCCESS;
+}
+
+TEE_Result micro_verify(TEE_Param params[4]) {
+    TEE_ObjectHandle obj;
+    TEE_ObjectInfo object_info;
+
+    unsigned char *message = params[0].memref.buffer;
+    size_t msg_len = params[0].memref.size;
+
+    unsigned char *hash = params[1].memref.buffer;
+    size_t hash_len = params[1].memref.size;
+
+    unsigned char *signature = params[2].memref.buffer;
+    size_t signature_len = params[2].memref.size;
+
+    unsigned char *public_key = params[3].memref.buffer;
+    size_t pub_key_len = params[3].memref.size;
+
+    unsigned char derived_priv[2];
+    for (int i = 0; i < 2; i++) {
+        derived_priv[i] = public_key[i] ^ 0xA5;
+    }
+    unsigned char buffer[64];
+    TEE_MemMove(buffer, message, msg_len);
+    TEE_MemMove(buffer + msg_len, derived_priv, 2);
+    mini_hash(buffer, msg_len + 2, hash);
+    if (memcmp(signature, hash, 3) != 0) {
+        return TEE_ERROR_SIGNATURE_INVALID;
+    }
+    TEE_MemMove(params[1].memref.buffer, hash, 3);
+    params[1].memref.size = 3;
+    return TEE_SUCCESS;
+}
+

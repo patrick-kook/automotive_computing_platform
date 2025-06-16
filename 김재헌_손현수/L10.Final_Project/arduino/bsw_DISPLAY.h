@@ -1,0 +1,12 @@
+uint32_t feistel(uint32_t half, uint64_t key);
+uint64_t simple_des(uint64_t input, uint64_t key, int encrypt);
+uint64_t bytes_to_uint64(unsigned char *block);
+void uint64_to_bytes(uint64_t value, unsigned char *block);
+void encrypt(unsigned char *plaintext, unsigned char *encrypted);
+void decrypt(unsigned char *encrypted, unsigned char *decrypted);
+static void mini_hash24(const unsigned char *data, size_t len, unsigned char out[3]);
+static int is_prime(uint32_t x);
+static int32_t modinv32(int32_t e, int32_t phi);
+static uint32_t modexp(uint32_t b, uint32_t e, uint32_t m);
+static void derive_rsa(const unsigned char priv[2], uint32_t *n, uint32_t *d);
+int micro_verify(const unsigned char message[5], const unsigned char pub[3], const unsigned char sig[3], unsigned char hash[3], unsigned char decrypted_sig[3]);

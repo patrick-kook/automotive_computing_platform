@@ -1,0 +1,793 @@
+# 1 "C:\\Users\\hongkerous2619\\Documents\\GitHub\\L6.CAN Interface\\interface_can\\CAN_SEND\\lib\\ACAN2517FD\\ACAN2517FDSettings.cpp"
+# 1 "<built-in>"
+# 1 "<command-line>"
+# 1 "C:\\Users\\hongkerous2619\\Documents\\GitHub\\L6.CAN Interface\\interface_can\\CAN_SEND\\lib\\ACAN2517FD\\ACAN2517FDSettings.cpp"
+
+
+
+
+
+
+
+# 1 "../lib/ACAN2517FD/ACAN2517FDSettings.h" 1
+
+
+
+
+
+
+
+       
+
+
+
+# 1 "../lib/ACAN2517FD/ACANFD_DataBitRateFactor.h" 1
+# 16 "../lib/ACAN2517FD/ACANFD_DataBitRateFactor.h"
+# 1 "c:\\arduino\\hardware\\tools\\avr\\lib\\gcc\\avr\\7.3.0\\include\\stdint.h" 1 3 4
+# 9 "c:\\arduino\\hardware\\tools\\avr\\lib\\gcc\\avr\\7.3.0\\include\\stdint.h" 3 4
+# 1 "c:\\arduino\\hardware\\tools\\avr\\avr\\include\\stdint.h" 1 3 4
+# 125 "c:\\arduino\\hardware\\tools\\avr\\avr\\include\\stdint.h" 3 4
+
+# 125 "c:\\arduino\\hardware\\tools\\avr\\avr\\include\\stdint.h" 3 4
+typedef signed int int8_t __attribute__((__mode__(__QI__)));
+typedef unsigned int uint8_t __attribute__((__mode__(__QI__)));
+typedef signed int int16_t __attribute__ ((__mode__ (__HI__)));
+typedef unsigned int uint16_t __attribute__ ((__mode__ (__HI__)));
+typedef signed int int32_t __attribute__ ((__mode__ (__SI__)));
+typedef unsigned int uint32_t __attribute__ ((__mode__ (__SI__)));
+
+typedef signed int int64_t __attribute__((__mode__(__DI__)));
+typedef unsigned int uint64_t __attribute__((__mode__(__DI__)));
+# 146 "c:\\arduino\\hardware\\tools\\avr\\avr\\include\\stdint.h" 3 4
+typedef int16_t intptr_t;
+
+
+
+
+typedef uint16_t uintptr_t;
+# 163 "c:\\arduino\\hardware\\tools\\avr\\avr\\include\\stdint.h" 3 4
+typedef int8_t int_least8_t;
+
+
+
+
+typedef uint8_t uint_least8_t;
+
+
+
+
+typedef int16_t int_least16_t;
+
+
+
+
+typedef uint16_t uint_least16_t;
+
+
+
+
+typedef int32_t int_least32_t;
+
+
+
+
+typedef uint32_t uint_least32_t;
+
+
+
+
+
+
+
+typedef int64_t int_least64_t;
+
+
+
+
+
+
+typedef uint64_t uint_least64_t;
+# 217 "c:\\arduino\\hardware\\tools\\avr\\avr\\include\\stdint.h" 3 4
+typedef int8_t int_fast8_t;
+
+
+
+
+typedef uint8_t uint_fast8_t;
+
+
+
+
+typedef int16_t int_fast16_t;
+
+
+
+
+typedef uint16_t uint_fast16_t;
+
+
+
+
+typedef int32_t int_fast32_t;
+
+
+
+
+typedef uint32_t uint_fast32_t;
+
+
+
+
+
+
+
+typedef int64_t int_fast64_t;
+
+
+
+
+
+
+typedef uint64_t uint_fast64_t;
+# 277 "c:\\arduino\\hardware\\tools\\avr\\avr\\include\\stdint.h" 3 4
+typedef int64_t intmax_t;
+
+
+
+
+typedef uint64_t uintmax_t;
+# 10 "c:\\arduino\\hardware\\tools\\avr\\lib\\gcc\\avr\\7.3.0\\include\\stdint.h" 2 3 4
+# 17 "../lib/ACAN2517FD/ACANFD_DataBitRateFactor.h" 2
+
+
+
+
+# 20 "../lib/ACAN2517FD/ACANFD_DataBitRateFactor.h"
+enum class DataBitRateFactor : uint8_t {
+    x1 = 1,
+    x2 = 2,
+    x3 = 3,
+    x4 = 4,
+    x5 = 5,
+    x6 = 6,
+    x7 = 7,
+    x8 = 8,
+    x9 = 9,
+    x10 = 10
+} ;
+# 13 "../lib/ACAN2517FD/ACAN2517FDSettings.h" 2
+
+
+
+
+
+class ACAN2517FDSettings {
+
+
+
+
+
+  public: typedef enum : uint8_t {
+    OSC_4MHz,
+    OSC_4MHz_DIVIDED_BY_2,
+    OSC_4MHz10xPLL,
+    OSC_4MHz10xPLL_DIVIDED_BY_2,
+    OSC_20MHz,
+    OSC_20MHz_DIVIDED_BY_2,
+    OSC_40MHz,
+    OSC_40MHz_DIVIDED_BY_2
+  } Oscillator ;
+
+  public: typedef enum : uint8_t {
+    CLKO_DIVIDED_BY_1,
+    CLKO_DIVIDED_BY_2,
+    CLKO_DIVIDED_BY_4,
+    CLKO_DIVIDED_BY_10,
+    SOF
+  } CLKOpin ;
+
+  public: typedef enum : uint8_t {
+    NormalFD = 0,
+    Sleep = 1,
+    InternalLoopBack = 2,
+    ListenOnly = 3,
+    Configuration = 4,
+    ExternalLoopBack = 5,
+    Normal20B = 6,
+    RestrictedOperation = 7
+  } OperationMode ;
+
+  public: typedef enum : uint8_t {Disabled, ThreeAttempts, UnlimitedNumber} RetransmissionAttempts ;
+
+  public: typedef enum : uint8_t {
+    PAYLOAD_8 = 0,
+    PAYLOAD_12 = 1,
+    PAYLOAD_16 = 2,
+    PAYLOAD_20 = 3,
+    PAYLOAD_24 = 4,
+    PAYLOAD_32 = 5,
+    PAYLOAD_48 = 6,
+    PAYLOAD_64 = 7
+  } PayloadSize ;
+
+
+
+
+
+  public : typedef enum : uint8_t {
+      DATA_BITRATE_x1 = 1,
+      DATA_BITRATE_x2 = 2,
+      DATA_BITRATE_x3 = 3,
+      DATA_BITRATE_x4 = 4,
+      DATA_BITRATE_x5 = 5,
+      DATA_BITRATE_x6 = 6,
+      DATA_BITRATE_x7 = 7,
+      DATA_BITRATE_x8 = 8,
+      DATA_BITRATE_x9 = 9,
+      DATA_BITRATE_x10 = 10
+  } DataBitRateFactor_Deprecated ;
+
+
+
+
+
+  public: ACAN2517FDSettings (const Oscillator inOscillator,
+                              const uint32_t inDesiredArbitrationBitRate,
+                              const DataBitRateFactor inDataBitRateFactor,
+                              const uint32_t inTolerancePPM = 1000) ;
+
+
+
+
+
+  public: ACAN2517FDSettings (const Oscillator inOscillator,
+                              const uint32_t inDesiredArbitrationBitRate,
+                              const DataBitRateFactor_Deprecated inDataBitRateFactor,
+                              const uint32_t inTolerancePPM = 1000) :
+  ACAN2517FDSettings (inOscillator, inDesiredArbitrationBitRate, DataBitRateFactor (inDataBitRateFactor), inTolerancePPM) {
+  }
+
+
+
+
+
+  private: Oscillator mOscillator ;
+  private: uint32_t mSysClock ;
+  public: const uint32_t mDesiredArbitrationBitRate ;
+  public: const DataBitRateFactor mDataBitRateFactor ;
+
+  public: uint8_t mDataPhaseSegment1 = 0 ;
+  public: uint8_t mDataPhaseSegment2 = 0 ;
+  public: uint8_t mDataSJW = 0 ;
+
+  public: uint16_t mBitRatePrescaler = 0 ;
+
+  public: uint16_t mArbitrationPhaseSegment1 = 0 ;
+  public: uint8_t mArbitrationPhaseSegment2 = 0 ;
+  public: uint8_t mArbitrationSJW = 0 ;
+  public: bool mArbitrationBitRateClosedToDesiredRate = false ;
+
+  public: int8_t mTDCO = 0 ;
+
+
+
+
+
+  public: bool mTXCANIsOpenDrain = false ;
+
+
+
+
+
+  public: bool mINTIsOpenDrain = false ;
+
+
+
+
+
+
+
+  public: bool mISOCRCEnabled = true ;
+
+
+
+
+
+  public: CLKOpin mCLKOPin = CLKO_DIVIDED_BY_10 ;
+
+
+
+
+
+  public: OperationMode mRequestedMode = NormalFD ;
+
+
+
+
+
+
+  public: uint16_t mDriverTransmitFIFOSize = 16 ;
+
+
+  public: uint8_t mControllerTransmitFIFOSize = 1 ;
+
+
+  public: PayloadSize mControllerTransmitFIFOPayload = PAYLOAD_64 ;
+
+
+  public: uint8_t mControllerTransmitFIFOPriority = 0 ;
+
+
+  public: RetransmissionAttempts mControllerTransmitFIFORetransmissionAttempts = UnlimitedNumber ;
+
+
+
+
+
+
+  public: uint8_t mControllerTXQSize = 0 ;
+
+
+  public: PayloadSize mControllerTXQBufferPayload = PAYLOAD_64 ;
+
+
+  public: uint8_t mControllerTXQBufferPriority = 31 ;
+
+
+  public: RetransmissionAttempts mControllerTXQBufferRetransmissionAttempts = UnlimitedNumber ;
+
+
+
+
+
+
+
+  public: uint16_t mDriverReceiveFIFOSize = 32 ;
+
+
+  public: PayloadSize mControllerReceiveFIFOPayload = PAYLOAD_64 ;
+
+
+  public: uint8_t mControllerReceiveFIFOSize = 27 ;
+
+
+
+
+
+  public: static uint32_t sysClock (const Oscillator inOscillator) ;
+
+
+
+
+
+  public: Oscillator oscillator (void) const { return mOscillator ; }
+  public: uint32_t sysClock (void) const { return mSysClock ; }
+  public: uint32_t actualArbitrationBitRate (void) const ;
+  public: uint32_t actualDataBitRate (void) const ;
+  public: bool exactArbitrationBitRate (void) const ;
+  public: bool exactDataBitRate (void) const ;
+  public: bool dataBitRateIsAMultipleOfArbitrationBitRate (void) const ;
+
+
+
+
+
+  public: uint32_t ramUsage (void) const ;
+
+  public: static uint32_t objectSizeForPayload (const PayloadSize inPayload) ;
+
+
+
+
+
+  public: uint32_t ppmFromDesiredArbitrationBitRate (void) const ;
+  public: uint32_t ppmFromDesiredDataBitRate (void) const ;
+
+
+
+
+
+  public: uint32_t arbitrationSamplePointFromBitStart (void) const ;
+  public: uint32_t dataSamplePointFromBitStart (void) const ;
+
+
+
+
+
+  public: uint32_t CANBitSettingConsistency (void) const ;
+
+
+
+
+
+  public: static const uint32_t kBitRatePrescalerIsZero = ((uint32_t) 1) << 0 ;
+  public: static const uint32_t kBitRatePrescalerIsGreaterThan256 = ((uint32_t) 1) << 1 ;
+  public: static const uint32_t kArbitrationPhaseSegment1IsLowerThan2 = ((uint32_t) 1) << 2 ;
+  public: static const uint32_t kArbitrationPhaseSegment1IsGreaterThan256 = ((uint32_t) 1) << 3 ;
+  public: static const uint32_t kArbitrationPhaseSegment2IsZero = ((uint32_t) 1) << 4 ;
+  public: static const uint32_t kArbitrationPhaseSegment2IsGreaterThan128 = ((uint32_t) 1) << 5 ;
+  public: static const uint32_t kArbitrationSJWIsZero = ((uint32_t) 1) << 6 ;
+  public: static const uint32_t kArbitrationSJWIsGreaterThan128 = ((uint32_t) 1) << 7 ;
+  public: static const uint32_t kArbitrationSJWIsGreaterThanPhaseSegment1 = ((uint32_t) 1) << 8 ;
+  public: static const uint32_t kArbitrationSJWIsGreaterThanPhaseSegment2 = ((uint32_t) 1) << 9 ;
+  public: static const uint32_t kArbitrationTQCountNotDivisibleByDataBitRateFactor = ((uint32_t) 1) << 10 ;
+  public: static const uint32_t kDataPhaseSegment1IsLowerThan2 = ((uint32_t) 1) << 11 ;
+  public: static const uint32_t kDataPhaseSegment1IsGreaterThan32 = ((uint32_t) 1) << 12 ;
+  public: static const uint32_t kDataPhaseSegment2IsZero = ((uint32_t) 1) << 13 ;
+  public: static const uint32_t kDataPhaseSegment2IsGreaterThan16 = ((uint32_t) 1) << 14 ;
+  public: static const uint32_t kDataSJWIsZero = ((uint32_t) 1) << 15 ;
+  public: static const uint32_t kDataSJWIsGreaterThan16 = ((uint32_t) 1) << 16 ;
+  public: static const uint32_t kDataSJWIsGreaterThanPhaseSegment1 = ((uint32_t) 1) << 17 ;
+  public: static const uint32_t kDataSJWIsGreaterThanPhaseSegment2 = ((uint32_t) 1) << 18 ;
+
+
+
+
+
+  public: static const uint16_t MAX_BRP = 256 ;
+
+  public: static const uint16_t MAX_ARBITRATION_PHASE_SEGMENT_1 = 256 ;
+  public: static const uint8_t MAX_ARBITRATION_PHASE_SEGMENT_2 = 128 ;
+  public: static const uint8_t MAX_ARBITRATION_SJW = 128 ;
+
+  public: static const uint16_t MAX_DATA_PHASE_SEGMENT_1 = 32 ;
+  public: static const uint8_t MAX_DATA_PHASE_SEGMENT_2 = 16 ;
+  public: static const uint8_t MAX_DATA_SJW = 16 ;
+
+
+
+} ;
+# 9 "C:\\Users\\hongkerous2619\\Documents\\GitHub\\L6.CAN Interface\\interface_can\\CAN_SEND\\lib\\ACAN2517FD\\ACAN2517FDSettings.cpp" 2
+
+
+
+#pragma GCC diagnostic error "-Wswitch-enum"
+
+
+
+
+
+uint32_t ACAN2517FDSettings::sysClock (const Oscillator inOscillator) {
+  uint32_t sysClock = 40UL * 1000 * 1000 ;
+  switch (inOscillator) {
+  case OSC_4MHz:
+    sysClock = 4UL * 1000 * 1000 ;
+    break ;
+  case OSC_4MHz_DIVIDED_BY_2:
+    sysClock = 2UL * 1000 * 1000 ;
+    break ;
+  case OSC_4MHz10xPLL_DIVIDED_BY_2 :
+  case OSC_40MHz_DIVIDED_BY_2:
+  case OSC_20MHz:
+    sysClock = 20UL * 1000 * 1000 ;
+    break ;
+  case OSC_20MHz_DIVIDED_BY_2:
+    sysClock = 10UL * 1000 * 1000 ;
+    break ;
+  case OSC_4MHz10xPLL:
+  case OSC_40MHz:
+    break ;
+  }
+  return sysClock ;
+}
+
+
+
+
+
+ACAN2517FDSettings::ACAN2517FDSettings (const Oscillator inOscillator,
+                                        const uint32_t inDesiredArbitrationBitRate,
+                                        const DataBitRateFactor inDataBitRateFactor,
+                                        const uint32_t inTolerancePPM) :
+mOscillator (inOscillator),
+mSysClock (sysClock (inOscillator)),
+mDesiredArbitrationBitRate (inDesiredArbitrationBitRate),
+mDataBitRateFactor (inDataBitRateFactor) {
+  if (inDataBitRateFactor == DataBitRateFactor::x1) {
+    const uint32_t maxTQCount = MAX_ARBITRATION_PHASE_SEGMENT_1 + MAX_ARBITRATION_PHASE_SEGMENT_2 + 1 ;
+    uint32_t BRP = MAX_BRP ;
+    uint32_t smallestError = 
+# 57 "C:\\Users\\hongkerous2619\\Documents\\GitHub\\L6.CAN Interface\\interface_can\\CAN_SEND\\lib\\ACAN2517FD\\ACAN2517FDSettings.cpp" 3 4
+                            (0x7fffffffLU * 2UL + 1UL) 
+# 57 "C:\\Users\\hongkerous2619\\Documents\\GitHub\\L6.CAN Interface\\interface_can\\CAN_SEND\\lib\\ACAN2517FD\\ACAN2517FDSettings.cpp"
+                                       ;
+    uint32_t bestBRP = 1 ;
+    uint32_t bestTQCount = 4 ;
+    uint32_t TQCount = mSysClock / inDesiredArbitrationBitRate / BRP ;
+
+    while ((TQCount <= (MAX_ARBITRATION_PHASE_SEGMENT_1 + MAX_ARBITRATION_PHASE_SEGMENT_2 + 1)) && (BRP > 0)) {
+
+      if ((TQCount >= 4) && (TQCount <= maxTQCount)) {
+        const uint32_t error = mSysClock - inDesiredArbitrationBitRate * TQCount * BRP ;
+        if (error <= smallestError) {
+          smallestError = error ;
+          bestBRP = BRP ;
+          bestTQCount = TQCount ;
+        }
+      }
+
+      if ((TQCount >= 3) && (TQCount < maxTQCount)) {
+        const uint32_t error = inDesiredArbitrationBitRate * (TQCount + 1) * BRP - mSysClock ;
+        if (error <= smallestError) {
+          smallestError = error ;
+          bestBRP = BRP ;
+          bestTQCount = TQCount + 1 ;
+        }
+      }
+
+      BRP -- ;
+      TQCount = (BRP == 0) ? (maxTQCount + 1) : (mSysClock / inDesiredArbitrationBitRate / BRP) ;
+    }
+
+    uint32_t PS2 = bestTQCount / 5 ;
+    if (PS2 == 0) {
+      PS2 = 1 ;
+    }else if (PS2 > MAX_ARBITRATION_PHASE_SEGMENT_2) {
+      PS2 = MAX_ARBITRATION_PHASE_SEGMENT_2 ;
+    }
+
+    uint32_t PS1 = bestTQCount - PS2 - 1 ;
+    if (PS1 > MAX_ARBITRATION_PHASE_SEGMENT_1) {
+      PS2 += PS1 - MAX_ARBITRATION_PHASE_SEGMENT_1 ;
+      PS1 = MAX_ARBITRATION_PHASE_SEGMENT_1 ;
+    }
+
+    mBitRatePrescaler = (uint16_t) bestBRP ;
+    mArbitrationPhaseSegment1 = (uint16_t) PS1 ;
+    mArbitrationPhaseSegment2 = (uint8_t) PS2 ;
+    mArbitrationSJW = mArbitrationPhaseSegment2 ;
+
+    const uint32_t W = bestTQCount * mDesiredArbitrationBitRate * bestBRP ;
+    const uint64_t diff = (mSysClock > W) ? (mSysClock - W) : (W - mSysClock) ;
+    const uint64_t ppm = (uint64_t) (1000UL * 1000UL) ;
+    mArbitrationBitRateClosedToDesiredRate = (diff * ppm) <= (((uint64_t) W) * inTolerancePPM) ;
+  }else{
+    const uint32_t maxDataTQCount = MAX_DATA_PHASE_SEGMENT_1 + MAX_DATA_PHASE_SEGMENT_2 ;
+    const uint32_t desiredDataBitRate = inDesiredArbitrationBitRate * uint8_t (inDataBitRateFactor) ;
+    uint32_t smallestError = 
+# 111 "C:\\Users\\hongkerous2619\\Documents\\GitHub\\L6.CAN Interface\\interface_can\\CAN_SEND\\lib\\ACAN2517FD\\ACAN2517FDSettings.cpp" 3 4
+                            (0x7fffffffLU * 2UL + 1UL) 
+# 111 "C:\\Users\\hongkerous2619\\Documents\\GitHub\\L6.CAN Interface\\interface_can\\CAN_SEND\\lib\\ACAN2517FD\\ACAN2517FDSettings.cpp"
+                                       ;
+    uint32_t bestBRP = MAX_BRP ;
+    uint32_t bestDataTQCount = maxDataTQCount ;
+    uint32_t dataTQCount = 4 ;
+    uint32_t brp = mSysClock / desiredDataBitRate / dataTQCount ;
+
+    while ((dataTQCount <= maxDataTQCount) && (brp > 0)) {
+
+      if (brp <= MAX_BRP) {
+        const uint32_t error = mSysClock - desiredDataBitRate * dataTQCount * brp ;
+        if (error <= smallestError) {
+          smallestError = error ;
+          bestBRP = brp ;
+          bestDataTQCount = dataTQCount ;
+        }
+      }
+
+      if (brp < MAX_BRP) {
+        const uint32_t error = desiredDataBitRate * dataTQCount * (brp + 1) - mSysClock ;
+        if (error <= smallestError) {
+          smallestError = error ;
+          bestBRP = brp + 1 ;
+          bestDataTQCount = dataTQCount ;
+        }
+      }
+
+      dataTQCount += 1 ;
+      brp = mSysClock / desiredDataBitRate / dataTQCount ;
+    }
+
+    uint32_t dataPS2 = bestDataTQCount / 5 ;
+    if (dataPS2 == 0) {
+      dataPS2 = 1 ;
+    }
+
+    uint32_t dataPS1 = bestDataTQCount - dataPS2 - 1 ;
+    if (dataPS1 > MAX_DATA_PHASE_SEGMENT_1) {
+      dataPS2 += dataPS1 - MAX_DATA_PHASE_SEGMENT_1 ;
+      dataPS1 = MAX_DATA_PHASE_SEGMENT_1 ;
+    }
+
+    if ((mDesiredArbitrationBitRate * uint32_t (inDataBitRateFactor)) <= (1000UL * 1000)) {
+      mTDCO = 0 ;
+    }else{
+      const int TDCO = bestBRP * dataPS1 ;
+      mTDCO = (TDCO > 63) ? 63 : (int8_t) TDCO ;
+    }
+    mDataPhaseSegment1 = (uint8_t) dataPS1 ;
+    mDataPhaseSegment2 = (uint8_t) dataPS2 ;
+    mDataSJW = mDataPhaseSegment2 ;
+    const uint32_t arbitrationTQCount = bestDataTQCount * uint8_t (mDataBitRateFactor) ;
+
+    uint32_t arbitrationPS2 = arbitrationTQCount / 5 ;
+    if (arbitrationPS2 == 0) {
+      arbitrationPS2 = 1 ;
+    }
+
+    uint32_t arbitrationPS1 = arbitrationTQCount - arbitrationPS2 - 1 ;
+    if (arbitrationPS1 > MAX_ARBITRATION_PHASE_SEGMENT_1) {
+      arbitrationPS2 += arbitrationPS1 - MAX_ARBITRATION_PHASE_SEGMENT_1 ;
+      arbitrationPS1 = MAX_ARBITRATION_PHASE_SEGMENT_1 ;
+    }
+
+    mBitRatePrescaler = (uint16_t) bestBRP ;
+    mArbitrationPhaseSegment1 = (uint16_t) arbitrationPS1 ;
+    mArbitrationPhaseSegment2 = (uint8_t) arbitrationPS2 ;
+    mArbitrationSJW = mArbitrationPhaseSegment2 ;
+
+    const uint32_t W = arbitrationTQCount * mDesiredArbitrationBitRate * bestBRP ;
+    const uint64_t diff = (mSysClock > W) ? (mSysClock - W) : (W - mSysClock) ;
+    const uint64_t ppm = (uint64_t) (1000UL * 1000UL) ;
+    mArbitrationBitRateClosedToDesiredRate = (diff * ppm) <= (((uint64_t) W) * inTolerancePPM) ;
+  }
+} ;
+
+
+
+
+
+uint32_t ACAN2517FDSettings::actualArbitrationBitRate (void) const {
+  const uint32_t arbitrationTQCount = 1 + mArbitrationPhaseSegment1 + mArbitrationPhaseSegment2 ;
+  return mSysClock / mBitRatePrescaler / arbitrationTQCount ;
+}
+
+
+
+uint32_t ACAN2517FDSettings::actualDataBitRate (void) const {
+  if (mDataBitRateFactor == DataBitRateFactor::x1) {
+    return actualArbitrationBitRate () ;
+  }else{
+    const uint32_t dataTQCount = 1 + mDataPhaseSegment1 + mDataPhaseSegment2 ;
+    return mSysClock / mBitRatePrescaler / dataTQCount ;
+  }
+}
+
+
+
+bool ACAN2517FDSettings::exactArbitrationBitRate (void) const {
+  const uint32_t TQCount = 1 + mArbitrationPhaseSegment1 + mArbitrationPhaseSegment2 ;
+  return mSysClock == (mBitRatePrescaler * mDesiredArbitrationBitRate * TQCount) ;
+}
+
+
+
+bool ACAN2517FDSettings::exactDataBitRate (void) const {
+  if (mDataBitRateFactor == DataBitRateFactor::x1) {
+    return exactArbitrationBitRate () ;
+  }else{
+    const uint32_t TQCount = 1 + mDataPhaseSegment1 + mDataPhaseSegment2 ;
+    return mSysClock == (mBitRatePrescaler * mDesiredArbitrationBitRate * TQCount * uint8_t (mDataBitRateFactor)) ;
+  }
+}
+
+
+
+bool ACAN2517FDSettings::dataBitRateIsAMultipleOfArbitrationBitRate (void) const {
+  bool result = mDataBitRateFactor == DataBitRateFactor::x1 ;
+  if (!result) {
+    const uint32_t dataTQCount = 1 + mDataPhaseSegment1 + mDataPhaseSegment2 ;
+    const uint32_t arbitrationTQCount = 1 + mArbitrationPhaseSegment1 + mArbitrationPhaseSegment2 ;
+    result = arbitrationTQCount == (dataTQCount * uint8_t (mDataBitRateFactor)) ;
+  }
+  return result ;
+}
+
+
+
+uint32_t ACAN2517FDSettings::ppmFromDesiredArbitrationBitRate (void) const {
+  const uint32_t TQCount = 1 + mArbitrationPhaseSegment1 + mArbitrationPhaseSegment2 ;
+  const uint32_t W = TQCount * mDesiredArbitrationBitRate * mBitRatePrescaler ;
+  const uint64_t diff = (mSysClock > W) ? (mSysClock - W) : (W - mSysClock) ;
+  const uint64_t ppm = (uint64_t) (1000UL * 1000UL) ;
+  return (uint32_t) ((diff * ppm) / W) ;
+}
+
+
+
+uint32_t ACAN2517FDSettings::arbitrationSamplePointFromBitStart (void) const {
+  const uint32_t nominalTQCount = 1 + mArbitrationPhaseSegment1 + mArbitrationPhaseSegment2 ;
+  const uint32_t samplePoint = 1 + mArbitrationPhaseSegment1 ;
+  const uint32_t partPerCent = 100 ;
+  return (samplePoint * partPerCent) / nominalTQCount ;
+}
+
+
+
+uint32_t ACAN2517FDSettings::dataSamplePointFromBitStart (void) const {
+  const uint32_t nominalTQCount = 1 + mDataPhaseSegment1 + mDataPhaseSegment2 ;
+  const uint32_t samplePoint = 1 + mDataPhaseSegment1 ;
+  const uint32_t partPerCent = 100 ;
+  return (samplePoint * partPerCent) / nominalTQCount ;
+}
+
+
+
+uint32_t ACAN2517FDSettings::CANBitSettingConsistency (void) const {
+  uint32_t errorCode = 0 ;
+
+  if (mBitRatePrescaler == 0) {
+    errorCode |= kBitRatePrescalerIsZero ;
+  }else if (mBitRatePrescaler > MAX_BRP) {
+    errorCode |= kBitRatePrescalerIsGreaterThan256 ;
+  }
+
+  if (mArbitrationPhaseSegment1 < 2) {
+    errorCode |= kArbitrationPhaseSegment1IsLowerThan2 ;
+  }else if (mArbitrationPhaseSegment1 > MAX_ARBITRATION_PHASE_SEGMENT_1) {
+    errorCode |= kArbitrationPhaseSegment1IsGreaterThan256 ;
+  }
+
+  if (mArbitrationPhaseSegment2 == 0) {
+    errorCode |= kArbitrationPhaseSegment2IsZero ;
+  }else if (mArbitrationPhaseSegment2 > MAX_ARBITRATION_PHASE_SEGMENT_2) {
+    errorCode |= kArbitrationPhaseSegment2IsGreaterThan128 ;
+  }
+
+  if (mArbitrationSJW == 0) {
+    errorCode |= kArbitrationSJWIsZero ;
+  }else if (mArbitrationSJW > MAX_ARBITRATION_SJW) {
+    errorCode |= kArbitrationSJWIsGreaterThan128 ;
+  }
+  if (mArbitrationSJW > mArbitrationPhaseSegment1) {
+    errorCode |= kArbitrationSJWIsGreaterThanPhaseSegment1 ;
+  }
+  if (mArbitrationSJW > mArbitrationPhaseSegment2) {
+    errorCode |= kArbitrationSJWIsGreaterThanPhaseSegment2 ;
+  }
+
+  if (mDataBitRateFactor != DataBitRateFactor::x1) {
+    if (! dataBitRateIsAMultipleOfArbitrationBitRate ()) {
+      errorCode |= kArbitrationTQCountNotDivisibleByDataBitRateFactor ;
+    }
+
+    if (mDataPhaseSegment1 < 2) {
+      errorCode |= kDataPhaseSegment1IsLowerThan2 ;
+    }else if (mDataPhaseSegment1 > MAX_DATA_PHASE_SEGMENT_1) {
+      errorCode |= kDataPhaseSegment1IsGreaterThan32 ;
+    }
+
+    if (mDataPhaseSegment2 == 0) {
+      errorCode |= kDataPhaseSegment2IsZero ;
+    }else if (mDataPhaseSegment2 > MAX_DATA_PHASE_SEGMENT_2) {
+      errorCode |= kDataPhaseSegment2IsGreaterThan16 ;
+    }
+
+    if (mDataSJW == 0) {
+      errorCode |= kDataSJWIsZero ;
+    }else if (mDataSJW > MAX_DATA_SJW) {
+      errorCode |= kDataSJWIsGreaterThan16 ;
+    }
+    if (mDataSJW > mDataPhaseSegment1) {
+      errorCode |= kDataSJWIsGreaterThanPhaseSegment1 ;
+    }
+    if (mDataSJW > mDataPhaseSegment2) {
+      errorCode |= kDataSJWIsGreaterThanPhaseSegment2 ;
+    }
+  }
+
+  return errorCode ;
+}
+
+
+
+
+
+uint32_t ACAN2517FDSettings::ramUsage (void) const {
+  uint32_t result = 0 ;
+
+  result += objectSizeForPayload (mControllerTXQBufferPayload) * mControllerTXQSize ;
+
+  result += objectSizeForPayload (mControllerReceiveFIFOPayload) * mControllerReceiveFIFOSize ;
+
+  result += objectSizeForPayload (mControllerTransmitFIFOPayload) * mControllerTransmitFIFOSize ;
+
+  return result ;
+}
+
+
+
+uint32_t ACAN2517FDSettings::objectSizeForPayload (const PayloadSize inPayload) {
+  static const uint8_t kPayload [8] = {16, 20, 24, 28, 32, 40, 56, 72} ;
+  return kPayload [inPayload] ;
+}

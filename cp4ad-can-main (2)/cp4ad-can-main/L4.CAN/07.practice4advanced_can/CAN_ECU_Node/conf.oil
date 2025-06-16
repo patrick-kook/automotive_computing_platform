@@ -1,0 +1,70 @@
+CPU mySystem {
+	OS myOs {
+		EE_OPT = "DEBUG";
+		USERESSCHEDULER = TRUE;
+		CPU_DATA = AVR8 {
+			MULTI_STACK = FALSE;
+		};
+		MCU_DATA = MEGA {
+			MODEL = MEGA_328p;
+			
+		};
+		LIB = ARDUINO {
+			SDK_BOARD = UNO;
+			VARIANT = CC {
+				VERSION = "1.8.16";
+			};
+			STAND_ALONE = TRUE;		// Generate arduino libraries
+		};
+		KERNEL_TYPE = OSEK {
+			CLASS = ECC2;	// Default
+		};
+	};
+	
+	APPDATA myApp {
+		APP_SRC = "SPI.cpp";
+		APP_SRC = "bsw.cpp";
+		APP_SRC = "asw.c";
+		APP_SRC = "../lib/ACAN2517FD/ACAN2517FD.cpp";
+		APP_SRC = "../lib/ACAN2517FD/ACAN2517FDSettings.cpp";
+	
+		
+	};
+	
+	TASK Task1 {
+		PRIORITY = 3;
+		STACK = SHARED;
+		SCHEDULE = FULL;
+		AUTOSTART = FALSE;
+		ACTIVATION = 1;
+		
+		
+	};
+	
+	COUNTER counter1 {
+        MINCYCLE = 1;
+        MAXALLOWEDVALUE = 65535;
+        TICKSPERBASE = 1;
+    };
+    ALARM alarm1{
+		COUNTER = counter1;
+		ACTION = ACTIVATETASK
+		{
+			TASK = Task1 ;
+		};
+		AUTOSTART = TRUE
+		{
+			ALARMTIME = 5;
+			CYCLETIME = 20;
+			
+		};
+	};
+
+	
+	ISR TimerISR {
+		CATEGORY = 2;
+		SOURCE = "TIMER1_COMPA";
+	};
+	
+	
+};

@@ -1,0 +1,2072 @@
+Archive member included to satisfy reference by file (symbol)
+
+C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libarduinosdk.a(wiring.c.o)
+                              obj/../lib/ACAN2517FD/ACAN2517FD.cpp.o (millis)
+C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libarduinosdk.a(wiring_digital.c.o)
+                              obj/../lib/ACAN2517FD/ACAN2517FD.cpp.o (pinMode)
+C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libarduinosdk.a(WInterrupts.c.o)
+                              obj/../lib/ACAN2517FD/ACAN2517FD.cpp.o (attachInterrupt)
+C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libarduinosdk.a(HardwareSerial.cpp.o)
+                              obj/bsw.cpp.o (_ZN14HardwareSerial5beginEmh)
+C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libarduinosdk.a(HardwareSerial0.cpp.o)
+                              obj/bsw.cpp.o (Serial)
+C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libarduinosdk.a(new.cpp.o)
+                              obj/../lib/ACAN2517FD/ACAN2517FD.cpp.o (_Znwj)
+C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libarduinosdk.a(Print.cpp.o)
+                              C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libarduinosdk.a(HardwareSerial.cpp.o) (_ZN5Print5writeEPKhj)
+C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libarduinosdk.a(hooks.c.o)
+                              C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libarduinosdk.a(wiring.c.o) (yield)
+C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libarduinosdk.a(abi.cpp.o)
+                              C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libarduinosdk.a(Print.cpp.o) (__cxa_pure_virtual)
+C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libee.a(ee_atmega_timer1ctc.c.o)
+                              obj/bsw.cpp.o (OsEE_atmega_startTimer1)
+C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libee.a(ee_oo_api_osek.c.o)
+                              obj/bsw.cpp.o (StartOS)
+C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libee.a(ee_oo_sched_entry_points.c.o)
+                              obj/ee_applcfg.c.o (osEE_idle_hook_wrapper)
+C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libee.a(ee_oo_scheduler.c.o)
+                              C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libee.a(ee_oo_api_osek.c.o) (osEE_scheduler_core_pop_running)
+C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libee.a(ee_oo_kernel.c.o)
+                              C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libee.a(ee_oo_api_osek.c.o) (osEE_task_activated)
+C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libee.a(ee_oo_sched_partitioned.c.o)
+                              C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libee.a(ee_oo_api_osek.c.o) (osEE_scheduler_task_activated)
+C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libee.a(ee_oo_counter.c.o)
+                              C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libee.a(ee_oo_api_osek.c.o) (osEE_counter_increment)
+C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libee.a(ee_oo_alarm.c.o)
+                              C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libee.a(ee_oo_api_osek.c.o) (osEE_alarm_set_rel)
+C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libee.a(ee_std_change_context.c.o)
+                              C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libee.a(ee_oo_api_osek.c.o) (osEE_change_context_from_running)
+C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libee.a(ee_atmega_intvect.c.o)
+                              C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libee.a(ee_oo_api_osek.c.o) (osEE_atmega_intvect)
+C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libee.a(ee_avr8_asm.S.o)
+                              C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libee.a(ee_std_change_context.c.o) (osEE_hal_save_ctx_and_restore_ctx)
+C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libee.a(ee_avr8_irqstub.c.o)
+                              C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libee.a(ee_atmega_intvect.c.o) (osEE_avr8_isr2_stub)
+c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(addsf3.o)
+                              obj/bsw.cpp.o (__subsf3)
+c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(addsf3x.o)
+                              c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(addsf3.o) (__addsf3x)
+c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(cmpsf2.o)
+                              obj/bsw.cpp.o (__ltsf2)
+c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(divsf3.o)
+                              C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libarduinosdk.a(Print.cpp.o) (__divsf3)
+c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(divsf3x.o)
+                              c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(divsf3.o) (__divsf3x)
+c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(fixsfsi.o)
+                              obj/bsw.cpp.o (__fixsfsi)
+c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(fixunssfsi.o)
+                              C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libarduinosdk.a(Print.cpp.o) (__fixunssfsi)
+c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(floatsisf.o)
+                              C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libarduinosdk.a(Print.cpp.o) (__floatunsisf)
+c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(fp_cmp.o)
+                              c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(cmpsf2.o) (__fp_cmp)
+c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(fp_inf.o)
+                              c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(addsf3x.o) (__fp_inf)
+c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(fp_nan.o)
+                              c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(addsf3x.o) (__fp_nan)
+c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(fp_pscA.o)
+                              c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(addsf3x.o) (__fp_pscA)
+c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(fp_pscB.o)
+                              c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(addsf3x.o) (__fp_pscB)
+c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(fp_round.o)
+                              c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(addsf3.o) (__fp_round)
+c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(fp_split3.o)
+                              c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(addsf3x.o) (__fp_split3)
+c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(fp_zero.o)
+                              c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(addsf3x.o) (__fp_zero)
+c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(gesf2.o)
+                              obj/bsw.cpp.o (__gtsf2)
+c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(mulsf3.o)
+                              obj/bsw.cpp.o (__mulsf3)
+c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(mulsf3x.o)
+                              c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(mulsf3.o) (__mulsf3x)
+c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(pow.o)
+                              obj/bsw.cpp.o (pow)
+c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(unordsf2.o)
+                              C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libarduinosdk.a(Print.cpp.o) (__unordsf2)
+c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(exp.o)
+                              c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(pow.o) (exp)
+c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(fp_powser.o)
+                              c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(exp.o) (__fp_powser)
+c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(inverse.o)
+                              c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(exp.o) (inverse)
+c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(ldexp.o)
+                              c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(exp.o) (ldexp)
+c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(log.o)
+                              c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(pow.o) (log)
+c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(modf.o)
+                              c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(exp.o) (modf)
+c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(fp_mpack.o)
+                              c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(ldexp.o) (__fp_mpack)
+c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_mulsi3.o)
+                              obj/../lib/ACAN2517FD/ACAN2517FDSettings.cpp.o (__mulsi3)
+c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_udivmodhi4.o)
+                              obj/asw.c.o (__udivmodhi4)
+c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_udivmodsi4.o)
+                              obj/../lib/ACAN2517FD/ACAN2517FD.cpp.o (__udivmodsi4)
+c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_exit.o)
+                              c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/crtatmega328p.o (exit)
+c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_copy_data.o)
+                              obj/../lib/ACAN2517FD/ACAN2517FD.cpp.o (__do_copy_data)
+c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_clear_bss.o)
+                              obj/SPI.cpp.o (__do_clear_bss)
+c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_ctors.o)
+                              obj/bsw.cpp.o (__do_global_ctors)
+c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_dtors.o)
+                              obj/bsw.cpp.o (__do_global_dtors)
+c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_umulhisi3.o)
+                              obj/../lib/ACAN2517FD/ACAN2517FDSettings.cpp.o (__umulhisi3)
+c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_usmulhisi3.o)
+                              obj/../lib/ACAN2517FD/ACAN2517FDSettings.cpp.o (__usmulhisi3)
+c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_muluhisi3.o)
+                              obj/../lib/ACAN2517FD/ACAN2517FDSettings.cpp.o (__muluhisi3)
+c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_mulshisi3.o)
+                              obj/../lib/ACAN2517FD/ACAN2517FDSettings.cpp.o (__mulshisi3)
+c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_muldi3.o)
+                              obj/../lib/ACAN2517FD/ACAN2517FDSettings.cpp.o (__muldi3)
+c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_muldi3_6.o)
+                              c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_muldi3.o) (__muldi3_6)
+c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_umulsidi3.o)
+                              obj/../lib/ACAN2517FD/ACAN2517FDSettings.cpp.o (__umulsidi3)
+c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_divdi3.o)
+                              obj/../lib/ACAN2517FD/ACAN2517FDSettings.cpp.o (__divdi3)
+c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_udivdi3.o)
+                              c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_divdi3.o) (__udivdi3_umoddi3)
+c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_udivmod64.o)
+                              c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_divdi3.o) (__udivmod64)
+c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_negdi2.o)
+                              c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_divdi3.o) (__negdi2)
+c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_prologue.o)
+                              c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_divdi3.o) (__prologue_saves__)
+c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_epilogue.o)
+                              c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_divdi3.o) (__epilogue_restores__)
+c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_cmpdi2.o)
+                              obj/../lib/ACAN2517FD/ACAN2517FDSettings.cpp.o (__cmpdi2)
+c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_tablejump2.o)
+                              c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_ctors.o) (__tablejump2__)
+c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libc.a(malloc.o)
+                              C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libarduinosdk.a(new.cpp.o) (malloc)
+c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libc.a(abort.o)
+                              C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libarduinosdk.a(abi.cpp.o) (abort)
+c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libc.a(memcpy.o)
+                              obj/bsw.cpp.o (memcpy)
+c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libc.a(vsnprintf.o)
+                              obj/bsw.cpp.o (vsnprintf)
+c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libc.a(vfprintf_std.o)
+                              c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libc.a(vsnprintf.o) (vfprintf)
+c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libc.a(strnlen_P.o)
+                              c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libc.a(vfprintf_std.o) (strnlen_P)
+c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libc.a(strnlen.o)
+                              c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libc.a(vfprintf_std.o) (strnlen)
+c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libc.a(fputc.o)
+                              c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libc.a(vfprintf_std.o) (fputc)
+c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libc.a(ultoa_invert.o)
+                              c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libc.a(vfprintf_std.o) (__ultoa_invert)
+
+Allocating common symbols
+Common symbol       size              file
+
+osEE_kcb_var        0x1               obj/ee_applcfg.c.o
+__brkval            0x2               c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libc.a(malloc.o)
+__flp               0x2               c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libc.a(malloc.o)
+
+Discarded input sections
+
+ .data          0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/crtatmega328p.o
+ .bss           0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/crtatmega328p.o
+ .group         0x00000000        0x8 obj/../lib/ACAN2517FD/ACAN2517FD.cpp.o
+ .group         0x00000000        0x8 obj/../lib/ACAN2517FD/ACAN2517FD.cpp.o
+ .group         0x00000000        0x8 obj/../lib/ACAN2517FD/ACAN2517FD.cpp.o
+ .group         0x00000000        0x8 obj/../lib/ACAN2517FD/ACAN2517FD.cpp.o
+ .group         0x00000000        0x8 obj/../lib/ACAN2517FD/ACAN2517FD.cpp.o
+ .group         0x00000000        0x8 obj/../lib/ACAN2517FD/ACAN2517FD.cpp.o
+ .group         0x00000000        0x8 obj/../lib/ACAN2517FD/ACAN2517FD.cpp.o
+ .group         0x00000000        0x8 obj/../lib/ACAN2517FD/ACAN2517FD.cpp.o
+ .text          0x00000000        0x0 obj/../lib/ACAN2517FD/ACAN2517FD.cpp.o
+ .data          0x00000000        0x0 obj/../lib/ACAN2517FD/ACAN2517FD.cpp.o
+ .bss           0x00000000        0x0 obj/../lib/ACAN2517FD/ACAN2517FD.cpp.o
+ .text._ZN10ACAN2517FD9availableEv
+                0x00000000       0x3a obj/../lib/ACAN2517FD/ACAN2517FD.cpp.o
+ .text._ZN10ACAN2517FD3endEv
+                0x00000000       0xd8 obj/../lib/ACAN2517FD/ACAN2517FD.cpp.o
+ .text._ZN10ACAN2517FD4pollEv
+                0x00000000        0xa obj/../lib/ACAN2517FD/ACAN2517FD.cpp.o
+ .text._ZN10ACAN2517FD7receiveER12CANFDMessage
+                0x00000000       0x86 obj/../lib/ACAN2517FD/ACAN2517FD.cpp.o
+ .text._ZN10ACAN2517FD23dispatchReceivedMessageEPFvmE
+                0x00000000       0x9e obj/../lib/ACAN2517FD/ACAN2517FD.cpp.o
+ .text._ZN10ACAN2517FD14readRegister16Ej
+                0x00000000       0x32 obj/../lib/ACAN2517FD/ACAN2517FD.cpp.o
+ .text._ZN10ACAN2517FD20currentOperationModeEv
+                0x00000000       0x10 obj/../lib/ACAN2517FD/ACAN2517FD.cpp.o
+ .text._ZN10ACAN2517FD34recoverFromRestrictedOperationModeEv
+                0x00000000       0x82 obj/../lib/ACAN2517FD/ACAN2517FD.cpp.o
+ .text._ZN10ACAN2517FD16setOperationModeEN18ACAN2517FDSettings13OperationModeE
+                0x00000000        0xa obj/../lib/ACAN2517FD/ACAN2517FD.cpp.o
+ .text._ZN10ACAN2517FD35performSleepModeToConfigurationModeEv
+                0x00000000       0x40 obj/../lib/ACAN2517FD/ACAN2517FD.cpp.o
+ .text._ZN10ACAN2517FD13errorCountersEv
+                0x00000000        0x8 obj/../lib/ACAN2517FD/ACAN2517FD.cpp.o
+ .text._ZN10ACAN2517FD9diagInfosEi
+                0x00000000       0x12 obj/../lib/ACAN2517FD/ACAN2517FD.cpp.o
+ .text._ZN10ACAN2517FD11gpioSetModeEhh
+                0x00000000       0x6a obj/../lib/ACAN2517FD/ACAN2517FD.cpp.o
+ .text._ZN10ACAN2517FD9gpioWriteEhh
+                0x00000000       0x50 obj/../lib/ACAN2517FD/ACAN2517FD.cpp.o
+ .text._ZN10ACAN2517FD8gpioReadEh
+                0x00000000       0x1e obj/../lib/ACAN2517FD/ACAN2517FD.cpp.o
+ .text._ZN10ACAN2517FD21configureGPIO0AsXSTBYEv
+                0x00000000       0x20 obj/../lib/ACAN2517FD/ACAN2517FD.cpp.o
+ .text          0x00000000        0x0 obj/../lib/ACAN2517FD/ACAN2517FDSettings.cpp.o
+ .data          0x00000000        0x0 obj/../lib/ACAN2517FD/ACAN2517FDSettings.cpp.o
+ .bss           0x00000000        0x0 obj/../lib/ACAN2517FD/ACAN2517FDSettings.cpp.o
+ .text._ZN18ACAN2517FDSettings8sysClockENS_10OscillatorE
+                0x00000000       0x24 obj/../lib/ACAN2517FD/ACAN2517FDSettings.cpp.o
+ .text._ZNK18ACAN2517FDSettings24actualArbitrationBitRateEv
+                0x00000000       0x4a obj/../lib/ACAN2517FD/ACAN2517FDSettings.cpp.o
+ .text._ZNK18ACAN2517FDSettings17actualDataBitRateEv
+                0x00000000       0x62 obj/../lib/ACAN2517FD/ACAN2517FDSettings.cpp.o
+ .text._ZNK18ACAN2517FDSettings23exactArbitrationBitRateEv
+                0x00000000       0x52 obj/../lib/ACAN2517FD/ACAN2517FDSettings.cpp.o
+ .text._ZNK18ACAN2517FDSettings16exactDataBitRateEv
+                0x00000000       0x6c obj/../lib/ACAN2517FD/ACAN2517FDSettings.cpp.o
+ .text._ZNK18ACAN2517FDSettings32ppmFromDesiredArbitrationBitRateEv
+                0x00000000       0xae obj/../lib/ACAN2517FD/ACAN2517FDSettings.cpp.o
+ .text._ZNK18ACAN2517FDSettings34arbitrationSamplePointFromBitStartEv
+                0x00000000       0x2a obj/../lib/ACAN2517FD/ACAN2517FDSettings.cpp.o
+ .text._ZNK18ACAN2517FDSettings27dataSamplePointFromBitStartEv
+                0x00000000       0x2e obj/../lib/ACAN2517FD/ACAN2517FDSettings.cpp.o
+ .text          0x00000000        0x0 obj/SPI.cpp.o
+ .data          0x00000000        0x0 obj/SPI.cpp.o
+ .bss           0x00000000        0x0 obj/SPI.cpp.o
+ .text._ZN8SPIClass3endEv
+                0x00000000       0x28 obj/SPI.cpp.o
+ .text._ZN8SPIClass17notUsingInterruptEh
+                0x00000000       0x36 obj/SPI.cpp.o
+ .text          0x00000000        0x0 obj/asw.c.o
+ .data          0x00000000        0x0 obj/asw.c.o
+ .bss           0x00000000        0x0 obj/asw.c.o
+ .group         0x00000000        0x8 obj/bsw.cpp.o
+ .text          0x00000000        0x0 obj/bsw.cpp.o
+ .data          0x00000000        0x0 obj/bsw.cpp.o
+ .bss           0x00000000        0x0 obj/bsw.cpp.o
+ .text._ZN12CANFDMessageC2Ev
+                0x00000000       0x26 obj/bsw.cpp.o
+ .text.CAN_checkMsg
+                0x00000000        0x8 obj/bsw.cpp.o
+ .text.CAN_readMsg
+                0x00000000       0x7a obj/bsw.cpp.o
+ .text.mdelay   0x00000000       0x90 obj/bsw.cpp.o
+ .text.loop     0x00000000        0x2 obj/bsw.cpp.o
+ .text          0x00000000        0x0 obj/ee_applcfg.c.o
+ .data          0x00000000        0x0 obj/ee_applcfg.c.o
+ .bss           0x00000000        0x0 obj/ee_applcfg.c.o
+ .text          0x00000000        0x0 C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libarduinosdk.a(wiring.c.o)
+ .data          0x00000000        0x0 C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libarduinosdk.a(wiring.c.o)
+ .bss           0x00000000        0x0 C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libarduinosdk.a(wiring.c.o)
+ .text.micros   0x00000000       0x4a C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libarduinosdk.a(wiring.c.o)
+ .text.delay    0x00000000       0x72 C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libarduinosdk.a(wiring.c.o)
+ .text.delayMicroseconds
+                0x00000000       0x16 C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libarduinosdk.a(wiring.c.o)
+ .text          0x00000000        0x0 C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libarduinosdk.a(wiring_digital.c.o)
+ .data          0x00000000        0x0 C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libarduinosdk.a(wiring_digital.c.o)
+ .bss           0x00000000        0x0 C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libarduinosdk.a(wiring_digital.c.o)
+ .text.digitalRead
+                0x00000000       0x52 C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libarduinosdk.a(wiring_digital.c.o)
+ .progmem.data.port_to_input_PGM
+                0x00000000        0xa C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libarduinosdk.a(wiring_digital.c.o)
+ .text          0x00000000        0x0 C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libarduinosdk.a(WInterrupts.c.o)
+ .data          0x00000000        0x0 C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libarduinosdk.a(WInterrupts.c.o)
+ .bss           0x00000000        0x0 C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libarduinosdk.a(WInterrupts.c.o)
+ .text.detachInterrupt
+                0x00000000       0x24 C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libarduinosdk.a(WInterrupts.c.o)
+ .group         0x00000000        0x8 C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libarduinosdk.a(HardwareSerial.cpp.o)
+ .text          0x00000000        0x0 C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libarduinosdk.a(HardwareSerial.cpp.o)
+ .data          0x00000000        0x0 C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libarduinosdk.a(HardwareSerial.cpp.o)
+ .bss           0x00000000        0x0 C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libarduinosdk.a(HardwareSerial.cpp.o)
+ .text._Z14serialEventRunv
+                0x00000000       0x1c C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libarduinosdk.a(HardwareSerial.cpp.o)
+ .text._ZN14HardwareSerial3endEv
+                0x00000000       0x44 C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libarduinosdk.a(HardwareSerial.cpp.o)
+ .text          0x00000000        0x0 C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libarduinosdk.a(HardwareSerial0.cpp.o)
+ .data          0x00000000        0x0 C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libarduinosdk.a(HardwareSerial0.cpp.o)
+ .bss           0x00000000        0x0 C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libarduinosdk.a(HardwareSerial0.cpp.o)
+ .text._Z17Serial0_availablev
+                0x00000000       0x14 C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libarduinosdk.a(HardwareSerial0.cpp.o)
+ .text          0x00000000        0x0 C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libarduinosdk.a(new.cpp.o)
+ .data          0x00000000        0x0 C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libarduinosdk.a(new.cpp.o)
+ .bss           0x00000000        0x0 C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libarduinosdk.a(new.cpp.o)
+ .text._ZnwjPv  0x00000000        0x4 C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libarduinosdk.a(new.cpp.o)
+ .group         0x00000000        0x8 C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libarduinosdk.a(Print.cpp.o)
+ .group         0x00000000        0x8 C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libarduinosdk.a(Print.cpp.o)
+ .group         0x00000000        0x8 C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libarduinosdk.a(Print.cpp.o)
+ .text          0x00000000        0x0 C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libarduinosdk.a(Print.cpp.o)
+ .data          0x00000000        0x0 C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libarduinosdk.a(Print.cpp.o)
+ .bss           0x00000000        0x0 C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libarduinosdk.a(Print.cpp.o)
+ .text._ZN5Print17availableForWriteEv
+                0x00000000        0x6 C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libarduinosdk.a(Print.cpp.o)
+ .text._ZN5Print5flushEv
+                0x00000000        0x2 C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libarduinosdk.a(Print.cpp.o)
+ .text._ZN5Print5printEPK19__FlashStringHelper
+                0x00000000       0x48 C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libarduinosdk.a(Print.cpp.o)
+ .text._ZN5Print5printERK6String
+                0x00000000       0x1c C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libarduinosdk.a(Print.cpp.o)
+ .text._ZN5Print5printEc
+                0x00000000        0xe C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libarduinosdk.a(Print.cpp.o)
+ .text._ZN5Print5printERK9Printable
+                0x00000000       0x14 C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libarduinosdk.a(Print.cpp.o)
+ .rodata._ZN5Print7printlnEv.str1.1
+                0x00000000        0x3 C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libarduinosdk.a(Print.cpp.o)
+ .text._ZN5Print7printlnEv
+                0x00000000        0x8 C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libarduinosdk.a(Print.cpp.o)
+ .text._ZN5Print7printlnEPK19__FlashStringHelper
+                0x00000000       0x24 C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libarduinosdk.a(Print.cpp.o)
+ .text._ZN5Print7printlnERK6String
+                0x00000000       0x24 C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libarduinosdk.a(Print.cpp.o)
+ .text._ZN5Print7printlnEPKc
+                0x00000000       0x2e C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libarduinosdk.a(Print.cpp.o)
+ .text._ZN5Print7printlnEc
+                0x00000000       0x24 C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libarduinosdk.a(Print.cpp.o)
+ .text._ZN5Print7printlnERK9Printable
+                0x00000000       0x24 C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libarduinosdk.a(Print.cpp.o)
+ .text._ZN5Print11printNumberEmh
+                0x00000000       0x98 C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libarduinosdk.a(Print.cpp.o)
+ .text._ZN5Print5printEli
+                0x00000000       0x90 C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libarduinosdk.a(Print.cpp.o)
+ .text._ZN5Print5printEii
+                0x00000000        0xe C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libarduinosdk.a(Print.cpp.o)
+ .text._ZN5Print7printlnEii
+                0x00000000       0x24 C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libarduinosdk.a(Print.cpp.o)
+ .text._ZN5Print7printlnEli
+                0x00000000       0x24 C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libarduinosdk.a(Print.cpp.o)
+ .text._ZN5Print5printEmi
+                0x00000000       0x1a C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libarduinosdk.a(Print.cpp.o)
+ .text._ZN5Print5printEhi
+                0x00000000        0xe C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libarduinosdk.a(Print.cpp.o)
+ .text._ZN5Print7printlnEhi
+                0x00000000       0x24 C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libarduinosdk.a(Print.cpp.o)
+ .text._ZN5Print5printEji
+                0x00000000        0xc C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libarduinosdk.a(Print.cpp.o)
+ .text._ZN5Print7printlnEji
+                0x00000000       0x24 C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libarduinosdk.a(Print.cpp.o)
+ .text._ZN5Print7printlnEmi
+                0x00000000       0x24 C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libarduinosdk.a(Print.cpp.o)
+ .rodata._ZN5Print10printFloatEdh.str1.1
+                0x00000000        0xc C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libarduinosdk.a(Print.cpp.o)
+ .text._ZN5Print10printFloatEdh
+                0x00000000      0x1c8 C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libarduinosdk.a(Print.cpp.o)
+ .text._ZN5Print5printEdi
+                0x00000000        0x4 C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libarduinosdk.a(Print.cpp.o)
+ .text._ZN5Print7printlnEdi
+                0x00000000       0x24 C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libarduinosdk.a(Print.cpp.o)
+ .rodata._ZTV5Print
+                0x00000000        0xc C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libarduinosdk.a(Print.cpp.o)
+ .text          0x00000000        0x0 C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libarduinosdk.a(hooks.c.o)
+ .data          0x00000000        0x0 C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libarduinosdk.a(hooks.c.o)
+ .bss           0x00000000        0x0 C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libarduinosdk.a(hooks.c.o)
+ .text.__empty  0x00000000        0x2 C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libarduinosdk.a(hooks.c.o)
+ .comment       0x00000000       0x12 C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libarduinosdk.a(hooks.c.o)
+ .text          0x00000000        0x0 C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libarduinosdk.a(abi.cpp.o)
+ .data          0x00000000        0x0 C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libarduinosdk.a(abi.cpp.o)
+ .bss           0x00000000        0x0 C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libarduinosdk.a(abi.cpp.o)
+ .text.__cxa_pure_virtual
+                0x00000000        0x4 C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libarduinosdk.a(abi.cpp.o)
+ .text.__cxa_deleted_virtual
+                0x00000000        0x4 C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libarduinosdk.a(abi.cpp.o)
+ .comment       0x00000000       0x12 C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libarduinosdk.a(abi.cpp.o)
+ .text          0x00000000        0x0 C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libee.a(ee_atmega_timer1ctc.c.o)
+ .data          0x00000000        0x0 C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libee.a(ee_atmega_timer1ctc.c.o)
+ .bss           0x00000000        0x0 C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libee.a(ee_atmega_timer1ctc.c.o)
+ .text          0x00000000        0x0 C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libee.a(ee_oo_api_osek.c.o)
+ .data          0x00000000        0x0 C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libee.a(ee_oo_api_osek.c.o)
+ .bss           0x00000000        0x0 C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libee.a(ee_oo_api_osek.c.o)
+ .text.DisableAllInterrupts
+                0x00000000       0x10 C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libee.a(ee_oo_api_osek.c.o)
+ .text.EnableAllInterrupts
+                0x00000000       0x14 C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libee.a(ee_oo_api_osek.c.o)
+ .text.SuspendAllInterrupts
+                0x00000000       0x34 C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libee.a(ee_oo_api_osek.c.o)
+ .text.ResumeAllInterrupts
+                0x00000000       0x1c C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libee.a(ee_oo_api_osek.c.o)
+ .text.SuspendOSInterrupts
+                0x00000000       0x34 C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libee.a(ee_oo_api_osek.c.o)
+ .text.ResumeOSInterrupts
+                0x00000000       0x1c C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libee.a(ee_oo_api_osek.c.o)
+ .text.GetActiveApplicationMode
+                0x00000000       0x18 C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libee.a(ee_oo_api_osek.c.o)
+ .text.ActivateTask
+                0x00000000       0x6a C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libee.a(ee_oo_api_osek.c.o)
+ .text.ChainTask
+                0x00000000       0xb0 C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libee.a(ee_oo_api_osek.c.o)
+ .text.Schedule
+                0x00000000       0x4c C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libee.a(ee_oo_api_osek.c.o)
+ .text.GetResource
+                0x00000000       0x7a C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libee.a(ee_oo_api_osek.c.o)
+ .text.ReleaseResource
+                0x00000000       0x8c C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libee.a(ee_oo_api_osek.c.o)
+ .text.ShutdownOS
+                0x00000000       0x34 C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libee.a(ee_oo_api_osek.c.o)
+ .text.GetTaskID
+                0x00000000       0x58 C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libee.a(ee_oo_api_osek.c.o)
+ .text.GetTaskState
+                0x00000000       0x7e C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libee.a(ee_oo_api_osek.c.o)
+ .text.SetRelAlarm
+                0x00000000       0x44 C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libee.a(ee_oo_api_osek.c.o)
+ .text.SetAbsAlarm
+                0x00000000       0x44 C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libee.a(ee_oo_api_osek.c.o)
+ .text.CancelAlarm
+                0x00000000       0x3c C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libee.a(ee_oo_api_osek.c.o)
+ .text.GetAlarm
+                0x00000000       0x48 C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libee.a(ee_oo_api_osek.c.o)
+ .text.GetAlarmBase
+                0x00000000       0x56 C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libee.a(ee_oo_api_osek.c.o)
+ .text.WaitEvent
+                0x00000000       0x76 C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libee.a(ee_oo_api_osek.c.o)
+ .text.SetEvent
+                0x00000000       0x76 C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libee.a(ee_oo_api_osek.c.o)
+ .text.GetEvent
+                0x00000000       0x4e C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libee.a(ee_oo_api_osek.c.o)
+ .text.ClearEvent
+                0x00000000       0x32 C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libee.a(ee_oo_api_osek.c.o)
+ .text.GetCounterValue
+                0x00000000       0x4e C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libee.a(ee_oo_api_osek.c.o)
+ .text.GetElapsedValue
+                0x00000000       0x8a C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libee.a(ee_oo_api_osek.c.o)
+ .text.GetISRID
+                0x00000000       0x1e C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libee.a(ee_oo_api_osek.c.o)
+ .text          0x00000000        0x0 C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libee.a(ee_oo_sched_entry_points.c.o)
+ .data          0x00000000        0x0 C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libee.a(ee_oo_sched_entry_points.c.o)
+ .bss           0x00000000        0x0 C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libee.a(ee_oo_sched_entry_points.c.o)
+ .text          0x00000000        0x0 C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libee.a(ee_oo_scheduler.c.o)
+ .data          0x00000000        0x0 C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libee.a(ee_oo_scheduler.c.o)
+ .bss           0x00000000        0x0 C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libee.a(ee_oo_scheduler.c.o)
+ .text          0x00000000        0x0 C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libee.a(ee_oo_kernel.c.o)
+ .data          0x00000000        0x0 C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libee.a(ee_oo_kernel.c.o)
+ .bss           0x00000000        0x0 C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libee.a(ee_oo_kernel.c.o)
+ .text          0x00000000        0x0 C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libee.a(ee_oo_sched_partitioned.c.o)
+ .data          0x00000000        0x0 C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libee.a(ee_oo_sched_partitioned.c.o)
+ .bss           0x00000000        0x0 C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libee.a(ee_oo_sched_partitioned.c.o)
+ .text.osEE_scheduler_task_activated
+                0x00000000       0xb0 C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libee.a(ee_oo_sched_partitioned.c.o)
+ .text          0x00000000        0x0 C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libee.a(ee_oo_counter.c.o)
+ .data          0x00000000        0x0 C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libee.a(ee_oo_counter.c.o)
+ .bss           0x00000000        0x0 C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libee.a(ee_oo_counter.c.o)
+ .text.osEE_counter_cancel_trigger
+                0x00000000       0x3a C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libee.a(ee_oo_counter.c.o)
+ .text          0x00000000        0x0 C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libee.a(ee_oo_alarm.c.o)
+ .data          0x00000000        0x0 C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libee.a(ee_oo_alarm.c.o)
+ .bss           0x00000000        0x0 C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libee.a(ee_oo_alarm.c.o)
+ .text.osEE_alarm_set_abs
+                0x00000000       0x3e C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libee.a(ee_oo_alarm.c.o)
+ .text.osEE_alarm_cancel
+                0x00000000       0x3e C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libee.a(ee_oo_alarm.c.o)
+ .text.osEE_alarm_get
+                0x00000000       0x56 C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libee.a(ee_oo_alarm.c.o)
+ .text          0x00000000        0x0 C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libee.a(ee_std_change_context.c.o)
+ .data          0x00000000        0x0 C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libee.a(ee_std_change_context.c.o)
+ .bss           0x00000000        0x0 C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libee.a(ee_std_change_context.c.o)
+ .text          0x00000000        0x0 C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libee.a(ee_atmega_intvect.c.o)
+ .data          0x00000000        0x0 C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libee.a(ee_atmega_intvect.c.o)
+ .bss           0x00000000        0x0 C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libee.a(ee_atmega_intvect.c.o)
+ .data          0x00000000        0x0 C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libee.a(ee_avr8_asm.S.o)
+ .bss           0x00000000        0x0 C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libee.a(ee_avr8_asm.S.o)
+ .avr.prop      0x00000000       0x3a C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libee.a(ee_avr8_asm.S.o)
+ .text          0x00000000        0x0 C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libee.a(ee_avr8_irqstub.c.o)
+ .data          0x00000000        0x0 C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libee.a(ee_avr8_irqstub.c.o)
+ .bss           0x00000000        0x0 C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libee.a(ee_avr8_irqstub.c.o)
+ .text.osEE_avr8_isr1_stub
+                0x00000000       0x42 C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libee.a(ee_avr8_irqstub.c.o)
+ .text          0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(addsf3.o)
+ .data          0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(addsf3.o)
+ .bss           0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(addsf3.o)
+ .text          0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(addsf3x.o)
+ .data          0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(addsf3x.o)
+ .bss           0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(addsf3x.o)
+ .text          0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(cmpsf2.o)
+ .data          0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(cmpsf2.o)
+ .bss           0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(cmpsf2.o)
+ .text          0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(divsf3.o)
+ .data          0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(divsf3.o)
+ .bss           0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(divsf3.o)
+ .text          0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(divsf3x.o)
+ .data          0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(divsf3x.o)
+ .bss           0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(divsf3x.o)
+ .text          0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(fixsfsi.o)
+ .data          0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(fixsfsi.o)
+ .bss           0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(fixsfsi.o)
+ .text          0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(fixunssfsi.o)
+ .data          0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(fixunssfsi.o)
+ .bss           0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(fixunssfsi.o)
+ .text          0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(floatsisf.o)
+ .data          0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(floatsisf.o)
+ .bss           0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(floatsisf.o)
+ .text          0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(fp_cmp.o)
+ .data          0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(fp_cmp.o)
+ .bss           0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(fp_cmp.o)
+ .text          0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(fp_inf.o)
+ .data          0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(fp_inf.o)
+ .bss           0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(fp_inf.o)
+ .text          0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(fp_nan.o)
+ .data          0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(fp_nan.o)
+ .bss           0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(fp_nan.o)
+ .text          0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(fp_pscA.o)
+ .data          0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(fp_pscA.o)
+ .bss           0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(fp_pscA.o)
+ .text          0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(fp_pscB.o)
+ .data          0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(fp_pscB.o)
+ .bss           0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(fp_pscB.o)
+ .text          0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(fp_round.o)
+ .data          0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(fp_round.o)
+ .bss           0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(fp_round.o)
+ .text          0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(fp_split3.o)
+ .data          0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(fp_split3.o)
+ .bss           0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(fp_split3.o)
+ .text          0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(fp_zero.o)
+ .data          0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(fp_zero.o)
+ .bss           0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(fp_zero.o)
+ .text          0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(gesf2.o)
+ .data          0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(gesf2.o)
+ .bss           0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(gesf2.o)
+ .text          0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(mulsf3.o)
+ .data          0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(mulsf3.o)
+ .bss           0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(mulsf3.o)
+ .text          0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(mulsf3x.o)
+ .data          0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(mulsf3x.o)
+ .bss           0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(mulsf3x.o)
+ .text          0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(pow.o)
+ .data          0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(pow.o)
+ .bss           0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(pow.o)
+ .text          0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(unordsf2.o)
+ .data          0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(unordsf2.o)
+ .bss           0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(unordsf2.o)
+ .text.avr-libc.fplib
+                0x00000000        0xa c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(unordsf2.o)
+ .text          0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(exp.o)
+ .data          0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(exp.o)
+ .bss           0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(exp.o)
+ .text          0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(fp_powser.o)
+ .data          0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(fp_powser.o)
+ .bss           0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(fp_powser.o)
+ .text          0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(inverse.o)
+ .data          0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(inverse.o)
+ .bss           0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(inverse.o)
+ .text          0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(ldexp.o)
+ .data          0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(ldexp.o)
+ .bss           0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(ldexp.o)
+ .text          0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(log.o)
+ .data          0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(log.o)
+ .bss           0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(log.o)
+ .text          0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(modf.o)
+ .data          0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(modf.o)
+ .bss           0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(modf.o)
+ .text          0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(fp_mpack.o)
+ .data          0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(fp_mpack.o)
+ .bss           0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(fp_mpack.o)
+ .text          0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_mulsi3.o)
+ .data          0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_mulsi3.o)
+ .bss           0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_mulsi3.o)
+ .text.libgcc.div
+                0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_mulsi3.o)
+ .text.libgcc   0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_mulsi3.o)
+ .text.libgcc.prologue
+                0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_mulsi3.o)
+ .text.libgcc.builtins
+                0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_mulsi3.o)
+ .text.libgcc.fmul
+                0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_mulsi3.o)
+ .text.libgcc.fixed
+                0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_mulsi3.o)
+ .text          0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_udivmodhi4.o)
+ .data          0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_udivmodhi4.o)
+ .bss           0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_udivmodhi4.o)
+ .text.libgcc.mul
+                0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_udivmodhi4.o)
+ .text.libgcc   0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_udivmodhi4.o)
+ .text.libgcc.prologue
+                0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_udivmodhi4.o)
+ .text.libgcc.builtins
+                0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_udivmodhi4.o)
+ .text.libgcc.fmul
+                0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_udivmodhi4.o)
+ .text.libgcc.fixed
+                0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_udivmodhi4.o)
+ .text          0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_udivmodsi4.o)
+ .data          0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_udivmodsi4.o)
+ .bss           0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_udivmodsi4.o)
+ .text.libgcc.mul
+                0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_udivmodsi4.o)
+ .text.libgcc   0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_udivmodsi4.o)
+ .text.libgcc.prologue
+                0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_udivmodsi4.o)
+ .text.libgcc.builtins
+                0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_udivmodsi4.o)
+ .text.libgcc.fmul
+                0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_udivmodsi4.o)
+ .text.libgcc.fixed
+                0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_udivmodsi4.o)
+ .text          0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_exit.o)
+ .data          0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_exit.o)
+ .bss           0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_exit.o)
+ .text.libgcc.mul
+                0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_exit.o)
+ .text.libgcc.div
+                0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_exit.o)
+ .text.libgcc   0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_exit.o)
+ .text.libgcc.prologue
+                0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_exit.o)
+ .text.libgcc.builtins
+                0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_exit.o)
+ .text.libgcc.fmul
+                0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_exit.o)
+ .text.libgcc.fixed
+                0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_exit.o)
+ .text          0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_copy_data.o)
+ .data          0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_copy_data.o)
+ .bss           0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc.mul
+                0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc.div
+                0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc   0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc.prologue
+                0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc.builtins
+                0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc.fmul
+                0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc.fixed
+                0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_copy_data.o)
+ .text          0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_clear_bss.o)
+ .data          0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_clear_bss.o)
+ .bss           0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_clear_bss.o)
+ .text.libgcc.mul
+                0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_clear_bss.o)
+ .text.libgcc.div
+                0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_clear_bss.o)
+ .text.libgcc   0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_clear_bss.o)
+ .text.libgcc.prologue
+                0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_clear_bss.o)
+ .text.libgcc.builtins
+                0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_clear_bss.o)
+ .text.libgcc.fmul
+                0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_clear_bss.o)
+ .text.libgcc.fixed
+                0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_clear_bss.o)
+ .text          0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_ctors.o)
+ .data          0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_ctors.o)
+ .bss           0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_ctors.o)
+ .text.libgcc.mul
+                0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_ctors.o)
+ .text.libgcc.div
+                0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_ctors.o)
+ .text.libgcc   0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_ctors.o)
+ .text.libgcc.prologue
+                0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_ctors.o)
+ .text.libgcc.builtins
+                0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_ctors.o)
+ .text.libgcc.fmul
+                0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_ctors.o)
+ .text.libgcc.fixed
+                0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_ctors.o)
+ .text          0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_dtors.o)
+ .data          0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_dtors.o)
+ .bss           0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_dtors.o)
+ .text.libgcc.mul
+                0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_dtors.o)
+ .text.libgcc.div
+                0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_dtors.o)
+ .text.libgcc   0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_dtors.o)
+ .text.libgcc.prologue
+                0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_dtors.o)
+ .text.libgcc.builtins
+                0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_dtors.o)
+ .text.libgcc.fmul
+                0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_dtors.o)
+ .text.libgcc.fixed
+                0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_dtors.o)
+ .text          0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_umulhisi3.o)
+ .data          0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_umulhisi3.o)
+ .bss           0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_umulhisi3.o)
+ .text.libgcc.div
+                0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_umulhisi3.o)
+ .text.libgcc   0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_umulhisi3.o)
+ .text.libgcc.prologue
+                0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_umulhisi3.o)
+ .text.libgcc.builtins
+                0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_umulhisi3.o)
+ .text.libgcc.fmul
+                0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_umulhisi3.o)
+ .text.libgcc.fixed
+                0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_umulhisi3.o)
+ .text          0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_usmulhisi3.o)
+ .data          0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_usmulhisi3.o)
+ .bss           0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_usmulhisi3.o)
+ .text.libgcc.div
+                0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_usmulhisi3.o)
+ .text.libgcc   0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_usmulhisi3.o)
+ .text.libgcc.prologue
+                0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_usmulhisi3.o)
+ .text.libgcc.builtins
+                0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_usmulhisi3.o)
+ .text.libgcc.fmul
+                0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_usmulhisi3.o)
+ .text.libgcc.fixed
+                0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_usmulhisi3.o)
+ .text          0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_muluhisi3.o)
+ .data          0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_muluhisi3.o)
+ .bss           0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_muluhisi3.o)
+ .text.libgcc.div
+                0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_muluhisi3.o)
+ .text.libgcc   0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_muluhisi3.o)
+ .text.libgcc.prologue
+                0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_muluhisi3.o)
+ .text.libgcc.builtins
+                0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_muluhisi3.o)
+ .text.libgcc.fmul
+                0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_muluhisi3.o)
+ .text.libgcc.fixed
+                0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_muluhisi3.o)
+ .text          0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_mulshisi3.o)
+ .data          0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_mulshisi3.o)
+ .bss           0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_mulshisi3.o)
+ .text.libgcc.mul
+                0x00000000       0x10 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_mulshisi3.o)
+ .text.libgcc.div
+                0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_mulshisi3.o)
+ .text.libgcc   0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_mulshisi3.o)
+ .text.libgcc.prologue
+                0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_mulshisi3.o)
+ .text.libgcc.builtins
+                0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_mulshisi3.o)
+ .text.libgcc.fmul
+                0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_mulshisi3.o)
+ .text.libgcc.fixed
+                0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_mulshisi3.o)
+ .debug_line    0x00000000       0x7a c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_mulshisi3.o)
+ .debug_info    0x00000000       0xbb c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_mulshisi3.o)
+ .debug_abbrev  0x00000000       0x14 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_mulshisi3.o)
+ .debug_aranges
+                0x00000000       0x20 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_mulshisi3.o)
+ .text          0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_muldi3.o)
+ .data          0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_muldi3.o)
+ .bss           0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_muldi3.o)
+ .text.libgcc.div
+                0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_muldi3.o)
+ .text.libgcc   0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_muldi3.o)
+ .text.libgcc.prologue
+                0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_muldi3.o)
+ .text.libgcc.builtins
+                0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_muldi3.o)
+ .text.libgcc.fmul
+                0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_muldi3.o)
+ .text.libgcc.fixed
+                0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_muldi3.o)
+ .text          0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_muldi3_6.o)
+ .data          0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_muldi3_6.o)
+ .bss           0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_muldi3_6.o)
+ .text.libgcc.div
+                0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_muldi3_6.o)
+ .text.libgcc   0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_muldi3_6.o)
+ .text.libgcc.prologue
+                0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_muldi3_6.o)
+ .text.libgcc.builtins
+                0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_muldi3_6.o)
+ .text.libgcc.fmul
+                0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_muldi3_6.o)
+ .text.libgcc.fixed
+                0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_muldi3_6.o)
+ .text          0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_umulsidi3.o)
+ .data          0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_umulsidi3.o)
+ .bss           0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_umulsidi3.o)
+ .text.libgcc.div
+                0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_umulsidi3.o)
+ .text.libgcc   0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_umulsidi3.o)
+ .text.libgcc.prologue
+                0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_umulsidi3.o)
+ .text.libgcc.builtins
+                0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_umulsidi3.o)
+ .text.libgcc.fmul
+                0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_umulsidi3.o)
+ .text.libgcc.fixed
+                0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_umulsidi3.o)
+ .text          0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_divdi3.o)
+ .data          0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_divdi3.o)
+ .bss           0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_divdi3.o)
+ .text.libgcc.mul
+                0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_divdi3.o)
+ .text.libgcc.div
+                0x00000000       0x62 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_divdi3.o)
+ .text.libgcc   0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_divdi3.o)
+ .text.libgcc.prologue
+                0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_divdi3.o)
+ .text.libgcc.builtins
+                0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_divdi3.o)
+ .text.libgcc.fmul
+                0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_divdi3.o)
+ .text.libgcc.fixed
+                0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_divdi3.o)
+ .debug_line    0x00000000       0xf2 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_divdi3.o)
+ .debug_info    0x00000000       0xbb c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_divdi3.o)
+ .debug_abbrev  0x00000000       0x14 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_divdi3.o)
+ .debug_aranges
+                0x00000000       0x20 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_divdi3.o)
+ .text          0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_udivdi3.o)
+ .data          0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_udivdi3.o)
+ .bss           0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_udivdi3.o)
+ .text.libgcc.mul
+                0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_udivdi3.o)
+ .text.libgcc.div
+                0x00000000       0x1c c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_udivdi3.o)
+ .text.libgcc   0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_udivdi3.o)
+ .text.libgcc.prologue
+                0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_udivdi3.o)
+ .text.libgcc.builtins
+                0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_udivdi3.o)
+ .text.libgcc.fmul
+                0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_udivdi3.o)
+ .text.libgcc.fixed
+                0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_udivdi3.o)
+ .debug_line    0x00000000       0xa4 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_udivdi3.o)
+ .debug_info    0x00000000       0xbb c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_udivdi3.o)
+ .debug_abbrev  0x00000000       0x14 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_udivdi3.o)
+ .debug_aranges
+                0x00000000       0x20 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_udivdi3.o)
+ .text          0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_udivmod64.o)
+ .data          0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_udivmod64.o)
+ .bss           0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_udivmod64.o)
+ .text.libgcc.mul
+                0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_udivmod64.o)
+ .text.libgcc.div
+                0x00000000       0xa2 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_udivmod64.o)
+ .text.libgcc   0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_udivmod64.o)
+ .text.libgcc.prologue
+                0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_udivmod64.o)
+ .text.libgcc.builtins
+                0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_udivmod64.o)
+ .text.libgcc.fmul
+                0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_udivmod64.o)
+ .text.libgcc.fixed
+                0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_udivmod64.o)
+ .debug_line    0x00000000      0x146 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_udivmod64.o)
+ .debug_info    0x00000000       0xbb c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_udivmod64.o)
+ .debug_abbrev  0x00000000       0x14 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_udivmod64.o)
+ .debug_aranges
+                0x00000000       0x20 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_udivmod64.o)
+ .text          0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_negdi2.o)
+ .data          0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_negdi2.o)
+ .bss           0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_negdi2.o)
+ .text.libgcc.mul
+                0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_negdi2.o)
+ .text.libgcc.div
+                0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_negdi2.o)
+ .text.libgcc   0x00000000       0x20 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_negdi2.o)
+ .text.libgcc.prologue
+                0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_negdi2.o)
+ .text.libgcc.builtins
+                0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_negdi2.o)
+ .text.libgcc.fmul
+                0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_negdi2.o)
+ .text.libgcc.fixed
+                0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_negdi2.o)
+ .debug_line    0x00000000       0x7a c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_negdi2.o)
+ .debug_info    0x00000000       0xbb c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_negdi2.o)
+ .debug_abbrev  0x00000000       0x14 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_negdi2.o)
+ .debug_aranges
+                0x00000000       0x20 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_negdi2.o)
+ .text          0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_prologue.o)
+ .data          0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_prologue.o)
+ .bss           0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_prologue.o)
+ .text.libgcc.mul
+                0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_prologue.o)
+ .text.libgcc.div
+                0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_prologue.o)
+ .text.libgcc   0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_prologue.o)
+ .text.libgcc.builtins
+                0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_prologue.o)
+ .text.libgcc.fmul
+                0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_prologue.o)
+ .text.libgcc.fixed
+                0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_prologue.o)
+ .text          0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_epilogue.o)
+ .data          0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_epilogue.o)
+ .bss           0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_epilogue.o)
+ .text.libgcc.mul
+                0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_epilogue.o)
+ .text.libgcc.div
+                0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_epilogue.o)
+ .text.libgcc   0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_epilogue.o)
+ .text.libgcc.builtins
+                0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_epilogue.o)
+ .text.libgcc.fmul
+                0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_epilogue.o)
+ .text.libgcc.fixed
+                0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_epilogue.o)
+ .text          0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_cmpdi2.o)
+ .data          0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_cmpdi2.o)
+ .bss           0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_cmpdi2.o)
+ .text.libgcc.mul
+                0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_cmpdi2.o)
+ .text.libgcc.div
+                0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_cmpdi2.o)
+ .text.libgcc.prologue
+                0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_cmpdi2.o)
+ .text.libgcc.builtins
+                0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_cmpdi2.o)
+ .text.libgcc.fmul
+                0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_cmpdi2.o)
+ .text.libgcc.fixed
+                0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_cmpdi2.o)
+ .text          0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_tablejump2.o)
+ .data          0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_tablejump2.o)
+ .bss           0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_tablejump2.o)
+ .text.libgcc.mul
+                0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_tablejump2.o)
+ .text.libgcc.div
+                0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_tablejump2.o)
+ .text.libgcc.prologue
+                0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_tablejump2.o)
+ .text.libgcc.builtins
+                0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_tablejump2.o)
+ .text.libgcc.fmul
+                0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_tablejump2.o)
+ .text.libgcc.fixed
+                0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_tablejump2.o)
+ .text          0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libc.a(malloc.o)
+ .bss           0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libc.a(malloc.o)
+ .text          0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libc.a(abort.o)
+ .data          0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libc.a(abort.o)
+ .bss           0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libc.a(abort.o)
+ .text.avr-libc
+                0x00000000        0xa c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libc.a(abort.o)
+ .text          0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libc.a(memcpy.o)
+ .data          0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libc.a(memcpy.o)
+ .bss           0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libc.a(memcpy.o)
+ .text          0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libc.a(vsnprintf.o)
+ .data          0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libc.a(vsnprintf.o)
+ .bss           0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libc.a(vsnprintf.o)
+ .text          0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libc.a(vfprintf_std.o)
+ .data          0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libc.a(vfprintf_std.o)
+ .bss           0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libc.a(vfprintf_std.o)
+ .text          0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libc.a(strnlen_P.o)
+ .data          0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libc.a(strnlen_P.o)
+ .bss           0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libc.a(strnlen_P.o)
+ .text          0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libc.a(strnlen.o)
+ .data          0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libc.a(strnlen.o)
+ .bss           0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libc.a(strnlen.o)
+ .text          0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libc.a(fputc.o)
+ .data          0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libc.a(fputc.o)
+ .bss           0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libc.a(fputc.o)
+ .text          0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libc.a(ultoa_invert.o)
+ .data          0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libc.a(ultoa_invert.o)
+ .bss           0x00000000        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libc.a(ultoa_invert.o)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+text             0x00000000         0x00020000         xr
+data             0x00800060         0x0000ffa0         rw !x
+eeprom           0x00810000         0x00010000         rw !x
+fuse             0x00820000         0x00000003         rw !x
+lock             0x00830000         0x00000400         rw !x
+signature        0x00840000         0x00000400         rw !x
+user_signatures  0x00850000         0x00000400         rw !x
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+Address of section .data set to 0x800100
+LOAD c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/crtatmega328p.o
+LOAD obj/../lib/ACAN2517FD/ACAN2517FD.cpp.o
+LOAD obj/../lib/ACAN2517FD/ACAN2517FDSettings.cpp.o
+LOAD obj/SPI.cpp.o
+LOAD obj/asw.c.o
+LOAD obj/bsw.cpp.o
+LOAD obj/ee_applcfg.c.o
+START GROUP
+LOAD C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libarduinosdk.a
+LOAD C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libee.a
+END GROUP
+LOAD c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a
+START GROUP
+LOAD c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a
+LOAD c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a
+LOAD c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libc.a
+LOAD c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libatmega328p.a
+END GROUP
+                0x00020000                __TEXT_REGION_LENGTH__ = DEFINED (__TEXT_REGION_LENGTH__)?__TEXT_REGION_LENGTH__:0x20000
+                0x0000ffa0                __DATA_REGION_LENGTH__ = DEFINED (__DATA_REGION_LENGTH__)?__DATA_REGION_LENGTH__:0xffa0
+                0x00010000                __EEPROM_REGION_LENGTH__ = DEFINED (__EEPROM_REGION_LENGTH__)?__EEPROM_REGION_LENGTH__:0x10000
+                [0x00000003]                __FUSE_REGION_LENGTH__ = DEFINED (__FUSE_REGION_LENGTH__)?__FUSE_REGION_LENGTH__:0x400
+                0x00000400                __LOCK_REGION_LENGTH__ = DEFINED (__LOCK_REGION_LENGTH__)?__LOCK_REGION_LENGTH__:0x400
+                0x00000400                __SIGNATURE_REGION_LENGTH__ = DEFINED (__SIGNATURE_REGION_LENGTH__)?__SIGNATURE_REGION_LENGTH__:0x400
+                0x00000400                __USER_SIGNATURE_REGION_LENGTH__ = DEFINED (__USER_SIGNATURE_REGION_LENGTH__)?__USER_SIGNATURE_REGION_LENGTH__:0x400
+                0x00800060                __DATA_REGION_ORIGIN__ = DEFINED (__DATA_REGION_ORIGIN__)?__DATA_REGION_ORIGIN__:0x800060
+
+.hash
+ *(.hash)
+
+.dynsym
+ *(.dynsym)
+
+.dynstr
+ *(.dynstr)
+
+.gnu.version
+ *(.gnu.version)
+
+.gnu.version_d
+ *(.gnu.version_d)
+
+.gnu.version_r
+ *(.gnu.version_r)
+
+.rel.init
+ *(.rel.init)
+
+.rela.init
+ *(.rela.init)
+
+.rel.text
+ *(.rel.text)
+ *(.rel.text.*)
+ *(.rel.gnu.linkonce.t*)
+
+.rela.text
+ *(.rela.text)
+ *(.rela.text.*)
+ *(.rela.gnu.linkonce.t*)
+
+.rel.fini
+ *(.rel.fini)
+
+.rela.fini
+ *(.rela.fini)
+
+.rel.rodata
+ *(.rel.rodata)
+ *(.rel.rodata.*)
+ *(.rel.gnu.linkonce.r*)
+
+.rela.rodata
+ *(.rela.rodata)
+ *(.rela.rodata.*)
+ *(.rela.gnu.linkonce.r*)
+
+.rel.data
+ *(.rel.data)
+ *(.rel.data.*)
+ *(.rel.gnu.linkonce.d*)
+
+.rela.data
+ *(.rela.data)
+ *(.rela.data.*)
+ *(.rela.gnu.linkonce.d*)
+
+.rel.ctors
+ *(.rel.ctors)
+
+.rela.ctors
+ *(.rela.ctors)
+
+.rel.dtors
+ *(.rel.dtors)
+
+.rela.dtors
+ *(.rela.dtors)
+
+.rel.got
+ *(.rel.got)
+
+.rela.got
+ *(.rela.got)
+
+.rel.bss
+ *(.rel.bss)
+
+.rela.bss
+ *(.rela.bss)
+
+.rel.plt
+ *(.rel.plt)
+
+.rela.plt
+ *(.rela.plt)
+
+.text           0x00000000     0x4e40
+ *(.vectors)
+ .vectors       0x00000000       0x68 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/crtatmega328p.o
+                0x00000000                __vectors
+ *(.vectors)
+ *(.progmem.gcc*)
+ .progmem.gcc_fplib
+                0x00000068       0x28 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(exp.o)
+ .progmem.gcc_fplib
+                0x00000090       0x5a c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(log.o)
+                0x000000ea                . = ALIGN (0x2)
+                0x000000ea                __trampolines_start = .
+ *(.trampolines)
+ .trampolines   0x000000ea        0x0 linker stubs
+ *(.trampolines*)
+                0x000000ea                __trampolines_end = .
+ *libprintf_flt.a:*(.progmem.data)
+ *libc.a:*(.progmem.data)
+ *(.progmem*)
+ .progmem.data.digital_pin_to_timer_PGM
+                0x000000ea       0x14 C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libarduinosdk.a(wiring_digital.c.o)
+                0x000000ea                digital_pin_to_timer_PGM
+ .progmem.data.digital_pin_to_bit_mask_PGM
+                0x000000fe       0x14 C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libarduinosdk.a(wiring_digital.c.o)
+                0x000000fe                digital_pin_to_bit_mask_PGM
+ .progmem.data.digital_pin_to_port_PGM
+                0x00000112       0x14 C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libarduinosdk.a(wiring_digital.c.o)
+                0x00000112                digital_pin_to_port_PGM
+ .progmem.data.port_to_output_PGM
+                0x00000126        0xa C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libarduinosdk.a(wiring_digital.c.o)
+                0x00000126                port_to_output_PGM
+ .progmem.data.port_to_mode_PGM
+                0x00000130        0xa C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libarduinosdk.a(wiring_digital.c.o)
+                0x00000130                port_to_mode_PGM
+                0x0000013a                . = ALIGN (0x2)
+ *(.jumptables)
+ *(.jumptables*)
+ *(.lowtext)
+ *(.lowtext*)
+                0x0000013a                __ctors_start = .
+ *(.ctors)
+ .ctors         0x0000013a        0x2 obj/bsw.cpp.o
+ .ctors         0x0000013c        0x2 C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libarduinosdk.a(HardwareSerial0.cpp.o)
+                0x0000013e                __ctors_end = .
+                0x0000013e                __dtors_start = .
+ *(.dtors)
+ .dtors         0x0000013e        0x2 obj/bsw.cpp.o
+                0x00000140                __dtors_end = .
+ SORT(*)(.ctors)
+ SORT(*)(.dtors)
+ *(.init0)
+ .init0         0x00000140        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/crtatmega328p.o
+                0x00000140                __init
+ *(.init0)
+ *(.init1)
+ *(.init1)
+ *(.init2)
+ .init2         0x00000140        0xc c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/crtatmega328p.o
+ *(.init2)
+ *(.init3)
+ *(.init3)
+ *(.init4)
+ .init4         0x0000014c       0x16 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_copy_data.o)
+                0x0000014c                __do_copy_data
+ .init4         0x00000162       0x10 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_clear_bss.o)
+                0x00000162                __do_clear_bss
+ *(.init4)
+ *(.init5)
+ *(.init5)
+ *(.init6)
+ .init6         0x00000172       0x16 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_ctors.o)
+                0x00000172                __do_global_ctors
+ *(.init6)
+ *(.init7)
+ *(.init7)
+ *(.init8)
+ *(.init8)
+ *(.init9)
+ .init9         0x00000188        0x8 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/crtatmega328p.o
+ *(.init9)
+ *(.text)
+ .text          0x00000190        0x4 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/crtatmega328p.o
+                0x00000190                __vector_22
+                0x00000190                __vector_24
+                0x00000190                __vector_12
+                0x00000190                __bad_interrupt
+                0x00000190                __vector_6
+                0x00000190                __vector_3
+                0x00000190                __vector_23
+                0x00000190                __vector_25
+                0x00000190                __vector_13
+                0x00000190                __vector_17
+                0x00000190                __vector_7
+                0x00000190                __vector_5
+                0x00000190                __vector_4
+                0x00000190                __vector_9
+                0x00000190                __vector_21
+                0x00000190                __vector_15
+                0x00000190                __vector_8
+                0x00000190                __vector_14
+                0x00000190                __vector_10
+                0x00000190                __vector_20
+ .text          0x00000194       0xe4 C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libee.a(ee_avr8_asm.S.o)
+                0x00000194                osEE_hal_save_ctx_and_restore_ctx
+                0x000001d4                osEE_hal_restore_ctx
+                0x00000214                osEE_hal_ready2stacked
+                0x00000224                osEE_hal_save_ctx_and_ready2stacked
+                0x00000264                osEE_hal_terminate_ctx
+                0x00000278                . = ALIGN (0x2)
+ *(.text.*)
+ .text._ZL23enterU32InBufferAtIndexmPhh
+                0x00000278       0x10 obj/../lib/ACAN2517FD/ACAN2517FD.cpp.o
+ .text._ZL20u32FromBufferAtIndexPhh
+                0x00000288       0x22 obj/../lib/ACAN2517FD/ACAN2517FD.cpp.o
+ .text._ZL19lengthCodeForLengthh
+                0x000002aa       0x70 obj/../lib/ACAN2517FD/ACAN2517FD.cpp.o
+ .text._ZN12ACANFDBuffer6removeER12CANFDMessage.part.2
+                0x0000031a       0x74 obj/../lib/ACAN2517FD/ACAN2517FD.cpp.o
+ .text._ZN8SPIClass8transferEPvj.part.5
+                0x0000038e       0x34 obj/../lib/ACAN2517FD/ACAN2517FD.cpp.o
+ .text._ZN12CANFDMessageC2Ev
+                0x000003c2       0x26 obj/../lib/ACAN2517FD/ACAN2517FD.cpp.o
+                0x000003c2                _ZN12CANFDMessageC2Ev
+                0x000003c2                _ZN12CANFDMessageC1Ev
+ .text._ZN12ACANFDBuffer12initWithSizeEm
+                0x000003e8       0xb6 obj/../lib/ACAN2517FD/ACAN2517FD.cpp.o
+                0x000003e8                _ZN12ACANFDBuffer12initWithSizeEm
+ .text._ZN12ACANFDBuffer6appendERK12CANFDMessage
+                0x0000049e       0xd2 obj/../lib/ACAN2517FD/ACAN2517FD.cpp.o
+                0x0000049e                _ZN12ACANFDBuffer6appendERK12CANFDMessage
+ .text._ZN8SPIClass16beginTransactionE11SPISettings
+                0x00000570       0x34 obj/../lib/ACAN2517FD/ACAN2517FD.cpp.o
+                0x00000570                _ZN8SPIClass16beginTransactionE11SPISettings
+ .text._ZN8SPIClass10transfer16Ej
+                0x000005a4       0x3a obj/../lib/ACAN2517FD/ACAN2517FD.cpp.o
+                0x000005a4                _ZN8SPIClass10transfer16Ej
+ .text._ZN8SPIClass14endTransactionEv
+                0x000005de       0x22 obj/../lib/ACAN2517FD/ACAN2517FD.cpp.o
+                0x000005de                _ZN8SPIClass14endTransactionEv
+ .text._ZN10ACAN2517FD8assertCSEv
+                0x00000600       0x18 obj/../lib/ACAN2517FD/ACAN2517FD.cpp.o
+                0x00000600                _ZN10ACAN2517FD8assertCSEv
+ .text._ZN10ACAN2517FD10deassertCSEv
+                0x00000618       0x16 obj/../lib/ACAN2517FD/ACAN2517FD.cpp.o
+                0x00000618                _ZN10ACAN2517FD10deassertCSEv
+ .text._ZN10ACAN2517FDC2EhR8SPIClassh
+                0x0000062e       0x72 obj/../lib/ACAN2517FD/ACAN2517FD.cpp.o
+                0x0000062e                _ZN10ACAN2517FDC2EhR8SPIClassh
+                0x0000062e                _ZN10ACAN2517FDC1EhR8SPIClassh
+ .text._ZN10ACAN2517FD37writeRegister32Assume_SPI_transactionEjm
+                0x000006a0       0x66 obj/../lib/ACAN2517FD/ACAN2517FD.cpp.o
+                0x000006a0                _ZN10ACAN2517FD37writeRegister32Assume_SPI_transactionEjm
+ .text._ZN10ACAN2517FD36writeRegister8Assume_SPI_transactionEjh
+                0x00000706       0x42 obj/../lib/ACAN2517FD/ACAN2517FD.cpp.o
+                0x00000706                _ZN10ACAN2517FD36writeRegister8Assume_SPI_transactionEjh
+ .text._ZN10ACAN2517FD36readRegister32Assume_SPI_transactionEj
+                0x00000748       0x5a obj/../lib/ACAN2517FD/ACAN2517FD.cpp.o
+                0x00000748                _ZN10ACAN2517FD36readRegister32Assume_SPI_transactionEj
+ .text._ZN10ACAN2517FD24appendInControllerTxFIFOERK12CANFDMessage
+                0x000007a2      0x1e8 obj/../lib/ACAN2517FD/ACAN2517FD.cpp.o
+                0x000007a2                _ZN10ACAN2517FD24appendInControllerTxFIFOERK12CANFDMessage
+ .text._ZN10ACAN2517FD17transmitInterruptEv
+                0x0000098a       0x7a obj/../lib/ACAN2517FD/ACAN2517FD.cpp.o
+                0x0000098a                _ZN10ACAN2517FD17transmitInterruptEv
+ .text._ZN10ACAN2517FD36readRegister16Assume_SPI_transactionEj
+                0x00000a04       0x4a obj/../lib/ACAN2517FD/ACAN2517FD.cpp.o
+                0x00000a04                _ZN10ACAN2517FD36readRegister16Assume_SPI_transactionEj
+ .text._ZN10ACAN2517FD35readRegister8Assume_SPI_transactionEj
+                0x00000a4e       0x44 obj/../lib/ACAN2517FD/ACAN2517FD.cpp.o
+                0x00000a4e                _ZN10ACAN2517FD35readRegister8Assume_SPI_transactionEj
+ .text._ZN10ACAN2517FD21enterInTransmitBufferERK12CANFDMessage
+                0x00000a92       0x42 obj/../lib/ACAN2517FD/ACAN2517FD.cpp.o
+                0x00000a92                _ZN10ACAN2517FD21enterInTransmitBufferERK12CANFDMessage
+ .text._ZN10ACAN2517FD10sendViaTXQERK12CANFDMessage
+                0x00000ad4      0x220 obj/../lib/ACAN2517FD/ACAN2517FD.cpp.o
+                0x00000ad4                _ZN10ACAN2517FD10sendViaTXQERK12CANFDMessage
+ .text._ZN10ACAN2517FD9tryToSendERK12CANFDMessage
+                0x00000cf4       0x94 obj/../lib/ACAN2517FD/ACAN2517FD.cpp.o
+                0x00000cf4                _ZN10ACAN2517FD9tryToSendERK12CANFDMessage
+ .text._ZN10ACAN2517FD16receiveInterruptEv
+                0x00000d88      0x278 obj/../lib/ACAN2517FD/ACAN2517FD.cpp.o
+                0x00000d88                _ZN10ACAN2517FD16receiveInterruptEv
+ .text._ZN10ACAN2517FD13isr_poll_coreEv
+                0x00001000       0xb6 obj/../lib/ACAN2517FD/ACAN2517FD.cpp.o
+                0x00001000                _ZN10ACAN2517FD13isr_poll_coreEv
+ .text._ZN10ACAN2517FD3isrEv
+                0x000010b6        0x4 obj/../lib/ACAN2517FD/ACAN2517FD.cpp.o
+                0x000010b6                _ZN10ACAN2517FD3isrEv
+ .text._ZN10ACAN2517FD14writeRegister8Ejh
+                0x000010ba       0x34 obj/../lib/ACAN2517FD/ACAN2517FD.cpp.o
+                0x000010ba                _ZN10ACAN2517FD14writeRegister8Ejh
+ .text._ZN10ACAN2517FD13readRegister8Ej
+                0x000010ee       0x32 obj/../lib/ACAN2517FD/ACAN2517FD.cpp.o
+                0x000010ee                _ZN10ACAN2517FD13readRegister8Ej
+ .text._ZN10ACAN2517FD15writeRegister32Ejm
+                0x00001120       0x44 obj/../lib/ACAN2517FD/ACAN2517FD.cpp.o
+                0x00001120                _ZN10ACAN2517FD15writeRegister32Ejm
+ .text._ZN10ACAN2517FD14readRegister32Ej
+                0x00001164       0x3e obj/../lib/ACAN2517FD/ACAN2517FD.cpp.o
+                0x00001164                _ZN10ACAN2517FD14readRegister32Ej
+ .text._ZN10ACAN2517FD11reset2517FDEv
+                0x000011a2       0x2e obj/../lib/ACAN2517FD/ACAN2517FD.cpp.o
+                0x000011a2                _ZN10ACAN2517FD11reset2517FDEv
+ .text._ZN10ACAN2517FD5beginERK18ACAN2517FDSettingsPFvvERK17ACAN2517FDFilters
+                0x000011d0      0x826 obj/../lib/ACAN2517FD/ACAN2517FD.cpp.o
+                0x000011d0                _ZN10ACAN2517FD5beginERK18ACAN2517FDSettingsPFvvERK17ACAN2517FDFilters
+ .text._ZN10ACAN2517FD5beginERK18ACAN2517FDSettingsPFvvE
+                0x000019f6       0xc6 obj/../lib/ACAN2517FD/ACAN2517FD.cpp.o
+                0x000019f6                _ZN10ACAN2517FD5beginERK18ACAN2517FDSettingsPFvvE
+ .text._ZN18ACAN2517FDSettingsC2ENS_10OscillatorEm17DataBitRateFactorm
+                0x00001abc      0x792 obj/../lib/ACAN2517FD/ACAN2517FDSettings.cpp.o
+                0x00001abc                _ZN18ACAN2517FDSettingsC2ENS_10OscillatorEm17DataBitRateFactorm
+                0x00001abc                _ZN18ACAN2517FDSettingsC1ENS_10OscillatorEm17DataBitRateFactorm
+ .text._ZNK18ACAN2517FDSettings42dataBitRateIsAMultipleOfArbitrationBitRateEv
+                0x0000224e       0x56 obj/../lib/ACAN2517FD/ACAN2517FDSettings.cpp.o
+                0x0000224e                _ZNK18ACAN2517FDSettings42dataBitRateIsAMultipleOfArbitrationBitRateEv
+ .text._ZNK18ACAN2517FDSettings24CANBitSettingConsistencyEv
+                0x000022a4      0x10a obj/../lib/ACAN2517FD/ACAN2517FDSettings.cpp.o
+                0x000022a4                _ZNK18ACAN2517FDSettings24CANBitSettingConsistencyEv
+ .text._ZNK18ACAN2517FDSettings8ramUsageEv
+                0x000023ae       0x64 obj/../lib/ACAN2517FD/ACAN2517FDSettings.cpp.o
+                0x000023ae                _ZNK18ACAN2517FDSettings8ramUsageEv
+ .text._ZN18ACAN2517FDSettings20objectSizeForPayloadENS_11PayloadSizeE
+                0x00002412       0x12 obj/../lib/ACAN2517FD/ACAN2517FDSettings.cpp.o
+                0x00002412                _ZN18ACAN2517FDSettings20objectSizeForPayloadENS_11PayloadSizeE
+ .text._ZN8SPIClass5beginEv
+                0x00002424       0x6c obj/SPI.cpp.o
+                0x00002424                _ZN8SPIClass5beginEv
+ .text._ZN8SPIClass14usingInterruptEh
+                0x00002490       0x34 obj/SPI.cpp.o
+                0x00002490                _ZN8SPIClass14usingInterruptEh
+ .text.TimerISR
+                0x000024c4        0x6 obj/asw.c.o
+                0x000024c4                TimerISR
+ .text.FuncTask1
+                0x000024ca      0x142 obj/asw.c.o
+                0x000024ca                FuncTask1
+ .text._ZZ5beginvENUlvE_4_FUNEv
+                0x0000260c        0x8 obj/bsw.cpp.o
+ .text._Z5beginv
+                0x00002614       0x7c obj/bsw.cpp.o
+                0x00002614                _Z5beginv
+ .text.CAN_sendMsg
+                0x00002690       0x9e obj/bsw.cpp.o
+                0x00002690                CAN_sendMsg
+ .text.printfSerial
+                0x0000272e       0x52 obj/bsw.cpp.o
+                0x0000272e                printfSerial
+ .text.setup    0x00002780       0x8a obj/bsw.cpp.o
+                0x00002780                setup
+ .text.startup.main
+                0x0000280a       0x28 obj/bsw.cpp.o
+                0x0000280a                main
+ .text.compute  0x00002832      0x196 obj/bsw.cpp.o
+                0x00002832                compute
+ .text.startup._GLOBAL__sub_I_CAN
+                0x000029c8       0x10 obj/bsw.cpp.o
+ .text.exit._GLOBAL__sub_D_CAN
+                0x000029d8       0x22 obj/bsw.cpp.o
+ .text.__vector_16
+                0x000029fa       0x94 C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libarduinosdk.a(wiring.c.o)
+                0x000029fa                __vector_16
+ .text.millis   0x00002a8e       0x18 C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libarduinosdk.a(wiring.c.o)
+                0x00002a8e                millis
+ .text.init     0x00002aa6       0x76 C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libarduinosdk.a(wiring.c.o)
+                0x00002aa6                init
+ .text.turnOffPWM
+                0x00002b1c       0x52 C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libarduinosdk.a(wiring_digital.c.o)
+ .text.pinMode  0x00002b6e       0x78 C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libarduinosdk.a(wiring_digital.c.o)
+                0x00002b6e                pinMode
+ .text.digitalWrite
+                0x00002be6       0x5c C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libarduinosdk.a(wiring_digital.c.o)
+                0x00002be6                digitalWrite
+ .text.nothing  0x00002c42        0x2 C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libarduinosdk.a(WInterrupts.c.o)
+ .text.attachInterrupt
+                0x00002c44       0x40 C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libarduinosdk.a(WInterrupts.c.o)
+                0x00002c44                attachInterrupt
+ .text.__vector_1
+                0x00002c84       0x4e C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libarduinosdk.a(WInterrupts.c.o)
+                0x00002c84                __vector_1
+ .text.__vector_2
+                0x00002cd2       0x4e C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libarduinosdk.a(WInterrupts.c.o)
+                0x00002cd2                __vector_2
+ .text._ZN14HardwareSerial9availableEv
+                0x00002d20       0x18 C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libarduinosdk.a(HardwareSerial.cpp.o)
+                0x00002d20                _ZN14HardwareSerial9availableEv
+ .text._ZN14HardwareSerial4peekEv
+                0x00002d38       0x1c C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libarduinosdk.a(HardwareSerial.cpp.o)
+                0x00002d38                _ZN14HardwareSerial4peekEv
+ .text._ZN14HardwareSerial4readEv
+                0x00002d54       0x28 C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libarduinosdk.a(HardwareSerial.cpp.o)
+                0x00002d54                _ZN14HardwareSerial4readEv
+ .text._ZN14HardwareSerial17availableForWriteEv
+                0x00002d7c       0x1e C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libarduinosdk.a(HardwareSerial.cpp.o)
+                0x00002d7c                _ZN14HardwareSerial17availableForWriteEv
+ .text._ZN14HardwareSerial17_tx_udr_empty_irqEv
+                0x00002d9a       0x44 C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libarduinosdk.a(HardwareSerial.cpp.o)
+                0x00002d9a                _ZN14HardwareSerial17_tx_udr_empty_irqEv
+ .text._ZN14HardwareSerial5flushEv
+                0x00002dde       0x40 C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libarduinosdk.a(HardwareSerial.cpp.o)
+                0x00002dde                _ZN14HardwareSerial5flushEv
+ .text._ZN14HardwareSerial5writeEh
+                0x00002e1e       0x9a C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libarduinosdk.a(HardwareSerial.cpp.o)
+                0x00002e1e                _ZN14HardwareSerial5writeEh
+ .text._ZN14HardwareSerial5beginEmh
+                0x00002eb8       0xc4 C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libarduinosdk.a(HardwareSerial.cpp.o)
+                0x00002eb8                _ZN14HardwareSerial5beginEmh
+ .text.__vector_18
+                0x00002f7c       0x64 C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libarduinosdk.a(HardwareSerial0.cpp.o)
+                0x00002f7c                __vector_18
+ .text.__vector_19
+                0x00002fe0       0x4c C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libarduinosdk.a(HardwareSerial0.cpp.o)
+                0x00002fe0                __vector_19
+ .text.startup._GLOBAL__sub_I___vector_18
+                0x0000302c       0x5a C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libarduinosdk.a(HardwareSerial0.cpp.o)
+ .text._Znwj    0x00003086        0x4 C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libarduinosdk.a(new.cpp.o)
+                0x00003086                _Znwj
+ .text._Znaj    0x0000308a        0x4 C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libarduinosdk.a(new.cpp.o)
+                0x0000308a                _Znaj
+ .text._ZdlPv   0x0000308e        0x4 C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libarduinosdk.a(new.cpp.o)
+                0x0000308e                _ZdlPv
+ .text._ZdaPv   0x00003092        0x4 C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libarduinosdk.a(new.cpp.o)
+                0x00003092                _ZdaPv
+ .text._ZN5Print5writeEPKhj
+                0x00003096       0x5a C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libarduinosdk.a(Print.cpp.o)
+                0x00003096                _ZN5Print5writeEPKhj
+ .text._ZN5Print5writeEPKc.part.2
+                0x000030f0       0x1e C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libarduinosdk.a(Print.cpp.o)
+ .text._ZN5Print5printEPKc
+                0x0000310e       0x10 C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libarduinosdk.a(Print.cpp.o)
+                0x0000310e                _ZN5Print5printEPKc
+ .text.OsEE_atmega_startTimer1
+                0x0000311e       0xbc C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libee.a(ee_atmega_timer1ctc.c.o)
+                0x0000311e                OsEE_atmega_startTimer1
+ .text.StartOS  0x000031da      0x10e C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libee.a(ee_oo_api_osek.c.o)
+                0x000031da                StartOS
+ .text.TerminateTask
+                0x000032e8       0x34 C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libee.a(ee_oo_api_osek.c.o)
+                0x000032e8                TerminateTask
+ .text.IncrementCounter
+                0x0000331c       0x5e C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libee.a(ee_oo_api_osek.c.o)
+                0x0000331c                IncrementCounter
+ .text.osEE_scheduler_task_wrapper_restore
+                0x0000337a       0x12 C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libee.a(ee_oo_sched_entry_points.c.o)
+                0x0000337a                osEE_scheduler_task_wrapper_restore
+ .text.osEE_scheduler_task_wrapper_run
+                0x0000338c       0x98 C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libee.a(ee_oo_sched_entry_points.c.o)
+                0x0000338c                osEE_scheduler_task_wrapper_run
+ .text.osEE_idle_hook_wrapper
+                0x00003424       0x1c C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libee.a(ee_oo_sched_entry_points.c.o)
+                0x00003424                osEE_idle_hook_wrapper
+ .text.osEE_scheduler_core_rq_preempt_stk
+                0x00003440       0xae C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libee.a(ee_oo_scheduler.c.o)
+                0x00003440                osEE_scheduler_core_rq_preempt_stk
+ .text.osEE_sn_priority_insert
+                0x000034ee       0x74 C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libee.a(ee_oo_scheduler.c.o)
+                0x000034ee                osEE_sn_priority_insert
+ .text.osEE_scheduler_rq_insert
+                0x00003562        0xe C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libee.a(ee_oo_scheduler.c.o)
+                0x00003562                osEE_scheduler_rq_insert
+ .text.osEE_scheduler_core_pop_running
+                0x00003570       0x50 C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libee.a(ee_oo_scheduler.c.o)
+                0x00003570                osEE_scheduler_core_pop_running
+ .text.osEE_task_activated
+                0x000035c0       0x24 C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libee.a(ee_oo_kernel.c.o)
+                0x000035c0                osEE_task_activated
+ .text.osEE_task_end
+                0x000035e4       0x2a C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libee.a(ee_oo_kernel.c.o)
+                0x000035e4                osEE_task_end
+ .text.osEE_task_event_set_mask
+                0x0000360e       0x3a C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libee.a(ee_oo_kernel.c.o)
+                0x0000360e                osEE_task_event_set_mask
+ .text.osEE_activate_isr2
+                0x00003648       0x30 C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libee.a(ee_oo_kernel.c.o)
+                0x00003648                osEE_activate_isr2
+ .text.osEE_scheduler_task_insert
+                0x00003678       0x4e C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libee.a(ee_oo_sched_partitioned.c.o)
+                0x00003678                osEE_scheduler_task_insert
+ .text.osEE_scheduler_task_unblocked
+                0x000036c6       0x60 C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libee.a(ee_oo_sched_partitioned.c.o)
+                0x000036c6                osEE_scheduler_task_unblocked
+ .text.osEE_scheduler_task_terminated
+                0x00003726       0xd8 C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libee.a(ee_oo_sched_partitioned.c.o)
+                0x00003726                osEE_scheduler_task_terminated
+ .text.osEE_scheduler_task_preemption_point
+                0x000037fe       0x36 C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libee.a(ee_oo_sched_partitioned.c.o)
+                0x000037fe                osEE_scheduler_task_preemption_point
+ .text.osEE_scheduler_task_set_running
+                0x00003834       0x70 C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libee.a(ee_oo_sched_partitioned.c.o)
+                0x00003834                osEE_scheduler_task_set_running
+ .text.osEE_counter_insert_abs_trigger
+                0x000038a4       0xa6 C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libee.a(ee_oo_counter.c.o)
+                0x000038a4                osEE_counter_insert_abs_trigger
+ .text.osEE_counter_insert_rel_trigger
+                0x0000394a       0x40 C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libee.a(ee_oo_counter.c.o)
+                0x0000394a                osEE_counter_insert_rel_trigger
+ .text.osEE_counter_increment
+                0x0000398a      0x18c C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libee.a(ee_oo_counter.c.o)
+                0x0000398a                osEE_counter_increment
+ .text.osEE_alarm_set_rel
+                0x00003b16       0x74 C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libee.a(ee_oo_alarm.c.o)
+                0x00003b16                osEE_alarm_set_rel
+ .text.osEE_change_context_from_running
+                0x00003b8a       0x28 C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libee.a(ee_std_change_context.c.o)
+                0x00003b8a                osEE_change_context_from_running
+ .text.osEE_change_context_from_task_end
+                0x00003bb2       0x24 C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libee.a(ee_std_change_context.c.o)
+                0x00003bb2                osEE_change_context_from_task_end
+ .text.osEE_idle_task_terminate
+                0x00003bd6       0x36 C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libee.a(ee_std_change_context.c.o)
+                0x00003bd6                osEE_idle_task_terminate
+ .text.osEE_scheduler_task_end
+                0x00003c0c       0x2c C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libee.a(ee_std_change_context.c.o)
+                0x00003c0c                osEE_scheduler_task_end
+ .text.__vector_default
+                0x00003c38        0x4 C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libee.a(ee_atmega_intvect.c.o)
+                0x00003c38                tag___vector_default
+                0x00003c38                __vector_default
+ .text.osEE_atmega_intvect
+                0x00003c3c        0x4 C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libee.a(ee_atmega_intvect.c.o)
+                0x00003c3c                osEE_atmega_intvect
+ .text.__vector_11
+                0x00003c40       0x10 C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libee.a(ee_atmega_intvect.c.o)
+                0x00003c40                tag___vector_11
+                0x00003c40                __vector_11
+ .text.osEE_avr8_isr2_stub
+                0x00003c50       0x40 C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libee.a(ee_avr8_irqstub.c.o)
+                0x00003c50                osEE_avr8_isr2_stub
+ .text.avr-libc.fplib
+                0x00003c90        0xe c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(addsf3.o)
+                0x00003c90                __subsf3
+                0x00003c92                __addsf3
+ .text.avr-libc.fplib
+                0x00003c9e       0xcc c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(addsf3x.o)
+                0x00003cc0                __addsf3x
+ .text.avr-libc.fplib
+                0x00003d6a        0xa c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(cmpsf2.o)
+                0x00003d6a                __nesf2
+                0x00003d6a                __eqsf2
+                0x00003d6a                __cmpsf2
+                0x00003d6a                __ltsf2
+                0x00003d6a                __lesf2
+ .text.avr-libc.fplib
+                0x00003d74        0x8 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(divsf3.o)
+                0x00003d74                __divsf3
+ .text.avr-libc.fplib
+                0x00003d7c       0xdc c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(divsf3x.o)
+                0x00003d9c                __divsf3x
+                0x00003da2                __divsf3_pse
+ .text.avr-libc.fplib
+                0x00003e58        0xe c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(fixsfsi.o)
+                0x00003e58                __fixsfsi
+ .text.avr-libc.fplib
+                0x00003e66       0x5e c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(fixunssfsi.o)
+                0x00003e66                __fixunssfsi
+ .text.avr-libc.fplib
+                0x00003ec4       0x7a c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(floatsisf.o)
+                0x00003ec4                __floatunsisf
+                0x00003ec8                __floatsisf
+ .text.avr-libc.fplib
+                0x00003f3e       0x48 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(fp_cmp.o)
+                0x00003f3e                __fp_cmp
+ .text.avr-libc.fplib
+                0x00003f86        0xc c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(fp_inf.o)
+                0x00003f86                __fp_inf
+ .text.avr-libc.fplib
+                0x00003f92        0x6 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(fp_nan.o)
+                0x00003f92                __fp_nan
+ .text.avr-libc.fplib
+                0x00003f98        0xe c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(fp_pscA.o)
+                0x00003f98                __fp_pscA
+ .text.avr-libc.fplib
+                0x00003fa6        0xe c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(fp_pscB.o)
+                0x00003fa6                __fp_pscB
+ .text.avr-libc.fplib
+                0x00003fb4       0x22 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(fp_round.o)
+                0x00003fb4                __fp_round
+ .text.avr-libc.fplib
+                0x00003fd6       0x44 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(fp_split3.o)
+                0x00003fd6                __fp_split3
+                0x00003fe6                __fp_splitA
+ .text.avr-libc.fplib
+                0x0000401a        0xe c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(fp_zero.o)
+                0x0000401a                __fp_zero
+                0x0000401c                __fp_szero
+ .text.avr-libc.fplib
+                0x00004028        0xa c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(gesf2.o)
+                0x00004028                __gesf2
+                0x00004028                __gtsf2
+ .text.avr-libc.fplib
+                0x00004032        0x8 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(mulsf3.o)
+                0x00004032                __mulsf3
+ .text.avr-libc.fplib
+                0x0000403a       0xd2 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(mulsf3x.o)
+                0x00004058                __mulsf3x
+                0x0000405e                __mulsf3_pse
+ .text.avr-libc.fplib
+                0x0000410c       0xa0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(pow.o)
+                0x0000410c                pow
+ .text.avr-libc.fplib
+                0x000041ac       0x74 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(exp.o)
+                0x000041bc                exp
+ .text.avr-libc.fplib
+                0x00004220       0x4e c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(fp_powser.o)
+                0x00004220                __fp_powser
+ .text.avr-libc.fplib
+                0x0000426e       0x10 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(inverse.o)
+                0x0000426e                inverse
+ .text.avr-libc.fplib
+                0x0000427e       0x74 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(ldexp.o)
+                0x00004286                ldexp
+ .text.avr-libc.fplib
+                0x000042f2       0xa0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(log.o)
+                0x00004302                log
+ .text.avr-libc.fplib
+                0x00004392       0x68 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(modf.o)
+                0x00004392                modf
+                0x00004392                modff
+ .text.avr-libc.fplib
+                0x000043fa       0x1c c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(fp_mpack.o)
+                0x000043fa                __fp_mpack
+                0x000043fe                __fp_mpack_finite
+ .text.libgcc.mul
+                0x00004416       0x20 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_mulsi3.o)
+                0x00004416                __mulsi3
+ .text.libgcc.div
+                0x00004436       0x28 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_udivmodhi4.o)
+                0x00004436                __udivmodhi4
+ .text.libgcc.div
+                0x0000445e       0x44 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_udivmodsi4.o)
+                0x0000445e                __udivmodsi4
+ .text.libgcc.mul
+                0x000044a2       0x1e c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_umulhisi3.o)
+                0x000044a2                __umulhisi3
+ .text.libgcc.mul
+                0x000044c0        0xe c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_usmulhisi3.o)
+                0x000044c0                __usmulhisi3
+                0x000044c4                __usmulhisi3_tail
+ .text.libgcc.mul
+                0x000044ce       0x16 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_muluhisi3.o)
+                0x000044ce                __muluhisi3
+ .text.libgcc.mul
+                0x000044e4       0x9e c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_muldi3.o)
+                0x000044e4                __muldi3
+ .text.libgcc.mul
+                0x00004582       0x12 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_muldi3_6.o)
+                0x00004582                __muldi3_6
+ .text.libgcc.mul
+                0x00004594       0x56 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_umulsidi3.o)
+                0x00004594                __umulsidi3
+                0x00004596                __umulsidi3_helper
+ .text.libgcc.prologue
+                0x000045ea       0x38 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_prologue.o)
+                0x000045ea                __prologue_saves__
+ .text.libgcc.prologue
+                0x00004622       0x36 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_epilogue.o)
+                0x00004622                __epilogue_restores__
+ .text.libgcc   0x00004658       0x12 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_cmpdi2.o)
+                0x00004658                __cmpdi2
+ .text.libgcc   0x0000466a        0xc c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_tablejump2.o)
+                0x0000466a                __tablejump2__
+ .text.avr-libc
+                0x00004676      0x24a c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libc.a(malloc.o)
+                0x00004676                malloc
+                0x000047ae                free
+ .text.avr-libc
+                0x000048c0       0x12 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libc.a(memcpy.o)
+                0x000048c0                memcpy
+ .text.avr-libc
+                0x000048d2       0x58 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libc.a(vsnprintf.o)
+                0x000048d2                vsnprintf
+ .text.avr-libc
+                0x0000492a      0x3b4 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libc.a(vfprintf_std.o)
+                0x0000492a                vfprintf
+ .text.avr-libc
+                0x00004cde       0x16 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libc.a(strnlen_P.o)
+                0x00004cde                strnlen_P
+ .text.avr-libc
+                0x00004cf4       0x16 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libc.a(strnlen.o)
+                0x00004cf4                strnlen
+ .text.avr-libc
+                0x00004d0a       0x60 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libc.a(fputc.o)
+                0x00004d0a                fputc
+ .text.avr-libc
+                0x00004d6a       0xbc c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libc.a(ultoa_invert.o)
+                0x00004d6a                __ultoa_invert
+                0x00004e26                . = ALIGN (0x2)
+ *(.fini9)
+ .fini9         0x00004e26        0x0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_exit.o)
+                0x00004e26                _exit
+                0x00004e26                exit
+ *(.fini9)
+ *(.fini8)
+ *(.fini8)
+ *(.fini7)
+ *(.fini7)
+ *(.fini6)
+ .fini6         0x00004e26       0x16 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_dtors.o)
+                0x00004e26                __do_global_dtors
+ *(.fini6)
+ *(.fini5)
+ *(.fini5)
+ *(.fini4)
+ *(.fini4)
+ *(.fini3)
+ *(.fini3)
+ *(.fini2)
+ *(.fini2)
+ *(.fini1)
+ *(.fini1)
+ *(.fini0)
+ .fini0         0x00004e3c        0x4 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_exit.o)
+ *(.fini0)
+                0x00004e40                _etext = .
+
+.data           0x00800100      0x1ac load address 0x00004e40
+                0x00800100                PROVIDE (__data_start, .)
+ *(.data)
+ .data          0x00800100        0x6 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libc.a(malloc.o)
+                0x00800100                __malloc_heap_end
+                0x00800102                __malloc_heap_start
+                0x00800104                __malloc_margin
+ *(.data*)
+ .data.osEE_ccb_var
+                0x00800106       0x12 obj/ee_applcfg.c.o
+                0x00800106                osEE_ccb_var
+ .data.osEE_sn_array
+                0x00800118        0x8 obj/ee_applcfg.c.o
+ .data.osEE_tcb_array
+                0x00800120       0x24 obj/ee_applcfg.c.o
+ .data.intFunc  0x00800144        0x4 C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libarduinosdk.a(WInterrupts.c.o)
+ *(.gnu.linkonce.d*)
+ *(.rodata)
+ *(.rodata*)
+ .rodata.CSWTCH.138
+                0x00800148        0x7 obj/../lib/ACAN2517FD/ACAN2517FD.cpp.o
+ .rodata.CSWTCH.137
+                0x0080014f        0x7 obj/../lib/ACAN2517FD/ACAN2517FD.cpp.o
+ .rodata._ZZN10ACAN2517FD16receiveInterruptEvE7kLength
+                0x00800156       0x10 obj/../lib/ACAN2517FD/ACAN2517FD.cpp.o
+ .rodata.CSWTCH.7
+                0x00800166       0x20 obj/../lib/ACAN2517FD/ACAN2517FDSettings.cpp.o
+ .rodata._ZZN18ACAN2517FDSettings20objectSizeForPayloadENS_11PayloadSizeEE8kPayload
+                0x00800186        0x8 obj/../lib/ACAN2517FD/ACAN2517FDSettings.cpp.o
+ .rodata.FuncTask1.str1.1
+                0x0080018e       0x72 obj/asw.c.o
+                                 0x74 (size before relaxing)
+ .rodata.setup.str1.1
+                0x00800200       0x24 obj/bsw.cpp.o
+                                 0x28 (size before relaxing)
+ .rodata.osEE_kdb_var
+                0x00800224       0x12 obj/ee_applcfg.c.o
+                0x00800224                osEE_kdb_var
+ .rodata.osEE_cdb_var
+                0x00800236        0x8 obj/ee_applcfg.c.o
+                0x00800236                osEE_cdb_var
+ .rodata.osEE_autostart_trigger_db
+                0x0080023e        0x4 obj/ee_applcfg.c.o
+ .rodata.osEE_trigger_autostart_info_OSDEFAULTAPPMODE
+                0x00800242        0x6 obj/ee_applcfg.c.o
+ .rodata.osEE_alarm_db_ptr_array
+                0x00800248        0x2 obj/ee_applcfg.c.o
+ .rodata.osEE_alarm_db_array
+                0x0080024a        0xe obj/ee_applcfg.c.o
+ .rodata.osEE_counter_db_ptr_array
+                0x00800258        0x2 obj/ee_applcfg.c.o
+ .rodata.osEE_counter_db_array
+                0x0080025a        0x6 obj/ee_applcfg.c.o
+ .rodata.osEE_res_db_ptr_array
+                0x00800260        0x2 obj/ee_applcfg.c.o
+ .rodata.osEE_res_db_array
+                0x00800262        0x3 obj/ee_applcfg.c.o
+ .rodata.osEE_tdb_ptr_array
+                0x00800265        0x6 obj/ee_applcfg.c.o
+ .rodata.osEE_tdb_array
+                0x0080026b       0x2a obj/ee_applcfg.c.o
+ .rodata.osEE_sdb_array
+                0x00800295        0x4 obj/ee_applcfg.c.o
+ .rodata._ZTV14HardwareSerial
+                0x00800299       0x12 C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libarduinosdk.a(HardwareSerial.cpp.o)
+                0x00800299                _ZTV14HardwareSerial
+ *(.gnu.linkonce.r*)
+                0x008002ac                . = ALIGN (0x2)
+ *fill*         0x008002ab        0x1 
+                0x008002ac                _edata = .
+                0x008002ac                PROVIDE (__data_end, .)
+
+.bss            0x008002ac      0x101
+                0x008002ac                PROVIDE (__bss_start, .)
+ *(.bss)
+ *(.bss*)
+ .bss._ZN8SPIClass13interruptSaveE
+                0x008002ac        0x1 obj/SPI.cpp.o
+                0x008002ac                _ZN8SPIClass13interruptSaveE
+ .bss._ZN8SPIClass13interruptMaskE
+                0x008002ad        0x1 obj/SPI.cpp.o
+                0x008002ad                _ZN8SPIClass13interruptMaskE
+ .bss._ZN8SPIClass13interruptModeE
+                0x008002ae        0x1 obj/SPI.cpp.o
+                0x008002ae                _ZN8SPIClass13interruptModeE
+ .bss._ZN8SPIClass11initializedE
+                0x008002af        0x1 obj/SPI.cpp.o
+                0x008002af                _ZN8SPIClass11initializedE
+ .bss.SPI       0x008002b0        0x1 obj/SPI.cpp.o
+                0x008002b0                SPI
+ .bss.meter     0x008002b1        0x4 obj/asw.c.o
+                0x008002b1                meter
+ .bss.counter   0x008002b5        0x2 obj/asw.c.o
+                0x008002b5                counter
+ .bss.CAN       0x008002b7       0x38 obj/bsw.cpp.o
+                0x008002b7                CAN
+ .bss.osEE_alarm_cb_array
+                0x008002ef        0x8 obj/ee_applcfg.c.o
+ .bss.osEE_counter_cb_array
+                0x008002f7        0x4 obj/ee_applcfg.c.o
+ .bss.osEE_res_cb_array
+                0x008002fb        0x5 obj/ee_applcfg.c.o
+ .bss.osEE_scb_array
+                0x00800300        0x2 obj/ee_applcfg.c.o
+ .bss.timer0_fract
+                0x00800302        0x1 C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libarduinosdk.a(wiring.c.o)
+ .bss.timer0_millis
+                0x00800303        0x4 C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libarduinosdk.a(wiring.c.o)
+                0x00800303                timer0_millis
+ .bss.timer0_overflow_count
+                0x00800307        0x4 C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libarduinosdk.a(wiring.c.o)
+                0x00800307                timer0_overflow_count
+ .bss.Serial    0x0080030b       0x9d C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libarduinosdk.a(HardwareSerial0.cpp.o)
+                0x0080030b                Serial
+ *(COMMON)
+ COMMON         0x008003a8        0x1 obj/ee_applcfg.c.o
+                0x008003a8                osEE_kcb_var
+ COMMON         0x008003a9        0x4 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libc.a(malloc.o)
+                0x008003a9                __brkval
+                0x008003ab                __flp
+                0x008003ad                PROVIDE (__bss_end, .)
+                0x00004e40                __data_load_start = LOADADDR (.data)
+                0x00004fec                __data_load_end = (__data_load_start + SIZEOF (.data))
+
+.noinit         0x008003ad        0x0
+                [!provide]                PROVIDE (__noinit_start, .)
+ *(.noinit*)
+                [!provide]                PROVIDE (__noinit_end, .)
+                0x008003ad                _end = .
+                0x008003ad                PROVIDE (__heap_start, .)
+
+.eeprom         0x00810000        0x0
+ *(.eeprom*)
+                0x00810000                __eeprom_end = .
+
+.fuse
+ *(.fuse)
+ *(.lfuse)
+ *(.hfuse)
+ *(.efuse)
+
+.lock
+ *(.lock*)
+
+.signature
+ *(.signature*)
+
+.user_signatures
+ *(.user_signatures*)
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment        0x00000000       0x11
+ *(.comment)
+ .comment       0x00000000       0x11 obj/../lib/ACAN2517FD/ACAN2517FD.cpp.o
+                                 0x12 (size before relaxing)
+ .comment       0x00000011       0x12 obj/../lib/ACAN2517FD/ACAN2517FDSettings.cpp.o
+ .comment       0x00000011       0x12 obj/SPI.cpp.o
+ .comment       0x00000011       0x12 obj/asw.c.o
+ .comment       0x00000011       0x12 obj/bsw.cpp.o
+ .comment       0x00000011       0x12 obj/ee_applcfg.c.o
+ .comment       0x00000011       0x12 C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libarduinosdk.a(wiring.c.o)
+ .comment       0x00000011       0x12 C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libarduinosdk.a(wiring_digital.c.o)
+ .comment       0x00000011       0x12 C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libarduinosdk.a(WInterrupts.c.o)
+ .comment       0x00000011       0x12 C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libarduinosdk.a(HardwareSerial.cpp.o)
+ .comment       0x00000011       0x12 C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libarduinosdk.a(HardwareSerial0.cpp.o)
+ .comment       0x00000011       0x12 C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libarduinosdk.a(new.cpp.o)
+ .comment       0x00000011       0x12 C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libarduinosdk.a(Print.cpp.o)
+ .comment       0x00000011       0x12 C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libee.a(ee_atmega_timer1ctc.c.o)
+ .comment       0x00000011       0x12 C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libee.a(ee_oo_api_osek.c.o)
+ .comment       0x00000011       0x12 C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libee.a(ee_oo_sched_entry_points.c.o)
+ .comment       0x00000011       0x12 C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libee.a(ee_oo_scheduler.c.o)
+ .comment       0x00000011       0x12 C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libee.a(ee_oo_kernel.c.o)
+ .comment       0x00000011       0x12 C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libee.a(ee_oo_sched_partitioned.c.o)
+ .comment       0x00000011       0x12 C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libee.a(ee_oo_counter.c.o)
+ .comment       0x00000011       0x12 C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libee.a(ee_oo_alarm.c.o)
+ .comment       0x00000011       0x12 C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libee.a(ee_std_change_context.c.o)
+ .comment       0x00000011       0x12 C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libee.a(ee_atmega_intvect.c.o)
+ .comment       0x00000011       0x12 C:\Users\HONGKE~1\DOCUME~1\GitHub\CP4AD-~1\L6B38F~1.CAN\TACHOG~1\CAN_SEND\erika\lib\libee.a(ee_avr8_irqstub.c.o)
+ .comment       0x00000011       0x12 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libc.a(malloc.o)
+ .comment       0x00000011       0x12 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libc.a(vsnprintf.o)
+ .comment       0x00000011       0x12 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libc.a(vfprintf_std.o)
+ .comment       0x00000011       0x12 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libc.a(fputc.o)
+
+.note.gnu.avr.deviceinfo
+                0x00000000       0x40
+ .note.gnu.avr.deviceinfo
+                0x00000000       0x40 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/crtatmega328p.o
+
+.note.gnu.build-id
+ *(.note.gnu.build-id)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges  0x00000000      0x240
+ *(.debug_aranges)
+ .debug_aranges
+                0x00000000       0x20 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_mulsi3.o)
+ .debug_aranges
+                0x00000020       0x20 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_udivmodhi4.o)
+ .debug_aranges
+                0x00000040       0x20 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_udivmodsi4.o)
+ .debug_aranges
+                0x00000060       0x20 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_exit.o)
+ .debug_aranges
+                0x00000080       0x20 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_copy_data.o)
+ .debug_aranges
+                0x000000a0       0x20 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_clear_bss.o)
+ .debug_aranges
+                0x000000c0       0x20 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_ctors.o)
+ .debug_aranges
+                0x000000e0       0x20 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_dtors.o)
+ .debug_aranges
+                0x00000100       0x20 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_umulhisi3.o)
+ .debug_aranges
+                0x00000120       0x20 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_usmulhisi3.o)
+ .debug_aranges
+                0x00000140       0x20 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_muluhisi3.o)
+ .debug_aranges
+                0x00000160       0x20 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_muldi3.o)
+ .debug_aranges
+                0x00000180       0x20 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_muldi3_6.o)
+ .debug_aranges
+                0x000001a0       0x20 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_umulsidi3.o)
+ .debug_aranges
+                0x000001c0       0x20 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_prologue.o)
+ .debug_aranges
+                0x000001e0       0x20 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_epilogue.o)
+ .debug_aranges
+                0x00000200       0x20 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_cmpdi2.o)
+ .debug_aranges
+                0x00000220       0x20 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_tablejump2.o)
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info     0x00000000     0x131a
+ *(.debug_info .gnu.linkonce.wi.*)
+ .debug_info    0x00000000      0x5f4 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/crtatmega328p.o
+ .debug_info    0x000005f4       0xbb c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_mulsi3.o)
+ .debug_info    0x000006af       0xbb c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_udivmodhi4.o)
+ .debug_info    0x0000076a       0xbb c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_udivmodsi4.o)
+ .debug_info    0x00000825       0xbb c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_exit.o)
+ .debug_info    0x000008e0       0xbb c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_copy_data.o)
+ .debug_info    0x0000099b       0xbb c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_clear_bss.o)
+ .debug_info    0x00000a56       0xbb c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_ctors.o)
+ .debug_info    0x00000b11       0xbb c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_dtors.o)
+ .debug_info    0x00000bcc       0xbb c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_umulhisi3.o)
+ .debug_info    0x00000c87       0xbb c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_usmulhisi3.o)
+ .debug_info    0x00000d42       0xbb c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_muluhisi3.o)
+ .debug_info    0x00000dfd       0xbb c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_muldi3.o)
+ .debug_info    0x00000eb8       0xbb c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_muldi3_6.o)
+ .debug_info    0x00000f73       0xbb c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_umulsidi3.o)
+ .debug_info    0x0000102e       0xbb c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_prologue.o)
+ .debug_info    0x000010e9       0xbb c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_epilogue.o)
+ .debug_info    0x000011a4       0xbb c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_cmpdi2.o)
+ .debug_info    0x0000125f       0xbb c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_tablejump2.o)
+
+.debug_abbrev   0x00000000      0x70a
+ *(.debug_abbrev)
+ .debug_abbrev  0x00000000      0x5a2 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/crtatmega328p.o
+ .debug_abbrev  0x000005a2       0x14 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_mulsi3.o)
+ .debug_abbrev  0x000005b6       0x14 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_udivmodhi4.o)
+ .debug_abbrev  0x000005ca       0x14 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_udivmodsi4.o)
+ .debug_abbrev  0x000005de       0x14 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_exit.o)
+ .debug_abbrev  0x000005f2       0x14 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_copy_data.o)
+ .debug_abbrev  0x00000606       0x14 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_clear_bss.o)
+ .debug_abbrev  0x0000061a       0x14 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_ctors.o)
+ .debug_abbrev  0x0000062e       0x14 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_dtors.o)
+ .debug_abbrev  0x00000642       0x14 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_umulhisi3.o)
+ .debug_abbrev  0x00000656       0x14 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_usmulhisi3.o)
+ .debug_abbrev  0x0000066a       0x14 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_muluhisi3.o)
+ .debug_abbrev  0x0000067e       0x14 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_muldi3.o)
+ .debug_abbrev  0x00000692       0x14 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_muldi3_6.o)
+ .debug_abbrev  0x000006a6       0x14 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_umulsidi3.o)
+ .debug_abbrev  0x000006ba       0x14 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_prologue.o)
+ .debug_abbrev  0x000006ce       0x14 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_epilogue.o)
+ .debug_abbrev  0x000006e2       0x14 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_cmpdi2.o)
+ .debug_abbrev  0x000006f6       0x14 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_tablejump2.o)
+
+.debug_line     0x00000000      0xcf8
+ *(.debug_line .debug_line.* .debug_line_end)
+ .debug_line    0x00000000       0x1a c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/crtatmega328p.o
+ .debug_line    0x0000001a       0xb0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_mulsi3.o)
+ .debug_line    0x000000ca       0xce c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_udivmodhi4.o)
+ .debug_line    0x00000198      0x122 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_udivmodsi4.o)
+ .debug_line    0x000002ba       0x62 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_exit.o)
+ .debug_line    0x0000031c       0x98 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_copy_data.o)
+ .debug_line    0x000003b4       0x86 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_clear_bss.o)
+ .debug_line    0x0000043a       0x92 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_ctors.o)
+ .debug_line    0x000004cc       0x92 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_dtors.o)
+ .debug_line    0x0000055e       0xb0 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_umulhisi3.o)
+ .debug_line    0x0000060e       0x7a c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_usmulhisi3.o)
+ .debug_line    0x00000688       0x92 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_muluhisi3.o)
+ .debug_line    0x0000071a      0x170 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_muldi3.o)
+ .debug_line    0x0000088a       0x86 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_muldi3_6.o)
+ .debug_line    0x00000910      0x110 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_umulsidi3.o)
+ .debug_line    0x00000a20       0xfe c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_prologue.o)
+ .debug_line    0x00000b1e       0xf8 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_epilogue.o)
+ .debug_line    0x00000c16       0x68 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_cmpdi2.o)
+ .debug_line    0x00000c7e       0x7a c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_tablejump2.o)
+
+.debug_frame
+ *(.debug_frame)
+
+.debug_str      0x00000000      0x208
+ *(.debug_str)
+ .debug_str     0x00000000      0x208 c:/arduino/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/crtatmega328p.o
+
+.debug_loc
+ *(.debug_loc)
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+
+.debug_pubtypes
+ *(.debug_pubtypes)
+
+.debug_ranges
+ *(.debug_ranges)
+
+.debug_macro
+ *(.debug_macro)
+OUTPUT(arduino.elf elf32-avr)
+LOAD linker stubs

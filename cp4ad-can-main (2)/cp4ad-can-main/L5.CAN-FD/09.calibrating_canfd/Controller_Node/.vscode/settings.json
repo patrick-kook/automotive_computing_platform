@@ -1,0 +1,8 @@
+{
+    "files.associations": {
+        "cstdint": "cpp",
+        "bsw.h": "c",
+        "string.h": "c",
+        "pid.h": "c"
+    }
+}

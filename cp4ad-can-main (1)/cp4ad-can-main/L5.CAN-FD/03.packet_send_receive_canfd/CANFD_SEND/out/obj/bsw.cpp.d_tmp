@@ -1,0 +1,126 @@
+obj\bsw.cpp.o: \
+ C:\Users\wjehe\DOWNLO~1\CP4AD-~1\CP4AD-~1\L517B7~1.CAN\03D311~1.PAC\CANFD_~2\bsw.cpp \
+ C:\Users\wjehe\DOWNLO~1\CP4AD-~1\CP4AD-~1\L517B7~1.CAN\03D311~1.PAC\CANFD_~2\erika\inc/ee.h \
+ C:\Users\wjehe\DOWNLO~1\CP4AD-~1\CP4AD-~1\L517B7~1.CAN\03D311~1.PAC\CANFD_~2\erika\inc/ee_cfg.h \
+ C:\Users\wjehe\DOWNLO~1\CP4AD-~1\CP4AD-~1\L517B7~1.CAN\03D311~1.PAC\CANFD_~2\out/ee_applcfg.h \
+ C:\Users\wjehe\DOWNLO~1\CP4AD-~1\CP4AD-~1\L517B7~1.CAN\03D311~1.PAC\CANFD_~2\erika\inc/ee_oscfg.h \
+ C:\Users\wjehe\DOWNLO~1\CP4AD-~1\CP4AD-~1\L517B7~1.CAN\03D311~1.PAC\CANFD_~2\erika\inc/ee_arch_override.h \
+ C:\Users\wjehe\DOWNLO~1\CP4AD-~1\CP4AD-~1\L517B7~1.CAN\03D311~1.PAC\CANFD_~2\erika\inc/ee_utils.h \
+ C:\Users\wjehe\DOWNLO~1\CP4AD-~1\CP4AD-~1\L517B7~1.CAN\03D311~1.PAC\CANFD_~2\erika\inc/ee_compiler.h \
+ C:\Users\wjehe\DOWNLO~1\CP4AD-~1\CP4AD-~1\L517B7~1.CAN\03D311~1.PAC\CANFD_~2\erika\inc/ee_compiler_cfg.h \
+ C:\Users\wjehe\DOWNLO~1\CP4AD-~1\CP4AD-~1\L517B7~1.CAN\03D311~1.PAC\CANFD_~2\erika\inc/ee_compiler_gcc.h \
+ C:\Users\wjehe\DOWNLO~1\CP4AD-~1\CP4AD-~1\L517B7~1.CAN\03D311~1.PAC\CANFD_~2\erika\inc/ee_arch_compiler_gcc.h \
+ C:\Users\wjehe\DOWNLO~1\CP4AD-~1\CP4AD-~1\L517B7~1.CAN\03D311~1.PAC\CANFD_~2\erika\inc/ee_platform_types.h \
+ C:\Users\wjehe\DOWNLO~1\CP4AD-~1\CP4AD-~1\L517B7~1.CAN\03D311~1.PAC\CANFD_~2\erika\inc/ee_avr8_compiler.h \
+ C:\Users\wjehe\DOWNLO~1\CP4AD-~1\CP4AD-~1\L517B7~1.CAN\03D311~1.PAC\CANFD_~2\erika\inc/ee_hal.h \
+ C:\Users\wjehe\DOWNLO~1\CP4AD-~1\CP4AD-~1\L517B7~1.CAN\03D311~1.PAC\CANFD_~2\erika\inc/ee_atmega_timer1ctc.h \
+ C:\Users\wjehe\DOWNLO~1\CP4AD-~1\CP4AD-~1\L517B7~1.CAN\03D311~1.PAC\CANFD_~2\erika\inc/ee_api.h \
+ C:\Users\wjehe\DOWNLO~1\CP4AD-~1\CP4AD-~1\L517B7~1.CAN\03D311~1.PAC\CANFD_~2\erika\inc/ee_api_types.h \
+ C:\Users\wjehe\DOWNLO~1\CP4AD-~1\CP4AD-~1\L517B7~1.CAN\03D311~1.PAC\CANFD_~2\erika\inc/ee_oo_api_osek.h \
+ C:\Users\wjehe\DOWNLO~1\CP4AD-~1\CP4AD-~1\L517B7~1.CAN\03D311~1.PAC\CANFD_~2\erika\inc/ee_oo_api_dynamic.h \
+ C:\Users\wjehe\DOWNLO~1\CP4AD-~1\CP4AD-~1\L517B7~1.CAN\03D311~1.PAC\CANFD_~2\erika\inc/ee_oo_api_extension.h \
+ C:\Users\wjehe\DOWNLO~1\CP4AD-~1\CP4AD-~1\L517B7~1.CAN\03D311~1.PAC\CANFD_~2\erika\inc/ee_scheduler_types.h \
+ C:\Users\wjehe\DOWNLO~1\CP4AD-~1\CP4AD-~1\L517B7~1.CAN\03D311~1.PAC\CANFD_~2\erika\inc/ee_avr8_irq.h \
+ C:\Users\wjehe\DOWNLO~1\CP4AD-~1\CP4AD-~1\L517B7~1.CAN\03D311~1.PAC\CANFD_~2\out/ee_declcfg.h \
+ C:\Arduino/hardware/arduino/avr/cores/arduino/Arduino.h \
+ C:\Arduino/hardware/arduino/avr/cores/arduino/binary.h \
+ C:\Arduino/hardware/arduino/avr/cores/arduino/WCharacter.h \
+ C:\Arduino/hardware/arduino/avr/cores/arduino/WString.h \
+ C:\Arduino/hardware/arduino/avr/cores/arduino/HardwareSerial.h \
+ C:\Arduino/hardware/arduino/avr/cores/arduino/Stream.h \
+ C:\Arduino/hardware/arduino/avr/cores/arduino/Print.h \
+ C:\Arduino/hardware/arduino/avr/cores/arduino/Printable.h \
+ C:\Arduino/hardware/arduino/avr/cores/arduino/USBAPI.h \
+ C:\Arduino/hardware/arduino/avr/cores/arduino/Arduino.h \
+ C:\Arduino/hardware/arduino/avr/variants/standard/pins_arduino.h \
+ C:\Users\wjehe\DOWNLO~1\CP4AD-~1\CP4AD-~1\L517B7~1.CAN\03D311~1.PAC\CANFD_~2\bsw.h \
+ C:\Users\wjehe\DOWNLO~1\CP4AD-~1\CP4AD-~1\L517B7~1.CAN\03D311~1.PAC\CANFD_~2/SPI.h \
+ C:\Users\wjehe\DOWNLO~1\CP4AD-~1\CP4AD-~1\L517B7~1.CAN\03D311~1.PAC\CANFD_~2\lib/ACAN2517FD/ACAN2517FD.h \
+ ../lib/ACAN2517FD/ACAN2517FDSettings.h \
+ ../lib/ACAN2517FD/ACANFD_DataBitRateFactor.h \
+ ../lib/ACAN2517FD/ACANFDBuffer.h ../lib/ACAN2517FD/CANFDMessage.h \
+ ../lib/ACAN2517FD/CANMessage.h ../lib/ACAN2517FD/ACAN2517FDFilters.h
+
+C:\Users\wjehe\DOWNLO~1\CP4AD-~1\CP4AD-~1\L517B7~1.CAN\03D311~1.PAC\CANFD_~2\erika\inc/ee.h:
+
+C:\Users\wjehe\DOWNLO~1\CP4AD-~1\CP4AD-~1\L517B7~1.CAN\03D311~1.PAC\CANFD_~2\erika\inc/ee_cfg.h:
+
+C:\Users\wjehe\DOWNLO~1\CP4AD-~1\CP4AD-~1\L517B7~1.CAN\03D311~1.PAC\CANFD_~2\out/ee_applcfg.h:
+
+C:\Users\wjehe\DOWNLO~1\CP4AD-~1\CP4AD-~1\L517B7~1.CAN\03D311~1.PAC\CANFD_~2\erika\inc/ee_oscfg.h:
+
+C:\Users\wjehe\DOWNLO~1\CP4AD-~1\CP4AD-~1\L517B7~1.CAN\03D311~1.PAC\CANFD_~2\erika\inc/ee_arch_override.h:
+
+C:\Users\wjehe\DOWNLO~1\CP4AD-~1\CP4AD-~1\L517B7~1.CAN\03D311~1.PAC\CANFD_~2\erika\inc/ee_utils.h:
+
+C:\Users\wjehe\DOWNLO~1\CP4AD-~1\CP4AD-~1\L517B7~1.CAN\03D311~1.PAC\CANFD_~2\erika\inc/ee_compiler.h:
+
+C:\Users\wjehe\DOWNLO~1\CP4AD-~1\CP4AD-~1\L517B7~1.CAN\03D311~1.PAC\CANFD_~2\erika\inc/ee_compiler_cfg.h:
+
+C:\Users\wjehe\DOWNLO~1\CP4AD-~1\CP4AD-~1\L517B7~1.CAN\03D311~1.PAC\CANFD_~2\erika\inc/ee_compiler_gcc.h:
+
+C:\Users\wjehe\DOWNLO~1\CP4AD-~1\CP4AD-~1\L517B7~1.CAN\03D311~1.PAC\CANFD_~2\erika\inc/ee_arch_compiler_gcc.h:
+
+C:\Users\wjehe\DOWNLO~1\CP4AD-~1\CP4AD-~1\L517B7~1.CAN\03D311~1.PAC\CANFD_~2\erika\inc/ee_platform_types.h:
+
+C:\Users\wjehe\DOWNLO~1\CP4AD-~1\CP4AD-~1\L517B7~1.CAN\03D311~1.PAC\CANFD_~2\erika\inc/ee_avr8_compiler.h:
+
+C:\Users\wjehe\DOWNLO~1\CP4AD-~1\CP4AD-~1\L517B7~1.CAN\03D311~1.PAC\CANFD_~2\erika\inc/ee_hal.h:
+
+C:\Users\wjehe\DOWNLO~1\CP4AD-~1\CP4AD-~1\L517B7~1.CAN\03D311~1.PAC\CANFD_~2\erika\inc/ee_atmega_timer1ctc.h:
+
+C:\Users\wjehe\DOWNLO~1\CP4AD-~1\CP4AD-~1\L517B7~1.CAN\03D311~1.PAC\CANFD_~2\erika\inc/ee_api.h:
+
+C:\Users\wjehe\DOWNLO~1\CP4AD-~1\CP4AD-~1\L517B7~1.CAN\03D311~1.PAC\CANFD_~2\erika\inc/ee_api_types.h:
+
+C:\Users\wjehe\DOWNLO~1\CP4AD-~1\CP4AD-~1\L517B7~1.CAN\03D311~1.PAC\CANFD_~2\erika\inc/ee_oo_api_osek.h:
+
+C:\Users\wjehe\DOWNLO~1\CP4AD-~1\CP4AD-~1\L517B7~1.CAN\03D311~1.PAC\CANFD_~2\erika\inc/ee_oo_api_dynamic.h:
+
+C:\Users\wjehe\DOWNLO~1\CP4AD-~1\CP4AD-~1\L517B7~1.CAN\03D311~1.PAC\CANFD_~2\erika\inc/ee_oo_api_extension.h:
+
+C:\Users\wjehe\DOWNLO~1\CP4AD-~1\CP4AD-~1\L517B7~1.CAN\03D311~1.PAC\CANFD_~2\erika\inc/ee_scheduler_types.h:
+
+C:\Users\wjehe\DOWNLO~1\CP4AD-~1\CP4AD-~1\L517B7~1.CAN\03D311~1.PAC\CANFD_~2\erika\inc/ee_avr8_irq.h:
+
+C:\Users\wjehe\DOWNLO~1\CP4AD-~1\CP4AD-~1\L517B7~1.CAN\03D311~1.PAC\CANFD_~2\out/ee_declcfg.h:
+
+C:\Arduino/hardware/arduino/avr/cores/arduino/Arduino.h:
+
+C:\Arduino/hardware/arduino/avr/cores/arduino/binary.h:
+
+C:\Arduino/hardware/arduino/avr/cores/arduino/WCharacter.h:
+
+C:\Arduino/hardware/arduino/avr/cores/arduino/WString.h:
+
+C:\Arduino/hardware/arduino/avr/cores/arduino/HardwareSerial.h:
+
+C:\Arduino/hardware/arduino/avr/cores/arduino/Stream.h:
+
+C:\Arduino/hardware/arduino/avr/cores/arduino/Print.h:
+
+C:\Arduino/hardware/arduino/avr/cores/arduino/Printable.h:
+
+C:\Arduino/hardware/arduino/avr/cores/arduino/USBAPI.h:
+
+C:\Arduino/hardware/arduino/avr/cores/arduino/Arduino.h:
+
+C:\Arduino/hardware/arduino/avr/variants/standard/pins_arduino.h:
+
+C:\Users\wjehe\DOWNLO~1\CP4AD-~1\CP4AD-~1\L517B7~1.CAN\03D311~1.PAC\CANFD_~2\bsw.h:
+
+C:\Users\wjehe\DOWNLO~1\CP4AD-~1\CP4AD-~1\L517B7~1.CAN\03D311~1.PAC\CANFD_~2/SPI.h:
+
+C:\Users\wjehe\DOWNLO~1\CP4AD-~1\CP4AD-~1\L517B7~1.CAN\03D311~1.PAC\CANFD_~2\lib/ACAN2517FD/ACAN2517FD.h:
+
+../lib/ACAN2517FD/ACAN2517FDSettings.h:
+
+../lib/ACAN2517FD/ACANFD_DataBitRateFactor.h:
+
+../lib/ACAN2517FD/ACANFDBuffer.h:
+
+../lib/ACAN2517FD/CANFDMessage.h:
+
+../lib/ACAN2517FD/CANMessage.h:
+
+../lib/ACAN2517FD/ACAN2517FDFilters.h:

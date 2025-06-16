@@ -1,0 +1,5019 @@
+# 1 "C:\\Users\\hongkerous2619\\Documents\\GitHub\\test\\07.MultiPacket_can\\CAN_SEND\\lib\\ACAN2517FD\\ACAN2517FD.cpp"
+# 1 "<built-in>"
+# 1 "<command-line>"
+# 1 "C:\\Users\\hongkerous2619\\Documents\\GitHub\\test\\07.MultiPacket_can\\CAN_SEND\\lib\\ACAN2517FD\\ACAN2517FD.cpp"
+
+
+
+
+
+
+
+# 1 "../lib/ACAN2517FD/ACAN2517FD.h" 1
+
+
+
+
+
+
+
+       
+
+
+
+# 1 "../lib/ACAN2517FD/ACAN2517FDSettings.h" 1
+
+
+
+
+
+
+
+       
+
+
+
+# 1 "../lib/ACAN2517FD/ACANFD_DataBitRateFactor.h" 1
+# 16 "../lib/ACAN2517FD/ACANFD_DataBitRateFactor.h"
+# 1 "c:\\arduino\\hardware\\tools\\avr\\lib\\gcc\\avr\\7.3.0\\include\\stdint.h" 1 3 4
+# 9 "c:\\arduino\\hardware\\tools\\avr\\lib\\gcc\\avr\\7.3.0\\include\\stdint.h" 3 4
+# 1 "c:\\arduino\\hardware\\tools\\avr\\avr\\include\\stdint.h" 1 3 4
+# 125 "c:\\arduino\\hardware\\tools\\avr\\avr\\include\\stdint.h" 3 4
+
+# 125 "c:\\arduino\\hardware\\tools\\avr\\avr\\include\\stdint.h" 3 4
+typedef signed int int8_t __attribute__((__mode__(__QI__)));
+typedef unsigned int uint8_t __attribute__((__mode__(__QI__)));
+typedef signed int int16_t __attribute__ ((__mode__ (__HI__)));
+typedef unsigned int uint16_t __attribute__ ((__mode__ (__HI__)));
+typedef signed int int32_t __attribute__ ((__mode__ (__SI__)));
+typedef unsigned int uint32_t __attribute__ ((__mode__ (__SI__)));
+
+typedef signed int int64_t __attribute__((__mode__(__DI__)));
+typedef unsigned int uint64_t __attribute__((__mode__(__DI__)));
+# 146 "c:\\arduino\\hardware\\tools\\avr\\avr\\include\\stdint.h" 3 4
+typedef int16_t intptr_t;
+
+
+
+
+typedef uint16_t uintptr_t;
+# 163 "c:\\arduino\\hardware\\tools\\avr\\avr\\include\\stdint.h" 3 4
+typedef int8_t int_least8_t;
+
+
+
+
+typedef uint8_t uint_least8_t;
+
+
+
+
+typedef int16_t int_least16_t;
+
+
+
+
+typedef uint16_t uint_least16_t;
+
+
+
+
+typedef int32_t int_least32_t;
+
+
+
+
+typedef uint32_t uint_least32_t;
+
+
+
+
+
+
+
+typedef int64_t int_least64_t;
+
+
+
+
+
+
+typedef uint64_t uint_least64_t;
+# 217 "c:\\arduino\\hardware\\tools\\avr\\avr\\include\\stdint.h" 3 4
+typedef int8_t int_fast8_t;
+
+
+
+
+typedef uint8_t uint_fast8_t;
+
+
+
+
+typedef int16_t int_fast16_t;
+
+
+
+
+typedef uint16_t uint_fast16_t;
+
+
+
+
+typedef int32_t int_fast32_t;
+
+
+
+
+typedef uint32_t uint_fast32_t;
+
+
+
+
+
+
+
+typedef int64_t int_fast64_t;
+
+
+
+
+
+
+typedef uint64_t uint_fast64_t;
+# 277 "c:\\arduino\\hardware\\tools\\avr\\avr\\include\\stdint.h" 3 4
+typedef int64_t intmax_t;
+
+
+
+
+typedef uint64_t uintmax_t;
+# 10 "c:\\arduino\\hardware\\tools\\avr\\lib\\gcc\\avr\\7.3.0\\include\\stdint.h" 2 3 4
+# 17 "../lib/ACAN2517FD/ACANFD_DataBitRateFactor.h" 2
+
+
+
+
+# 20 "../lib/ACAN2517FD/ACANFD_DataBitRateFactor.h"
+enum class DataBitRateFactor : uint8_t {
+    x1 = 1,
+    x2 = 2,
+    x3 = 3,
+    x4 = 4,
+    x5 = 5,
+    x6 = 6,
+    x7 = 7,
+    x8 = 8,
+    x9 = 9,
+    x10 = 10
+} ;
+# 13 "../lib/ACAN2517FD/ACAN2517FDSettings.h" 2
+
+
+
+
+
+class ACAN2517FDSettings {
+
+
+
+
+
+  public: typedef enum : uint8_t {
+    OSC_4MHz,
+    OSC_4MHz_DIVIDED_BY_2,
+    OSC_4MHz10xPLL,
+    OSC_4MHz10xPLL_DIVIDED_BY_2,
+    OSC_20MHz,
+    OSC_20MHz_DIVIDED_BY_2,
+    OSC_40MHz,
+    OSC_40MHz_DIVIDED_BY_2
+  } Oscillator ;
+
+  public: typedef enum : uint8_t {
+    CLKO_DIVIDED_BY_1,
+    CLKO_DIVIDED_BY_2,
+    CLKO_DIVIDED_BY_4,
+    CLKO_DIVIDED_BY_10,
+    SOF
+  } CLKOpin ;
+
+  public: typedef enum : uint8_t {
+    NormalFD = 0,
+    Sleep = 1,
+    InternalLoopBack = 2,
+    ListenOnly = 3,
+    Configuration = 4,
+    ExternalLoopBack = 5,
+    Normal20B = 6,
+    RestrictedOperation = 7
+  } OperationMode ;
+
+  public: typedef enum : uint8_t {Disabled, ThreeAttempts, UnlimitedNumber} RetransmissionAttempts ;
+
+  public: typedef enum : uint8_t {
+    PAYLOAD_8 = 0,
+    PAYLOAD_12 = 1,
+    PAYLOAD_16 = 2,
+    PAYLOAD_20 = 3,
+    PAYLOAD_24 = 4,
+    PAYLOAD_32 = 5,
+    PAYLOAD_48 = 6,
+    PAYLOAD_64 = 7
+  } PayloadSize ;
+
+
+
+
+
+  public : typedef enum : uint8_t {
+      DATA_BITRATE_x1 = 1,
+      DATA_BITRATE_x2 = 2,
+      DATA_BITRATE_x3 = 3,
+      DATA_BITRATE_x4 = 4,
+      DATA_BITRATE_x5 = 5,
+      DATA_BITRATE_x6 = 6,
+      DATA_BITRATE_x7 = 7,
+      DATA_BITRATE_x8 = 8,
+      DATA_BITRATE_x9 = 9,
+      DATA_BITRATE_x10 = 10
+  } DataBitRateFactor_Deprecated ;
+
+
+
+
+
+  public: ACAN2517FDSettings (const Oscillator inOscillator,
+                              const uint32_t inDesiredArbitrationBitRate,
+                              const DataBitRateFactor inDataBitRateFactor,
+                              const uint32_t inTolerancePPM = 1000) ;
+
+
+
+
+
+  public: ACAN2517FDSettings (const Oscillator inOscillator,
+                              const uint32_t inDesiredArbitrationBitRate,
+                              const DataBitRateFactor_Deprecated inDataBitRateFactor,
+                              const uint32_t inTolerancePPM = 1000) :
+  ACAN2517FDSettings (inOscillator, inDesiredArbitrationBitRate, DataBitRateFactor (inDataBitRateFactor), inTolerancePPM) {
+  }
+
+
+
+
+
+  private: Oscillator mOscillator ;
+  private: uint32_t mSysClock ;
+  public: const uint32_t mDesiredArbitrationBitRate ;
+  public: const DataBitRateFactor mDataBitRateFactor ;
+
+  public: uint8_t mDataPhaseSegment1 = 0 ;
+  public: uint8_t mDataPhaseSegment2 = 0 ;
+  public: uint8_t mDataSJW = 0 ;
+
+  public: uint16_t mBitRatePrescaler = 0 ;
+
+  public: uint16_t mArbitrationPhaseSegment1 = 0 ;
+  public: uint8_t mArbitrationPhaseSegment2 = 0 ;
+  public: uint8_t mArbitrationSJW = 0 ;
+  public: bool mArbitrationBitRateClosedToDesiredRate = false ;
+
+  public: int8_t mTDCO = 0 ;
+
+
+
+
+
+  public: bool mTXCANIsOpenDrain = false ;
+
+
+
+
+
+  public: bool mINTIsOpenDrain = false ;
+
+
+
+
+
+
+
+  public: bool mISOCRCEnabled = true ;
+
+
+
+
+
+  public: CLKOpin mCLKOPin = CLKO_DIVIDED_BY_10 ;
+
+
+
+
+
+  public: OperationMode mRequestedMode = NormalFD ;
+
+
+
+
+
+
+  public: uint16_t mDriverTransmitFIFOSize = 16 ;
+
+
+  public: uint8_t mControllerTransmitFIFOSize = 1 ;
+
+
+  public: PayloadSize mControllerTransmitFIFOPayload = PAYLOAD_64 ;
+
+
+  public: uint8_t mControllerTransmitFIFOPriority = 0 ;
+
+
+  public: RetransmissionAttempts mControllerTransmitFIFORetransmissionAttempts = UnlimitedNumber ;
+
+
+
+
+
+
+  public: uint8_t mControllerTXQSize = 0 ;
+
+
+  public: PayloadSize mControllerTXQBufferPayload = PAYLOAD_64 ;
+
+
+  public: uint8_t mControllerTXQBufferPriority = 31 ;
+
+
+  public: RetransmissionAttempts mControllerTXQBufferRetransmissionAttempts = UnlimitedNumber ;
+
+
+
+
+
+
+
+  public: uint16_t mDriverReceiveFIFOSize = 32 ;
+
+
+  public: PayloadSize mControllerReceiveFIFOPayload = PAYLOAD_64 ;
+
+
+  public: uint8_t mControllerReceiveFIFOSize = 27 ;
+
+
+
+
+
+  public: static uint32_t sysClock (const Oscillator inOscillator) ;
+
+
+
+
+
+  public: Oscillator oscillator (void) const { return mOscillator ; }
+  public: uint32_t sysClock (void) const { return mSysClock ; }
+  public: uint32_t actualArbitrationBitRate (void) const ;
+  public: uint32_t actualDataBitRate (void) const ;
+  public: bool exactArbitrationBitRate (void) const ;
+  public: bool exactDataBitRate (void) const ;
+  public: bool dataBitRateIsAMultipleOfArbitrationBitRate (void) const ;
+
+
+
+
+
+  public: uint32_t ramUsage (void) const ;
+
+  public: static uint32_t objectSizeForPayload (const PayloadSize inPayload) ;
+
+
+
+
+
+  public: uint32_t ppmFromDesiredArbitrationBitRate (void) const ;
+  public: uint32_t ppmFromDesiredDataBitRate (void) const ;
+
+
+
+
+
+  public: uint32_t arbitrationSamplePointFromBitStart (void) const ;
+  public: uint32_t dataSamplePointFromBitStart (void) const ;
+
+
+
+
+
+  public: uint32_t CANBitSettingConsistency (void) const ;
+
+
+
+
+
+  public: static const uint32_t kBitRatePrescalerIsZero = ((uint32_t) 1) << 0 ;
+  public: static const uint32_t kBitRatePrescalerIsGreaterThan256 = ((uint32_t) 1) << 1 ;
+  public: static const uint32_t kArbitrationPhaseSegment1IsLowerThan2 = ((uint32_t) 1) << 2 ;
+  public: static const uint32_t kArbitrationPhaseSegment1IsGreaterThan256 = ((uint32_t) 1) << 3 ;
+  public: static const uint32_t kArbitrationPhaseSegment2IsZero = ((uint32_t) 1) << 4 ;
+  public: static const uint32_t kArbitrationPhaseSegment2IsGreaterThan128 = ((uint32_t) 1) << 5 ;
+  public: static const uint32_t kArbitrationSJWIsZero = ((uint32_t) 1) << 6 ;
+  public: static const uint32_t kArbitrationSJWIsGreaterThan128 = ((uint32_t) 1) << 7 ;
+  public: static const uint32_t kArbitrationSJWIsGreaterThanPhaseSegment1 = ((uint32_t) 1) << 8 ;
+  public: static const uint32_t kArbitrationSJWIsGreaterThanPhaseSegment2 = ((uint32_t) 1) << 9 ;
+  public: static const uint32_t kArbitrationTQCountNotDivisibleByDataBitRateFactor = ((uint32_t) 1) << 10 ;
+  public: static const uint32_t kDataPhaseSegment1IsLowerThan2 = ((uint32_t) 1) << 11 ;
+  public: static const uint32_t kDataPhaseSegment1IsGreaterThan32 = ((uint32_t) 1) << 12 ;
+  public: static const uint32_t kDataPhaseSegment2IsZero = ((uint32_t) 1) << 13 ;
+  public: static const uint32_t kDataPhaseSegment2IsGreaterThan16 = ((uint32_t) 1) << 14 ;
+  public: static const uint32_t kDataSJWIsZero = ((uint32_t) 1) << 15 ;
+  public: static const uint32_t kDataSJWIsGreaterThan16 = ((uint32_t) 1) << 16 ;
+  public: static const uint32_t kDataSJWIsGreaterThanPhaseSegment1 = ((uint32_t) 1) << 17 ;
+  public: static const uint32_t kDataSJWIsGreaterThanPhaseSegment2 = ((uint32_t) 1) << 18 ;
+
+
+
+
+
+  public: static const uint16_t MAX_BRP = 256 ;
+
+  public: static const uint16_t MAX_ARBITRATION_PHASE_SEGMENT_1 = 256 ;
+  public: static const uint8_t MAX_ARBITRATION_PHASE_SEGMENT_2 = 128 ;
+  public: static const uint8_t MAX_ARBITRATION_SJW = 128 ;
+
+  public: static const uint16_t MAX_DATA_PHASE_SEGMENT_1 = 32 ;
+  public: static const uint8_t MAX_DATA_PHASE_SEGMENT_2 = 16 ;
+  public: static const uint8_t MAX_DATA_SJW = 16 ;
+
+
+
+} ;
+# 13 "../lib/ACAN2517FD/ACAN2517FD.h" 2
+# 1 "../lib/ACAN2517FD/ACANFDBuffer.h" 1
+# 13 "../lib/ACAN2517FD/ACANFDBuffer.h"
+# 1 "../lib/ACAN2517FD/CANFDMessage.h" 1
+# 14 "../lib/ACAN2517FD/CANFDMessage.h"
+# 1 "../lib/ACAN2517FD/CANMessage.h" 1
+# 18 "../lib/ACAN2517FD/CANMessage.h"
+# 1 "C:\\Arduino/hardware/arduino/avr/cores/arduino/Arduino.h" 1
+# 23 "C:\\Arduino/hardware/arduino/avr/cores/arduino/Arduino.h"
+# 1 "c:\\arduino\\hardware\\tools\\avr\\avr\\include\\stdlib.h" 1 3
+# 48 "c:\\arduino\\hardware\\tools\\avr\\avr\\include\\stdlib.h" 3
+# 1 "c:\\arduino\\hardware\\tools\\avr\\lib\\gcc\\avr\\7.3.0\\include\\stddef.h" 1 3 4
+# 216 "c:\\arduino\\hardware\\tools\\avr\\lib\\gcc\\avr\\7.3.0\\include\\stddef.h" 3 4
+
+# 216 "c:\\arduino\\hardware\\tools\\avr\\lib\\gcc\\avr\\7.3.0\\include\\stddef.h" 3 4
+typedef unsigned int size_t;
+# 49 "c:\\arduino\\hardware\\tools\\avr\\avr\\include\\stdlib.h" 2 3
+
+
+
+
+
+
+
+extern "C" {
+# 70 "c:\\arduino\\hardware\\tools\\avr\\avr\\include\\stdlib.h" 3
+typedef struct {
+ int quot;
+ int rem;
+} div_t;
+
+
+typedef struct {
+ long quot;
+ long rem;
+} ldiv_t;
+
+
+typedef int (*__compar_fn_t)(const void *, const void *);
+# 116 "c:\\arduino\\hardware\\tools\\avr\\avr\\include\\stdlib.h" 3
+extern void abort(void) __attribute__((__noreturn__));
+
+
+
+
+extern int abs(int __i) __attribute__((__const__));
+# 130 "c:\\arduino\\hardware\\tools\\avr\\avr\\include\\stdlib.h" 3
+extern long labs(long __i) __attribute__((__const__));
+# 153 "c:\\arduino\\hardware\\tools\\avr\\avr\\include\\stdlib.h" 3
+extern void *bsearch(const void *__key, const void *__base, size_t __nmemb,
+       size_t __size, int (*__compar)(const void *, const void *));
+
+
+
+
+
+
+
+extern div_t div(int __num, int __denom) __asm__("__divmodhi4") __attribute__((__const__));
+
+
+
+
+
+extern ldiv_t ldiv(long __num, long __denom) __asm__("__divmodsi4") __attribute__((__const__));
+# 185 "c:\\arduino\\hardware\\tools\\avr\\avr\\include\\stdlib.h" 3
+extern void qsort(void *__base, size_t __nmemb, size_t __size,
+    __compar_fn_t __compar);
+# 218 "c:\\arduino\\hardware\\tools\\avr\\avr\\include\\stdlib.h" 3
+extern long strtol(const char *__nptr, char **__endptr, int __base);
+# 252 "c:\\arduino\\hardware\\tools\\avr\\avr\\include\\stdlib.h" 3
+extern unsigned long strtoul(const char *__nptr, char **__endptr, int __base);
+# 264 "c:\\arduino\\hardware\\tools\\avr\\avr\\include\\stdlib.h" 3
+extern long atol(const char *__s) __attribute__((__pure__));
+# 276 "c:\\arduino\\hardware\\tools\\avr\\avr\\include\\stdlib.h" 3
+extern int atoi(const char *__s) __attribute__((__pure__));
+# 288 "c:\\arduino\\hardware\\tools\\avr\\avr\\include\\stdlib.h" 3
+extern void exit(int __status) __attribute__((__noreturn__));
+# 300 "c:\\arduino\\hardware\\tools\\avr\\avr\\include\\stdlib.h" 3
+extern void *malloc(size_t __size) __attribute__((__malloc__));
+
+
+
+
+
+
+extern void free(void *__ptr);
+
+
+
+
+extern size_t __malloc_margin;
+
+
+
+
+extern char *__malloc_heap_start;
+
+
+
+
+extern char *__malloc_heap_end;
+
+
+
+
+
+
+extern void *calloc(size_t __nele, size_t __size) __attribute__((__malloc__));
+# 348 "c:\\arduino\\hardware\\tools\\avr\\avr\\include\\stdlib.h" 3
+extern void *realloc(void *__ptr, size_t __size) __attribute__((__malloc__));
+
+extern double strtod(const char *__nptr, char **__endptr);
+# 361 "c:\\arduino\\hardware\\tools\\avr\\avr\\include\\stdlib.h" 3
+extern double atof(const char *__nptr);
+# 383 "c:\\arduino\\hardware\\tools\\avr\\avr\\include\\stdlib.h" 3
+extern int rand(void);
+
+
+
+extern void srand(unsigned int __seed);
+
+
+
+
+
+
+extern int rand_r(unsigned long *__ctx);
+# 428 "c:\\arduino\\hardware\\tools\\avr\\avr\\include\\stdlib.h" 3
+extern __inline__ __attribute__((__gnu_inline__))
+char *itoa (int __val, char *__s, int __radix)
+{
+    if (!__builtin_constant_p (__radix)) {
+ extern char *__itoa (int, char *, int);
+ return __itoa (__val, __s, __radix);
+    } else if (__radix < 2 || __radix > 36) {
+ *__s = 0;
+ return __s;
+    } else {
+ extern char *__itoa_ncheck (int, char *, unsigned char);
+ return __itoa_ncheck (__val, __s, __radix);
+    }
+}
+# 473 "c:\\arduino\\hardware\\tools\\avr\\avr\\include\\stdlib.h" 3
+extern __inline__ __attribute__((__gnu_inline__))
+char *ltoa (long __val, char *__s, int __radix)
+{
+    if (!__builtin_constant_p (__radix)) {
+ extern char *__ltoa (long, char *, int);
+ return __ltoa (__val, __s, __radix);
+    } else if (__radix < 2 || __radix > 36) {
+ *__s = 0;
+ return __s;
+    } else {
+ extern char *__ltoa_ncheck (long, char *, unsigned char);
+ return __ltoa_ncheck (__val, __s, __radix);
+    }
+}
+# 516 "c:\\arduino\\hardware\\tools\\avr\\avr\\include\\stdlib.h" 3
+extern __inline__ __attribute__((__gnu_inline__))
+char *utoa (unsigned int __val, char *__s, int __radix)
+{
+    if (!__builtin_constant_p (__radix)) {
+ extern char *__utoa (unsigned int, char *, int);
+ return __utoa (__val, __s, __radix);
+    } else if (__radix < 2 || __radix > 36) {
+ *__s = 0;
+ return __s;
+    } else {
+ extern char *__utoa_ncheck (unsigned int, char *, unsigned char);
+ return __utoa_ncheck (__val, __s, __radix);
+    }
+}
+# 558 "c:\\arduino\\hardware\\tools\\avr\\avr\\include\\stdlib.h" 3
+extern __inline__ __attribute__((__gnu_inline__))
+char *ultoa (unsigned long __val, char *__s, int __radix)
+{
+    if (!__builtin_constant_p (__radix)) {
+ extern char *__ultoa (unsigned long, char *, int);
+ return __ultoa (__val, __s, __radix);
+    } else if (__radix < 2 || __radix > 36) {
+ *__s = 0;
+ return __s;
+    } else {
+ extern char *__ultoa_ncheck (unsigned long, char *, unsigned char);
+ return __ultoa_ncheck (__val, __s, __radix);
+    }
+}
+# 590 "c:\\arduino\\hardware\\tools\\avr\\avr\\include\\stdlib.h" 3
+extern long random(void);
+
+
+
+
+extern void srandom(unsigned long __seed);
+
+
+
+
+
+
+
+extern long random_r(unsigned long *__ctx);
+# 649 "c:\\arduino\\hardware\\tools\\avr\\avr\\include\\stdlib.h" 3
+extern char *dtostre(double __val, char *__s, unsigned char __prec,
+       unsigned char __flags);
+# 666 "c:\\arduino\\hardware\\tools\\avr\\avr\\include\\stdlib.h" 3
+extern char *dtostrf(double __val, signed char __width,
+                     unsigned char __prec, char *__s);
+# 685 "c:\\arduino\\hardware\\tools\\avr\\avr\\include\\stdlib.h" 3
+extern int atexit(void (*)(void));
+extern int system (const char *);
+extern char *getenv (const char *);
+
+
+
+}
+# 24 "C:\\Arduino/hardware/arduino/avr/cores/arduino/Arduino.h" 2
+# 1 "c:\\arduino\\hardware\\tools\\avr\\lib\\gcc\\avr\\7.3.0\\include\\stdbool.h" 1 3 4
+# 25 "C:\\Arduino/hardware/arduino/avr/cores/arduino/Arduino.h" 2
+# 1 "c:\\arduino\\hardware\\tools\\avr\\avr\\include\\string.h" 1 3
+# 46 "c:\\arduino\\hardware\\tools\\avr\\avr\\include\\string.h" 3
+# 1 "c:\\arduino\\hardware\\tools\\avr\\lib\\gcc\\avr\\7.3.0\\include\\stddef.h" 1 3 4
+# 47 "c:\\arduino\\hardware\\tools\\avr\\avr\\include\\string.h" 2 3
+# 58 "c:\\arduino\\hardware\\tools\\avr\\avr\\include\\string.h" 3
+extern "C" {
+# 125 "c:\\arduino\\hardware\\tools\\avr\\avr\\include\\string.h" 3
+extern int ffs(int __val) __attribute__((__const__));
+
+
+
+
+
+extern int ffsl(long __val) __attribute__((__const__));
+
+
+
+
+
+__extension__ extern int ffsll(long long __val) __attribute__((__const__));
+# 150 "c:\\arduino\\hardware\\tools\\avr\\avr\\include\\string.h" 3
+extern void *memccpy(void *, const void *, int, size_t);
+# 162 "c:\\arduino\\hardware\\tools\\avr\\avr\\include\\string.h" 3
+extern void *memchr(const void *, int, size_t) __attribute__((__pure__));
+# 180 "c:\\arduino\\hardware\\tools\\avr\\avr\\include\\string.h" 3
+extern int memcmp(const void *, const void *, size_t) __attribute__((__pure__));
+# 191 "c:\\arduino\\hardware\\tools\\avr\\avr\\include\\string.h" 3
+extern void *memcpy(void *, const void *, size_t);
+# 203 "c:\\arduino\\hardware\\tools\\avr\\avr\\include\\string.h" 3
+extern void *memmem(const void *, size_t, const void *, size_t) __attribute__((__pure__));
+# 213 "c:\\arduino\\hardware\\tools\\avr\\avr\\include\\string.h" 3
+extern void *memmove(void *, const void *, size_t);
+# 225 "c:\\arduino\\hardware\\tools\\avr\\avr\\include\\string.h" 3
+extern void *memrchr(const void *, int, size_t) __attribute__((__pure__));
+# 235 "c:\\arduino\\hardware\\tools\\avr\\avr\\include\\string.h" 3
+extern void *memset(void *, int, size_t);
+# 248 "c:\\arduino\\hardware\\tools\\avr\\avr\\include\\string.h" 3
+extern char *strcat(char *, const char *);
+# 262 "c:\\arduino\\hardware\\tools\\avr\\avr\\include\\string.h" 3
+extern char *strchr(const char *, int) __attribute__((__pure__));
+# 274 "c:\\arduino\\hardware\\tools\\avr\\avr\\include\\string.h" 3
+extern char *strchrnul(const char *, int) __attribute__((__pure__));
+# 287 "c:\\arduino\\hardware\\tools\\avr\\avr\\include\\string.h" 3
+extern int strcmp(const char *, const char *) __attribute__((__pure__));
+# 305 "c:\\arduino\\hardware\\tools\\avr\\avr\\include\\string.h" 3
+extern char *strcpy(char *, const char *);
+# 320 "c:\\arduino\\hardware\\tools\\avr\\avr\\include\\string.h" 3
+extern int strcasecmp(const char *, const char *) __attribute__((__pure__));
+# 333 "c:\\arduino\\hardware\\tools\\avr\\avr\\include\\string.h" 3
+extern char *strcasestr(const char *, const char *) __attribute__((__pure__));
+# 344 "c:\\arduino\\hardware\\tools\\avr\\avr\\include\\string.h" 3
+extern size_t strcspn(const char *__s, const char *__reject) __attribute__((__pure__));
+# 364 "c:\\arduino\\hardware\\tools\\avr\\avr\\include\\string.h" 3
+extern char *strdup(const char *s1);
+# 377 "c:\\arduino\\hardware\\tools\\avr\\avr\\include\\string.h" 3
+extern size_t strlcat(char *, const char *, size_t);
+# 388 "c:\\arduino\\hardware\\tools\\avr\\avr\\include\\string.h" 3
+extern size_t strlcpy(char *, const char *, size_t);
+# 399 "c:\\arduino\\hardware\\tools\\avr\\avr\\include\\string.h" 3
+extern size_t strlen(const char *) __attribute__((__pure__));
+# 411 "c:\\arduino\\hardware\\tools\\avr\\avr\\include\\string.h" 3
+extern char *strlwr(char *);
+# 422 "c:\\arduino\\hardware\\tools\\avr\\avr\\include\\string.h" 3
+extern char *strncat(char *, const char *, size_t);
+# 434 "c:\\arduino\\hardware\\tools\\avr\\avr\\include\\string.h" 3
+extern int strncmp(const char *, const char *, size_t) __attribute__((__pure__));
+# 449 "c:\\arduino\\hardware\\tools\\avr\\avr\\include\\string.h" 3
+extern char *strncpy(char *, const char *, size_t);
+# 464 "c:\\arduino\\hardware\\tools\\avr\\avr\\include\\string.h" 3
+extern int strncasecmp(const char *, const char *, size_t) __attribute__((__pure__));
+# 478 "c:\\arduino\\hardware\\tools\\avr\\avr\\include\\string.h" 3
+extern size_t strnlen(const char *, size_t) __attribute__((__pure__));
+# 491 "c:\\arduino\\hardware\\tools\\avr\\avr\\include\\string.h" 3
+extern char *strpbrk(const char *__s, const char *__accept) __attribute__((__pure__));
+# 505 "c:\\arduino\\hardware\\tools\\avr\\avr\\include\\string.h" 3
+extern char *strrchr(const char *, int) __attribute__((__pure__));
+# 515 "c:\\arduino\\hardware\\tools\\avr\\avr\\include\\string.h" 3
+extern char *strrev(char *);
+# 533 "c:\\arduino\\hardware\\tools\\avr\\avr\\include\\string.h" 3
+extern char *strsep(char **, const char *);
+# 544 "c:\\arduino\\hardware\\tools\\avr\\avr\\include\\string.h" 3
+extern size_t strspn(const char *__s, const char *__accept) __attribute__((__pure__));
+# 557 "c:\\arduino\\hardware\\tools\\avr\\avr\\include\\string.h" 3
+extern char *strstr(const char *, const char *) __attribute__((__pure__));
+# 576 "c:\\arduino\\hardware\\tools\\avr\\avr\\include\\string.h" 3
+extern char *strtok(char *, const char *);
+# 593 "c:\\arduino\\hardware\\tools\\avr\\avr\\include\\string.h" 3
+extern char *strtok_r(char *, const char *, char **);
+# 606 "c:\\arduino\\hardware\\tools\\avr\\avr\\include\\string.h" 3
+extern char *strupr(char *);
+
+
+
+extern int strcoll(const char *s1, const char *s2);
+extern char *strerror(int errnum);
+extern size_t strxfrm(char *dest, const char *src, size_t n);
+
+
+
+}
+# 26 "C:\\Arduino/hardware/arduino/avr/cores/arduino/Arduino.h" 2
+# 1 "c:\\arduino\\hardware\\tools\\avr\\avr\\include\\math.h" 1 3
+# 121 "c:\\arduino\\hardware\\tools\\avr\\avr\\include\\math.h" 3
+extern "C" {
+
+
+
+
+
+extern double cos(double __x) __attribute__((__const__));
+
+
+
+
+
+extern double sin(double __x) __attribute__((__const__));
+
+
+
+
+
+extern double tan(double __x) __attribute__((__const__));
+
+
+
+
+
+
+extern double fabs(double __x) __attribute__((__const__));
+
+
+
+
+
+
+extern double fmod(double __x, double __y) __attribute__((__const__));
+# 168 "c:\\arduino\\hardware\\tools\\avr\\avr\\include\\math.h" 3
+extern double modf(double __x, double *__iptr);
+
+
+extern float modff (float __x, float *__iptr);
+
+
+
+
+extern double sqrt(double __x) __attribute__((__const__));
+
+
+extern float sqrtf (float) __attribute__((__const__));
+
+
+
+
+extern double cbrt(double __x) __attribute__((__const__));
+# 195 "c:\\arduino\\hardware\\tools\\avr\\avr\\include\\math.h" 3
+extern double hypot (double __x, double __y) __attribute__((__const__));
+
+
+
+
+
+
+
+extern double square(double __x) __attribute__((__const__));
+
+
+
+
+
+
+extern double floor(double __x) __attribute__((__const__));
+
+
+
+
+
+
+extern double ceil(double __x) __attribute__((__const__));
+# 235 "c:\\arduino\\hardware\\tools\\avr\\avr\\include\\math.h" 3
+extern double frexp(double __x, int *__pexp);
+
+
+
+
+
+
+
+extern double ldexp(double __x, int __exp) __attribute__((__const__));
+
+
+
+
+
+extern double exp(double __x) __attribute__((__const__));
+
+
+
+
+
+extern double cosh(double __x) __attribute__((__const__));
+
+
+
+
+
+extern double sinh(double __x) __attribute__((__const__));
+
+
+
+
+
+extern double tanh(double __x) __attribute__((__const__));
+
+
+
+
+
+
+
+extern double acos(double __x) __attribute__((__const__));
+
+
+
+
+
+
+
+extern double asin(double __x) __attribute__((__const__));
+
+
+
+
+
+
+extern double atan(double __x) __attribute__((__const__));
+# 299 "c:\\arduino\\hardware\\tools\\avr\\avr\\include\\math.h" 3
+extern double atan2(double __y, double __x) __attribute__((__const__));
+
+
+
+
+
+extern double log(double __x) __attribute__((__const__));
+
+
+
+
+
+extern double log10(double __x) __attribute__((__const__));
+
+
+
+
+
+extern double pow(double __x, double __y) __attribute__((__const__));
+
+
+
+
+
+
+extern int isnan(double __x) __attribute__((__const__));
+# 334 "c:\\arduino\\hardware\\tools\\avr\\avr\\include\\math.h" 3
+extern int isinf(double __x) __attribute__((__const__));
+
+
+
+
+
+
+__attribute__((__const__)) static inline int isfinite (double __x)
+{
+    unsigned char __exp;
+    __asm__ (
+ "mov	%0, %C1		\n\t"
+ "lsl	%0		\n\t"
+ "mov	%0, %D1		\n\t"
+ "rol	%0		"
+ : "=r" (__exp)
+ : "r" (__x) );
+    return __exp != 0xff;
+}
+
+
+
+
+
+
+__attribute__((__const__)) static inline double copysign (double __x, double __y)
+{
+    __asm__ (
+ "bst	%D2, 7	\n\t"
+ "bld	%D0, 7	"
+ : "=r" (__x)
+ : "0" (__x), "r" (__y) );
+    return __x;
+}
+# 377 "c:\\arduino\\hardware\\tools\\avr\\avr\\include\\math.h" 3
+extern int signbit (double __x) __attribute__((__const__));
+
+
+
+
+
+
+extern double fdim (double __x, double __y) __attribute__((__const__));
+# 393 "c:\\arduino\\hardware\\tools\\avr\\avr\\include\\math.h" 3
+extern double fma (double __x, double __y, double __z) __attribute__((__const__));
+
+
+
+
+
+
+
+extern double fmax (double __x, double __y) __attribute__((__const__));
+
+
+
+
+
+
+
+extern double fmin (double __x, double __y) __attribute__((__const__));
+
+
+
+
+
+
+extern double trunc (double __x) __attribute__((__const__));
+# 427 "c:\\arduino\\hardware\\tools\\avr\\avr\\include\\math.h" 3
+extern double round (double __x) __attribute__((__const__));
+# 440 "c:\\arduino\\hardware\\tools\\avr\\avr\\include\\math.h" 3
+extern long lround (double __x) __attribute__((__const__));
+# 454 "c:\\arduino\\hardware\\tools\\avr\\avr\\include\\math.h" 3
+extern long lrint (double __x) __attribute__((__const__));
+
+
+
+}
+# 27 "C:\\Arduino/hardware/arduino/avr/cores/arduino/Arduino.h" 2
+
+# 1 "c:\\arduino\\hardware\\tools\\avr\\avr\\include\\avr\\pgmspace.h" 1 3
+# 88 "c:\\arduino\\hardware\\tools\\avr\\avr\\include\\avr\\pgmspace.h" 3
+# 1 "c:\\arduino\\hardware\\tools\\avr\\avr\\include\\inttypes.h" 1 3
+# 77 "c:\\arduino\\hardware\\tools\\avr\\avr\\include\\inttypes.h" 3
+typedef int32_t int_farptr_t;
+
+
+
+typedef uint32_t uint_farptr_t;
+# 89 "c:\\arduino\\hardware\\tools\\avr\\avr\\include\\avr\\pgmspace.h" 2 3
+# 1 "c:\\arduino\\hardware\\tools\\avr\\lib\\gcc\\avr\\7.3.0\\include\\stddef.h" 1 3 4
+# 90 "c:\\arduino\\hardware\\tools\\avr\\avr\\include\\avr\\pgmspace.h" 2 3
+# 1 "c:\\arduino\\hardware\\tools\\avr\\avr\\include\\avr\\io.h" 1 3
+# 99 "c:\\arduino\\hardware\\tools\\avr\\avr\\include\\avr\\io.h" 3
+# 1 "c:\\arduino\\hardware\\tools\\avr\\avr\\include\\avr\\sfr_defs.h" 1 3
+# 100 "c:\\arduino\\hardware\\tools\\avr\\avr\\include\\avr\\io.h" 2 3
+# 272 "c:\\arduino\\hardware\\tools\\avr\\avr\\include\\avr\\io.h" 3
+# 1 "c:\\arduino\\hardware\\tools\\avr\\avr\\include\\avr\\iom328p.h" 1 3
+# 273 "c:\\arduino\\hardware\\tools\\avr\\avr\\include\\avr\\io.h" 2 3
+# 715 "c:\\arduino\\hardware\\tools\\avr\\avr\\include\\avr\\io.h" 3
+# 1 "c:\\arduino\\hardware\\tools\\avr\\avr\\include\\avr\\portpins.h" 1 3
+# 716 "c:\\arduino\\hardware\\tools\\avr\\avr\\include\\avr\\io.h" 2 3
+
+# 1 "c:\\arduino\\hardware\\tools\\avr\\avr\\include\\avr\\common.h" 1 3
+# 718 "c:\\arduino\\hardware\\tools\\avr\\avr\\include\\avr\\io.h" 2 3
+
+# 1 "c:\\arduino\\hardware\\tools\\avr\\avr\\include\\avr\\version.h" 1 3
+# 720 "c:\\arduino\\hardware\\tools\\avr\\avr\\include\\avr\\io.h" 2 3
+
+
+
+
+
+
+# 1 "c:\\arduino\\hardware\\tools\\avr\\avr\\include\\avr\\fuse.h" 1 3
+# 239 "c:\\arduino\\hardware\\tools\\avr\\avr\\include\\avr\\fuse.h" 3
+typedef struct
+{
+    unsigned char low;
+    unsigned char high;
+    unsigned char extended;
+} __fuse_t;
+# 727 "c:\\arduino\\hardware\\tools\\avr\\avr\\include\\avr\\io.h" 2 3
+
+
+# 1 "c:\\arduino\\hardware\\tools\\avr\\avr\\include\\avr\\lock.h" 1 3
+# 730 "c:\\arduino\\hardware\\tools\\avr\\avr\\include\\avr\\io.h" 2 3
+# 91 "c:\\arduino\\hardware\\tools\\avr\\avr\\include\\avr\\pgmspace.h" 2 3
+# 116 "c:\\arduino\\hardware\\tools\\avr\\avr\\include\\avr\\pgmspace.h" 3
+extern "C" {
+# 1158 "c:\\arduino\\hardware\\tools\\avr\\avr\\include\\avr\\pgmspace.h" 3
+extern const void * memchr_P(const void *, int __val, size_t __len) __attribute__((__const__));
+# 1172 "c:\\arduino\\hardware\\tools\\avr\\avr\\include\\avr\\pgmspace.h" 3
+extern int memcmp_P(const void *, const void *, size_t) __attribute__((__pure__));
+
+
+
+
+
+
+extern void *memccpy_P(void *, const void *, int __val, size_t);
+# 1188 "c:\\arduino\\hardware\\tools\\avr\\avr\\include\\avr\\pgmspace.h" 3
+extern void *memcpy_P(void *, const void *, size_t);
+
+
+
+
+
+
+extern void *memmem_P(const void *, size_t, const void *, size_t) __attribute__((__pure__));
+# 1207 "c:\\arduino\\hardware\\tools\\avr\\avr\\include\\avr\\pgmspace.h" 3
+extern const void * memrchr_P(const void *, int __val, size_t __len) __attribute__((__const__));
+# 1217 "c:\\arduino\\hardware\\tools\\avr\\avr\\include\\avr\\pgmspace.h" 3
+extern char *strcat_P(char *, const char *);
+# 1233 "c:\\arduino\\hardware\\tools\\avr\\avr\\include\\avr\\pgmspace.h" 3
+extern const char * strchr_P(const char *, int __val) __attribute__((__const__));
+# 1245 "c:\\arduino\\hardware\\tools\\avr\\avr\\include\\avr\\pgmspace.h" 3
+extern const char * strchrnul_P(const char *, int __val) __attribute__((__const__));
+# 1258 "c:\\arduino\\hardware\\tools\\avr\\avr\\include\\avr\\pgmspace.h" 3
+extern int strcmp_P(const char *, const char *) __attribute__((__pure__));
+# 1268 "c:\\arduino\\hardware\\tools\\avr\\avr\\include\\avr\\pgmspace.h" 3
+extern char *strcpy_P(char *, const char *);
+# 1285 "c:\\arduino\\hardware\\tools\\avr\\avr\\include\\avr\\pgmspace.h" 3
+extern int strcasecmp_P(const char *, const char *) __attribute__((__pure__));
+
+
+
+
+
+
+extern char *strcasestr_P(const char *, const char *) __attribute__((__pure__));
+# 1305 "c:\\arduino\\hardware\\tools\\avr\\avr\\include\\avr\\pgmspace.h" 3
+extern size_t strcspn_P(const char *__s, const char * __reject) __attribute__((__pure__));
+# 1321 "c:\\arduino\\hardware\\tools\\avr\\avr\\include\\avr\\pgmspace.h" 3
+extern size_t strlcat_P (char *, const char *, size_t );
+# 1334 "c:\\arduino\\hardware\\tools\\avr\\avr\\include\\avr\\pgmspace.h" 3
+extern size_t strlcpy_P (char *, const char *, size_t );
+# 1346 "c:\\arduino\\hardware\\tools\\avr\\avr\\include\\avr\\pgmspace.h" 3
+extern size_t strnlen_P(const char *, size_t) __attribute__((__const__));
+# 1357 "c:\\arduino\\hardware\\tools\\avr\\avr\\include\\avr\\pgmspace.h" 3
+extern int strncmp_P(const char *, const char *, size_t) __attribute__((__pure__));
+# 1376 "c:\\arduino\\hardware\\tools\\avr\\avr\\include\\avr\\pgmspace.h" 3
+extern int strncasecmp_P(const char *, const char *, size_t) __attribute__((__pure__));
+# 1387 "c:\\arduino\\hardware\\tools\\avr\\avr\\include\\avr\\pgmspace.h" 3
+extern char *strncat_P(char *, const char *, size_t);
+# 1401 "c:\\arduino\\hardware\\tools\\avr\\avr\\include\\avr\\pgmspace.h" 3
+extern char *strncpy_P(char *, const char *, size_t);
+# 1416 "c:\\arduino\\hardware\\tools\\avr\\avr\\include\\avr\\pgmspace.h" 3
+extern char *strpbrk_P(const char *__s, const char * __accept) __attribute__((__pure__));
+# 1427 "c:\\arduino\\hardware\\tools\\avr\\avr\\include\\avr\\pgmspace.h" 3
+extern const char * strrchr_P(const char *, int __val) __attribute__((__const__));
+# 1447 "c:\\arduino\\hardware\\tools\\avr\\avr\\include\\avr\\pgmspace.h" 3
+extern char *strsep_P(char **__sp, const char * __delim);
+# 1460 "c:\\arduino\\hardware\\tools\\avr\\avr\\include\\avr\\pgmspace.h" 3
+extern size_t strspn_P(const char *__s, const char * __accept) __attribute__((__pure__));
+# 1474 "c:\\arduino\\hardware\\tools\\avr\\avr\\include\\avr\\pgmspace.h" 3
+extern char *strstr_P(const char *, const char *) __attribute__((__pure__));
+# 1496 "c:\\arduino\\hardware\\tools\\avr\\avr\\include\\avr\\pgmspace.h" 3
+extern char *strtok_P(char *__s, const char * __delim);
+# 1516 "c:\\arduino\\hardware\\tools\\avr\\avr\\include\\avr\\pgmspace.h" 3
+extern char *strtok_rP(char *__s, const char * __delim, char **__last);
+# 1529 "c:\\arduino\\hardware\\tools\\avr\\avr\\include\\avr\\pgmspace.h" 3
+extern size_t strlen_PF(uint_farptr_t src) __attribute__((__const__));
+# 1545 "c:\\arduino\\hardware\\tools\\avr\\avr\\include\\avr\\pgmspace.h" 3
+extern size_t strnlen_PF(uint_farptr_t src, size_t len) __attribute__((__const__));
+# 1560 "c:\\arduino\\hardware\\tools\\avr\\avr\\include\\avr\\pgmspace.h" 3
+extern void *memcpy_PF(void *dest, uint_farptr_t src, size_t len);
+# 1575 "c:\\arduino\\hardware\\tools\\avr\\avr\\include\\avr\\pgmspace.h" 3
+extern char *strcpy_PF(char *dest, uint_farptr_t src);
+# 1595 "c:\\arduino\\hardware\\tools\\avr\\avr\\include\\avr\\pgmspace.h" 3
+extern char *strncpy_PF(char *dest, uint_farptr_t src, size_t len);
+# 1611 "c:\\arduino\\hardware\\tools\\avr\\avr\\include\\avr\\pgmspace.h" 3
+extern char *strcat_PF(char *dest, uint_farptr_t src);
+# 1632 "c:\\arduino\\hardware\\tools\\avr\\avr\\include\\avr\\pgmspace.h" 3
+extern size_t strlcat_PF(char *dst, uint_farptr_t src, size_t siz);
+# 1649 "c:\\arduino\\hardware\\tools\\avr\\avr\\include\\avr\\pgmspace.h" 3
+extern char *strncat_PF(char *dest, uint_farptr_t src, size_t len);
+# 1665 "c:\\arduino\\hardware\\tools\\avr\\avr\\include\\avr\\pgmspace.h" 3
+extern int strcmp_PF(const char *s1, uint_farptr_t s2) __attribute__((__pure__));
+# 1682 "c:\\arduino\\hardware\\tools\\avr\\avr\\include\\avr\\pgmspace.h" 3
+extern int strncmp_PF(const char *s1, uint_farptr_t s2, size_t n) __attribute__((__pure__));
+# 1698 "c:\\arduino\\hardware\\tools\\avr\\avr\\include\\avr\\pgmspace.h" 3
+extern int strcasecmp_PF(const char *s1, uint_farptr_t s2) __attribute__((__pure__));
+# 1716 "c:\\arduino\\hardware\\tools\\avr\\avr\\include\\avr\\pgmspace.h" 3
+extern int strncasecmp_PF(const char *s1, uint_farptr_t s2, size_t n) __attribute__((__pure__));
+# 1732 "c:\\arduino\\hardware\\tools\\avr\\avr\\include\\avr\\pgmspace.h" 3
+extern char *strstr_PF(const char *s1, uint_farptr_t s2);
+# 1744 "c:\\arduino\\hardware\\tools\\avr\\avr\\include\\avr\\pgmspace.h" 3
+extern size_t strlcpy_PF(char *dst, uint_farptr_t src, size_t siz);
+# 1760 "c:\\arduino\\hardware\\tools\\avr\\avr\\include\\avr\\pgmspace.h" 3
+extern int memcmp_PF(const void *, uint_farptr_t, size_t) __attribute__((__pure__));
+# 1779 "c:\\arduino\\hardware\\tools\\avr\\avr\\include\\avr\\pgmspace.h" 3
+extern size_t __strlen_P(const char *) __attribute__((__const__));
+__attribute__((__always_inline__)) static __inline__ size_t strlen_P(const char * s);
+static __inline__ size_t strlen_P(const char *s) {
+  return __builtin_constant_p(__builtin_strlen(s))
+     ? __builtin_strlen(s) : __strlen_P(s);
+}
+
+
+
+}
+# 29 "C:\\Arduino/hardware/arduino/avr/cores/arduino/Arduino.h" 2
+
+# 1 "c:\\arduino\\hardware\\tools\\avr\\avr\\include\\avr\\interrupt.h" 1 3
+# 31 "C:\\Arduino/hardware/arduino/avr/cores/arduino/Arduino.h" 2
+
+# 1 "C:\\Arduino/hardware/arduino/avr/cores/arduino/binary.h" 1
+# 33 "C:\\Arduino/hardware/arduino/avr/cores/arduino/Arduino.h" 2
+
+
+
+# 35 "C:\\Arduino/hardware/arduino/avr/cores/arduino/Arduino.h"
+extern "C"{
+
+
+void yield(void);
+# 122 "C:\\Arduino/hardware/arduino/avr/cores/arduino/Arduino.h"
+typedef unsigned int word;
+
+
+
+typedef bool boolean;
+typedef uint8_t byte;
+
+void init(void);
+void initVariant(void);
+
+int atexit(void (*func)()) __attribute__((weak));
+
+void pinMode(uint8_t pin, uint8_t mode);
+void digitalWrite(uint8_t pin, uint8_t val);
+int digitalRead(uint8_t pin);
+int analogRead(uint8_t pin);
+void analogReference(uint8_t mode);
+void analogWrite(uint8_t pin, int val);
+
+unsigned long millis(void);
+unsigned long micros(void);
+void delay(unsigned long ms);
+void delayMicroseconds(unsigned int us);
+unsigned long pulseIn(uint8_t pin, uint8_t state, unsigned long timeout);
+unsigned long pulseInLong(uint8_t pin, uint8_t state, unsigned long timeout);
+
+void shiftOut(uint8_t dataPin, uint8_t clockPin, uint8_t bitOrder, uint8_t val);
+uint8_t shiftIn(uint8_t dataPin, uint8_t clockPin, uint8_t bitOrder);
+
+void attachInterrupt(uint8_t interruptNum, void (*userFunc)(void), int mode);
+void detachInterrupt(uint8_t interruptNum);
+
+void setup(void);
+void loop(void);
+# 164 "C:\\Arduino/hardware/arduino/avr/cores/arduino/Arduino.h"
+extern const uint16_t 
+# 164 "C:\\Arduino/hardware/arduino/avr/cores/arduino/Arduino.h" 3
+                     __attribute__((__progmem__)) 
+# 164 "C:\\Arduino/hardware/arduino/avr/cores/arduino/Arduino.h"
+                             port_to_mode_PGM[];
+extern const uint16_t 
+# 165 "C:\\Arduino/hardware/arduino/avr/cores/arduino/Arduino.h" 3
+                     __attribute__((__progmem__)) 
+# 165 "C:\\Arduino/hardware/arduino/avr/cores/arduino/Arduino.h"
+                             port_to_input_PGM[];
+extern const uint16_t 
+# 166 "C:\\Arduino/hardware/arduino/avr/cores/arduino/Arduino.h" 3
+                     __attribute__((__progmem__)) 
+# 166 "C:\\Arduino/hardware/arduino/avr/cores/arduino/Arduino.h"
+                             port_to_output_PGM[];
+
+extern const uint8_t 
+# 168 "C:\\Arduino/hardware/arduino/avr/cores/arduino/Arduino.h" 3
+                    __attribute__((__progmem__)) 
+# 168 "C:\\Arduino/hardware/arduino/avr/cores/arduino/Arduino.h"
+                            digital_pin_to_port_PGM[];
+
+extern const uint8_t 
+# 170 "C:\\Arduino/hardware/arduino/avr/cores/arduino/Arduino.h" 3
+                    __attribute__((__progmem__)) 
+# 170 "C:\\Arduino/hardware/arduino/avr/cores/arduino/Arduino.h"
+                            digital_pin_to_bit_mask_PGM[];
+extern const uint8_t 
+# 171 "C:\\Arduino/hardware/arduino/avr/cores/arduino/Arduino.h" 3
+                    __attribute__((__progmem__)) 
+# 171 "C:\\Arduino/hardware/arduino/avr/cores/arduino/Arduino.h"
+                            digital_pin_to_timer_PGM[];
+# 227 "C:\\Arduino/hardware/arduino/avr/cores/arduino/Arduino.h"
+}
+
+
+
+# 1 "C:\\Arduino/hardware/arduino/avr/cores/arduino/WCharacter.h" 1
+# 23 "C:\\Arduino/hardware/arduino/avr/cores/arduino/WCharacter.h"
+# 1 "c:\\arduino\\hardware\\tools\\avr\\avr\\include\\ctype.h" 1 3
+# 48 "c:\\arduino\\hardware\\tools\\avr\\avr\\include\\ctype.h" 3
+
+# 48 "c:\\arduino\\hardware\\tools\\avr\\avr\\include\\ctype.h" 3
+extern "C" {
+# 74 "c:\\arduino\\hardware\\tools\\avr\\avr\\include\\ctype.h" 3
+extern int isalnum(int __c) __attribute__((__const__));
+
+
+
+
+
+
+extern int isalpha(int __c) __attribute__((__const__));
+
+
+
+
+
+
+extern int isascii(int __c) __attribute__((__const__));
+
+
+
+
+
+extern int isblank(int __c) __attribute__((__const__));
+
+
+
+
+
+extern int iscntrl(int __c) __attribute__((__const__));
+
+
+
+
+
+extern int isdigit(int __c) __attribute__((__const__));
+
+
+
+
+
+extern int isgraph(int __c) __attribute__((__const__));
+
+
+
+
+
+extern int islower(int __c) __attribute__((__const__));
+
+
+
+
+
+extern int isprint(int __c) __attribute__((__const__));
+
+
+
+
+
+
+extern int ispunct(int __c) __attribute__((__const__));
+
+
+
+
+
+
+
+extern int isspace(int __c) __attribute__((__const__));
+
+
+
+
+
+extern int isupper(int __c) __attribute__((__const__));
+
+
+
+
+
+
+extern int isxdigit(int __c) __attribute__((__const__));
+# 173 "c:\\arduino\\hardware\\tools\\avr\\avr\\include\\ctype.h" 3
+extern int toascii(int __c) __attribute__((__const__));
+
+
+
+
+
+extern int tolower(int __c) __attribute__((__const__));
+
+
+
+
+
+extern int toupper(int __c) __attribute__((__const__));
+
+
+
+
+}
+# 24 "C:\\Arduino/hardware/arduino/avr/cores/arduino/WCharacter.h" 2
+
+
+
+# 26 "C:\\Arduino/hardware/arduino/avr/cores/arduino/WCharacter.h"
+inline boolean isAlphaNumeric(int c) __attribute__((always_inline));
+inline boolean isAlpha(int c) __attribute__((always_inline));
+inline boolean isAscii(int c) __attribute__((always_inline));
+inline boolean isWhitespace(int c) __attribute__((always_inline));
+inline boolean isControl(int c) __attribute__((always_inline));
+inline boolean isDigit(int c) __attribute__((always_inline));
+inline boolean isGraph(int c) __attribute__((always_inline));
+inline boolean isLowerCase(int c) __attribute__((always_inline));
+inline boolean isPrintable(int c) __attribute__((always_inline));
+inline boolean isPunct(int c) __attribute__((always_inline));
+inline boolean isSpace(int c) __attribute__((always_inline));
+inline boolean isUpperCase(int c) __attribute__((always_inline));
+inline boolean isHexadecimalDigit(int c) __attribute__((always_inline));
+inline int toAscii(int c) __attribute__((always_inline));
+inline int toLowerCase(int c) __attribute__((always_inline));
+inline int toUpperCase(int c)__attribute__((always_inline));
+
+
+
+
+inline boolean isAlphaNumeric(int c)
+{
+  return ( isalnum(c) == 0 ? false : true);
+}
+
+
+
+
+inline boolean isAlpha(int c)
+{
+  return ( isalpha(c) == 0 ? false : true);
+}
+
+
+
+
+inline boolean isAscii(int c)
+{
+  return ( isascii (c) == 0 ? false : true);
+}
+
+
+
+inline boolean isWhitespace(int c)
+{
+  return ( isblank (c) == 0 ? false : true);
+}
+
+
+
+inline boolean isControl(int c)
+{
+  return ( iscntrl (c) == 0 ? false : true);
+}
+
+
+
+inline boolean isDigit(int c)
+{
+  return ( isdigit (c) == 0 ? false : true);
+}
+
+
+
+inline boolean isGraph(int c)
+{
+  return ( isgraph (c) == 0 ? false : true);
+}
+
+
+
+inline boolean isLowerCase(int c)
+{
+  return (islower (c) == 0 ? false : true);
+}
+
+
+
+inline boolean isPrintable(int c)
+{
+  return ( isprint (c) == 0 ? false : true);
+}
+
+
+
+
+inline boolean isPunct(int c)
+{
+  return ( ispunct (c) == 0 ? false : true);
+}
+
+
+
+
+
+inline boolean isSpace(int c)
+{
+  return ( isspace (c) == 0 ? false : true);
+}
+
+
+
+inline boolean isUpperCase(int c)
+{
+  return ( isupper (c) == 0 ? false : true);
+}
+
+
+
+
+inline boolean isHexadecimalDigit(int c)
+{
+  return ( isxdigit (c) == 0 ? false : true);
+}
+
+
+
+
+inline int toAscii(int c)
+{
+  return toascii (c);
+}
+# 156 "C:\\Arduino/hardware/arduino/avr/cores/arduino/WCharacter.h"
+inline int toLowerCase(int c)
+{
+  return tolower (c);
+}
+
+
+
+inline int toUpperCase(int c)
+{
+  return toupper (c);
+}
+# 232 "C:\\Arduino/hardware/arduino/avr/cores/arduino/Arduino.h" 2
+# 1 "C:\\Arduino/hardware/arduino/avr/cores/arduino/WString.h" 1
+# 37 "C:\\Arduino/hardware/arduino/avr/cores/arduino/WString.h"
+class __FlashStringHelper;
+
+
+
+
+class StringSumHelper;
+
+
+class String
+{
+
+
+
+ typedef void (String::*StringIfHelperType)() const;
+ void StringIfHelper() const {}
+
+public:
+
+
+
+
+
+ String(const char *cstr = "");
+ String(const String &str);
+ String(const __FlashStringHelper *str);
+
+ String(String &&rval);
+ String(StringSumHelper &&rval);
+
+ explicit String(char c);
+ explicit String(unsigned char, unsigned char base=10);
+ explicit String(int, unsigned char base=10);
+ explicit String(unsigned int, unsigned char base=10);
+ explicit String(long, unsigned char base=10);
+ explicit String(unsigned long, unsigned char base=10);
+ explicit String(float, unsigned char decimalPlaces=2);
+ explicit String(double, unsigned char decimalPlaces=2);
+ ~String(void);
+
+
+
+
+
+ unsigned char reserve(unsigned int size);
+ inline unsigned int length(void) const {return len;}
+
+
+
+
+ String & operator = (const String &rhs);
+ String & operator = (const char *cstr);
+ String & operator = (const __FlashStringHelper *str);
+
+ String & operator = (String &&rval);
+ String & operator = (StringSumHelper &&rval);
+
+
+
+
+
+
+
+ unsigned char concat(const String &str);
+ unsigned char concat(const char *cstr);
+ unsigned char concat(char c);
+ unsigned char concat(unsigned char c);
+ unsigned char concat(int num);
+ unsigned char concat(unsigned int num);
+ unsigned char concat(long num);
+ unsigned char concat(unsigned long num);
+ unsigned char concat(float num);
+ unsigned char concat(double num);
+ unsigned char concat(const __FlashStringHelper * str);
+
+
+
+ String & operator += (const String &rhs) {concat(rhs); return (*this);}
+ String & operator += (const char *cstr) {concat(cstr); return (*this);}
+ String & operator += (char c) {concat(c); return (*this);}
+ String & operator += (unsigned char num) {concat(num); return (*this);}
+ String & operator += (int num) {concat(num); return (*this);}
+ String & operator += (unsigned int num) {concat(num); return (*this);}
+ String & operator += (long num) {concat(num); return (*this);}
+ String & operator += (unsigned long num) {concat(num); return (*this);}
+ String & operator += (float num) {concat(num); return (*this);}
+ String & operator += (double num) {concat(num); return (*this);}
+ String & operator += (const __FlashStringHelper *str){concat(str); return (*this);}
+
+ friend StringSumHelper & operator + (const StringSumHelper &lhs, const String &rhs);
+ friend StringSumHelper & operator + (const StringSumHelper &lhs, const char *cstr);
+ friend StringSumHelper & operator + (const StringSumHelper &lhs, char c);
+ friend StringSumHelper & operator + (const StringSumHelper &lhs, unsigned char num);
+ friend StringSumHelper & operator + (const StringSumHelper &lhs, int num);
+ friend StringSumHelper & operator + (const StringSumHelper &lhs, unsigned int num);
+ friend StringSumHelper & operator + (const StringSumHelper &lhs, long num);
+ friend StringSumHelper & operator + (const StringSumHelper &lhs, unsigned long num);
+ friend StringSumHelper & operator + (const StringSumHelper &lhs, float num);
+ friend StringSumHelper & operator + (const StringSumHelper &lhs, double num);
+ friend StringSumHelper & operator + (const StringSumHelper &lhs, const __FlashStringHelper *rhs);
+
+
+ operator StringIfHelperType() const { return buffer ? &String::StringIfHelper : 0; }
+ int compareTo(const String &s) const;
+ unsigned char equals(const String &s) const;
+ unsigned char equals(const char *cstr) const;
+ unsigned char operator == (const String &rhs) const {return equals(rhs);}
+ unsigned char operator == (const char *cstr) const {return equals(cstr);}
+ unsigned char operator != (const String &rhs) const {return !equals(rhs);}
+ unsigned char operator != (const char *cstr) const {return !equals(cstr);}
+ unsigned char operator < (const String &rhs) const;
+ unsigned char operator > (const String &rhs) const;
+ unsigned char operator <= (const String &rhs) const;
+ unsigned char operator >= (const String &rhs) const;
+ unsigned char equalsIgnoreCase(const String &s) const;
+ unsigned char startsWith( const String &prefix) const;
+ unsigned char startsWith(const String &prefix, unsigned int offset) const;
+ unsigned char endsWith(const String &suffix) const;
+
+
+ char charAt(unsigned int index) const;
+ void setCharAt(unsigned int index, char c);
+ char operator [] (unsigned int index) const;
+ char& operator [] (unsigned int index);
+ void getBytes(unsigned char *buf, unsigned int bufsize, unsigned int index=0) const;
+ void toCharArray(char *buf, unsigned int bufsize, unsigned int index=0) const
+  { getBytes((unsigned char *)buf, bufsize, index); }
+ const char* c_str() const { return buffer; }
+ char* begin() { return buffer; }
+ char* end() { return buffer + length(); }
+ const char* begin() const { return c_str(); }
+ const char* end() const { return c_str() + length(); }
+
+
+ int indexOf( char ch ) const;
+ int indexOf( char ch, unsigned int fromIndex ) const;
+ int indexOf( const String &str ) const;
+ int indexOf( const String &str, unsigned int fromIndex ) const;
+ int lastIndexOf( char ch ) const;
+ int lastIndexOf( char ch, unsigned int fromIndex ) const;
+ int lastIndexOf( const String &str ) const;
+ int lastIndexOf( const String &str, unsigned int fromIndex ) const;
+ String substring( unsigned int beginIndex ) const { return substring(beginIndex, len); };
+ String substring( unsigned int beginIndex, unsigned int endIndex ) const;
+
+
+ void replace(char find, char replace);
+ void replace(const String& find, const String& replace);
+ void remove(unsigned int index);
+ void remove(unsigned int index, unsigned int count);
+ void toLowerCase(void);
+ void toUpperCase(void);
+ void trim(void);
+
+
+ long toInt(void) const;
+ float toFloat(void) const;
+ double toDouble(void) const;
+
+protected:
+ char *buffer;
+ unsigned int capacity;
+ unsigned int len;
+protected:
+ void init(void);
+ void invalidate(void);
+ unsigned char changeBuffer(unsigned int maxStrLen);
+ unsigned char concat(const char *cstr, unsigned int length);
+
+
+ String & copy(const char *cstr, unsigned int length);
+ String & copy(const __FlashStringHelper *pstr, unsigned int length);
+
+ void move(String &rhs);
+
+};
+
+class StringSumHelper : public String
+{
+public:
+ StringSumHelper(const String &s) : String(s) {}
+ StringSumHelper(const char *p) : String(p) {}
+ StringSumHelper(char c) : String(c) {}
+ StringSumHelper(unsigned char num) : String(num) {}
+ StringSumHelper(int num) : String(num) {}
+ StringSumHelper(unsigned int num) : String(num) {}
+ StringSumHelper(long num) : String(num) {}
+ StringSumHelper(unsigned long num) : String(num) {}
+ StringSumHelper(float num) : String(num) {}
+ StringSumHelper(double num) : String(num) {}
+};
+# 233 "C:\\Arduino/hardware/arduino/avr/cores/arduino/Arduino.h" 2
+# 1 "C:\\Arduino/hardware/arduino/avr/cores/arduino/HardwareSerial.h" 1
+# 29 "C:\\Arduino/hardware/arduino/avr/cores/arduino/HardwareSerial.h"
+# 1 "C:\\Arduino/hardware/arduino/avr/cores/arduino/Stream.h" 1
+# 26 "C:\\Arduino/hardware/arduino/avr/cores/arduino/Stream.h"
+# 1 "C:\\Arduino/hardware/arduino/avr/cores/arduino/Print.h" 1
+# 24 "C:\\Arduino/hardware/arduino/avr/cores/arduino/Print.h"
+# 1 "c:\\arduino\\hardware\\tools\\avr\\avr\\include\\stdio.h" 1 3
+# 45 "c:\\arduino\\hardware\\tools\\avr\\avr\\include\\stdio.h" 3
+# 1 "c:\\arduino\\hardware\\tools\\avr\\lib\\gcc\\avr\\7.3.0\\include\\stdarg.h" 1 3 4
+# 40 "c:\\arduino\\hardware\\tools\\avr\\lib\\gcc\\avr\\7.3.0\\include\\stdarg.h" 3 4
+
+# 40 "c:\\arduino\\hardware\\tools\\avr\\lib\\gcc\\avr\\7.3.0\\include\\stdarg.h" 3 4
+typedef __builtin_va_list __gnuc_va_list;
+# 99 "c:\\arduino\\hardware\\tools\\avr\\lib\\gcc\\avr\\7.3.0\\include\\stdarg.h" 3 4
+typedef __gnuc_va_list va_list;
+# 46 "c:\\arduino\\hardware\\tools\\avr\\avr\\include\\stdio.h" 2 3
+
+
+
+
+# 1 "c:\\arduino\\hardware\\tools\\avr\\lib\\gcc\\avr\\7.3.0\\include\\stddef.h" 1 3 4
+# 51 "c:\\arduino\\hardware\\tools\\avr\\avr\\include\\stdio.h" 2 3
+# 244 "c:\\arduino\\hardware\\tools\\avr\\avr\\include\\stdio.h" 3
+struct __file {
+ char *buf;
+ unsigned char unget;
+ uint8_t flags;
+# 263 "c:\\arduino\\hardware\\tools\\avr\\avr\\include\\stdio.h" 3
+ int size;
+ int len;
+ int (*put)(char, struct __file *);
+ int (*get)(struct __file *);
+ void *udata;
+};
+# 277 "c:\\arduino\\hardware\\tools\\avr\\avr\\include\\stdio.h" 3
+typedef struct __file FILE;
+# 399 "c:\\arduino\\hardware\\tools\\avr\\avr\\include\\stdio.h" 3
+extern "C" {
+
+
+
+
+
+
+
+extern struct __file *__iob[];
+# 419 "c:\\arduino\\hardware\\tools\\avr\\avr\\include\\stdio.h" 3
+extern FILE *fdevopen(int (*__put)(char, FILE*), int (*__get)(FILE*));
+# 436 "c:\\arduino\\hardware\\tools\\avr\\avr\\include\\stdio.h" 3
+extern int fclose(FILE *__stream);
+# 610 "c:\\arduino\\hardware\\tools\\avr\\avr\\include\\stdio.h" 3
+extern int vfprintf(FILE *__stream, const char *__fmt, va_list __ap);
+
+
+
+
+
+extern int vfprintf_P(FILE *__stream, const char *__fmt, va_list __ap);
+
+
+
+
+
+
+extern int fputc(int __c, FILE *__stream);
+
+
+
+
+extern int putc(int __c, FILE *__stream);
+
+
+extern int putchar(int __c);
+# 651 "c:\\arduino\\hardware\\tools\\avr\\avr\\include\\stdio.h" 3
+extern int printf(const char *__fmt, ...);
+
+
+
+
+
+extern int printf_P(const char *__fmt, ...);
+
+
+
+
+
+
+
+extern int vprintf(const char *__fmt, va_list __ap);
+
+
+
+
+
+extern int sprintf(char *__s, const char *__fmt, ...);
+
+
+
+
+
+extern int sprintf_P(char *__s, const char *__fmt, ...);
+# 687 "c:\\arduino\\hardware\\tools\\avr\\avr\\include\\stdio.h" 3
+extern int snprintf(char *__s, size_t __n, const char *__fmt, ...);
+
+
+
+
+
+extern int snprintf_P(char *__s, size_t __n, const char *__fmt, ...);
+
+
+
+
+
+extern int vsprintf(char *__s, const char *__fmt, va_list ap);
+
+
+
+
+
+extern int vsprintf_P(char *__s, const char *__fmt, va_list ap);
+# 715 "c:\\arduino\\hardware\\tools\\avr\\avr\\include\\stdio.h" 3
+extern int vsnprintf(char *__s, size_t __n, const char *__fmt, va_list ap);
+
+
+
+
+
+extern int vsnprintf_P(char *__s, size_t __n, const char *__fmt, va_list ap);
+
+
+
+
+extern int fprintf(FILE *__stream, const char *__fmt, ...);
+
+
+
+
+
+extern int fprintf_P(FILE *__stream, const char *__fmt, ...);
+
+
+
+
+
+
+extern int fputs(const char *__str, FILE *__stream);
+
+
+
+
+extern int fputs_P(const char *__str, FILE *__stream);
+
+
+
+
+
+extern int puts(const char *__str);
+
+
+
+
+extern int puts_P(const char *__str);
+# 764 "c:\\arduino\\hardware\\tools\\avr\\avr\\include\\stdio.h" 3
+extern size_t fwrite(const void *__ptr, size_t __size, size_t __nmemb,
+         FILE *__stream);
+
+
+
+
+
+
+
+extern int fgetc(FILE *__stream);
+
+
+
+
+extern int getc(FILE *__stream);
+
+
+extern int getchar(void);
+# 812 "c:\\arduino\\hardware\\tools\\avr\\avr\\include\\stdio.h" 3
+extern int ungetc(int __c, FILE *__stream);
+# 824 "c:\\arduino\\hardware\\tools\\avr\\avr\\include\\stdio.h" 3
+extern char *fgets(char *__str, int __size, FILE *__stream);
+
+
+
+
+
+
+extern char *gets(char *__str);
+# 842 "c:\\arduino\\hardware\\tools\\avr\\avr\\include\\stdio.h" 3
+extern size_t fread(void *__ptr, size_t __size, size_t __nmemb,
+        FILE *__stream);
+
+
+
+
+extern void clearerr(FILE *__stream);
+# 859 "c:\\arduino\\hardware\\tools\\avr\\avr\\include\\stdio.h" 3
+extern int feof(FILE *__stream);
+# 870 "c:\\arduino\\hardware\\tools\\avr\\avr\\include\\stdio.h" 3
+extern int ferror(FILE *__stream);
+
+
+
+
+
+
+extern int vfscanf(FILE *__stream, const char *__fmt, va_list __ap);
+
+
+
+
+extern int vfscanf_P(FILE *__stream, const char *__fmt, va_list __ap);
+
+
+
+
+
+
+
+extern int fscanf(FILE *__stream, const char *__fmt, ...);
+
+
+
+
+extern int fscanf_P(FILE *__stream, const char *__fmt, ...);
+
+
+
+
+
+
+extern int scanf(const char *__fmt, ...);
+
+
+
+
+extern int scanf_P(const char *__fmt, ...);
+
+
+
+
+
+
+
+extern int vscanf(const char *__fmt, va_list __ap);
+
+
+
+
+
+
+
+extern int sscanf(const char *__buf, const char *__fmt, ...);
+
+
+
+
+extern int sscanf_P(const char *__buf, const char *__fmt, ...);
+# 940 "c:\\arduino\\hardware\\tools\\avr\\avr\\include\\stdio.h" 3
+static __inline__ int fflush(FILE *stream __attribute__((unused)))
+{
+ return 0;
+}
+
+
+
+
+
+
+__extension__ typedef long long fpos_t;
+extern int fgetpos(FILE *stream, fpos_t *pos);
+extern FILE *fopen(const char *path, const char *mode);
+extern FILE *freopen(const char *path, const char *mode, FILE *stream);
+extern FILE *fdopen(int, const char *);
+extern int fseek(FILE *stream, long offset, int whence);
+extern int fsetpos(FILE *stream, fpos_t *pos);
+extern long ftell(FILE *stream);
+extern int fileno(FILE *);
+extern void perror(const char *s);
+extern int remove(const char *pathname);
+extern int rename(const char *oldpath, const char *newpath);
+extern void rewind(FILE *stream);
+extern void setbuf(FILE *stream, char *buf);
+extern int setvbuf(FILE *stream, char *buf, int mode, size_t size);
+extern FILE *tmpfile(void);
+extern char *tmpnam (char *s);
+
+
+
+}
+# 25 "C:\\Arduino/hardware/arduino/avr/cores/arduino/Print.h" 2
+
+
+# 1 "C:\\Arduino/hardware/arduino/avr/cores/arduino/Printable.h" 1
+# 25 "C:\\Arduino/hardware/arduino/avr/cores/arduino/Printable.h"
+
+# 25 "C:\\Arduino/hardware/arduino/avr/cores/arduino/Printable.h"
+class Print;
+
+
+
+
+
+
+
+class Printable
+{
+  public:
+    virtual size_t printTo(Print& p) const = 0;
+};
+# 28 "C:\\Arduino/hardware/arduino/avr/cores/arduino/Print.h" 2
+# 37 "C:\\Arduino/hardware/arduino/avr/cores/arduino/Print.h"
+class Print
+{
+  private:
+    int write_error;
+    size_t printNumber(unsigned long, uint8_t);
+    size_t printFloat(double, uint8_t);
+  protected:
+    void setWriteError(int err = 1) { write_error = err; }
+  public:
+    Print() : write_error(0) {}
+
+    int getWriteError() { return write_error; }
+    void clearWriteError() { setWriteError(0); }
+
+    virtual size_t write(uint8_t) = 0;
+    size_t write(const char *str) {
+      if (str == 
+# 53 "C:\\Arduino/hardware/arduino/avr/cores/arduino/Print.h" 3 4
+                __null
+# 53 "C:\\Arduino/hardware/arduino/avr/cores/arduino/Print.h"
+                    ) return 0;
+      return write((const uint8_t *)str, strlen(str));
+    }
+    virtual size_t write(const uint8_t *buffer, size_t size);
+    size_t write(const char *buffer, size_t size) {
+      return write((const uint8_t *)buffer, size);
+    }
+
+
+
+    virtual int availableForWrite() { return 0; }
+
+    size_t print(const __FlashStringHelper *);
+    size_t print(const String &);
+    size_t print(const char[]);
+    size_t print(char);
+    size_t print(unsigned char, int = 10);
+    size_t print(int, int = 10);
+    size_t print(unsigned int, int = 10);
+    size_t print(long, int = 10);
+    size_t print(unsigned long, int = 10);
+    size_t print(double, int = 2);
+    size_t print(const Printable&);
+
+    size_t println(const __FlashStringHelper *);
+    size_t println(const String &s);
+    size_t println(const char[]);
+    size_t println(char);
+    size_t println(unsigned char, int = 10);
+    size_t println(int, int = 10);
+    size_t println(unsigned int, int = 10);
+    size_t println(long, int = 10);
+    size_t println(unsigned long, int = 10);
+    size_t println(double, int = 2);
+    size_t println(const Printable&);
+    size_t println(void);
+
+    virtual void flush() { }
+};
+# 27 "C:\\Arduino/hardware/arduino/avr/cores/arduino/Stream.h" 2
+# 41 "C:\\Arduino/hardware/arduino/avr/cores/arduino/Stream.h"
+enum LookaheadMode{
+    SKIP_ALL,
+    SKIP_NONE,
+    SKIP_WHITESPACE
+};
+
+
+
+class Stream : public Print
+{
+  protected:
+    unsigned long _timeout;
+    unsigned long _startMillis;
+    int timedRead();
+    int timedPeek();
+    int peekNextDigit(LookaheadMode lookahead, bool detectDecimal);
+
+  public:
+    virtual int available() = 0;
+    virtual int read() = 0;
+    virtual int peek() = 0;
+
+    Stream() {_timeout=1000;}
+
+
+
+  void setTimeout(unsigned long timeout);
+  unsigned long getTimeout(void) { return _timeout; }
+
+  bool find(char *target);
+  bool find(uint8_t *target) { return find ((char *)target); }
+
+
+  bool find(char *target, size_t length);
+  bool find(uint8_t *target, size_t length) { return find ((char *)target, length); }
+
+
+  bool find(char target) { return find (&target, 1); }
+
+  bool findUntil(char *target, char *terminator);
+  bool findUntil(uint8_t *target, char *terminator) { return findUntil((char *)target, terminator); }
+
+  bool findUntil(char *target, size_t targetLen, char *terminate, size_t termLen);
+  bool findUntil(uint8_t *target, size_t targetLen, char *terminate, size_t termLen) {return findUntil((char *)target, targetLen, terminate, termLen); }
+
+  long parseInt(LookaheadMode lookahead = SKIP_ALL, char ignore = '\x01');
+
+
+
+
+
+
+  float parseFloat(LookaheadMode lookahead = SKIP_ALL, char ignore = '\x01');
+
+
+  size_t readBytes( char *buffer, size_t length);
+  size_t readBytes( uint8_t *buffer, size_t length) { return readBytes((char *)buffer, length); }
+
+
+
+  size_t readBytesUntil( char terminator, char *buffer, size_t length);
+  size_t readBytesUntil( char terminator, uint8_t *buffer, size_t length) { return readBytesUntil(terminator, (char *)buffer, length); }
+
+
+
+
+  String readString();
+  String readStringUntil(char terminator);
+
+  protected:
+  long parseInt(char ignore) { return parseInt(SKIP_ALL, ignore); }
+  float parseFloat(char ignore) { return parseFloat(SKIP_ALL, ignore); }
+
+
+
+
+  struct MultiTarget {
+    const char *str;
+    size_t len;
+    size_t index;
+  };
+
+
+
+  int findMulti(struct MultiTarget *targets, int tCount);
+};
+# 30 "C:\\Arduino/hardware/arduino/avr/cores/arduino/HardwareSerial.h" 2
+# 59 "C:\\Arduino/hardware/arduino/avr/cores/arduino/HardwareSerial.h"
+typedef uint8_t tx_buffer_index_t;
+
+
+
+
+typedef uint8_t rx_buffer_index_t;
+# 93 "C:\\Arduino/hardware/arduino/avr/cores/arduino/HardwareSerial.h"
+class HardwareSerial : public Stream
+{
+  protected:
+    volatile uint8_t * const _ubrrh;
+    volatile uint8_t * const _ubrrl;
+    volatile uint8_t * const _ucsra;
+    volatile uint8_t * const _ucsrb;
+    volatile uint8_t * const _ucsrc;
+    volatile uint8_t * const _udr;
+
+    bool _written;
+
+    volatile rx_buffer_index_t _rx_buffer_head;
+    volatile rx_buffer_index_t _rx_buffer_tail;
+    volatile tx_buffer_index_t _tx_buffer_head;
+    volatile tx_buffer_index_t _tx_buffer_tail;
+
+
+
+
+    unsigned char _rx_buffer[64];
+    unsigned char _tx_buffer[64];
+
+  public:
+    inline HardwareSerial(
+      volatile uint8_t *ubrrh, volatile uint8_t *ubrrl,
+      volatile uint8_t *ucsra, volatile uint8_t *ucsrb,
+      volatile uint8_t *ucsrc, volatile uint8_t *udr);
+    void begin(unsigned long baud) { begin(baud, 0x06); }
+    void begin(unsigned long, uint8_t);
+    void end();
+    virtual int available(void);
+    virtual int peek(void);
+    virtual int read(void);
+    virtual int availableForWrite(void);
+    virtual void flush(void);
+    virtual size_t write(uint8_t);
+    inline size_t write(unsigned long n) { return write((uint8_t)n); }
+    inline size_t write(long n) { return write((uint8_t)n); }
+    inline size_t write(unsigned int n) { return write((uint8_t)n); }
+    inline size_t write(int n) { return write((uint8_t)n); }
+    using Print::write;
+    operator bool() { return true; }
+
+
+    inline void _rx_complete_irq(void);
+    void _tx_udr_empty_irq(void);
+};
+
+
+  extern HardwareSerial Serial;
+# 159 "C:\\Arduino/hardware/arduino/avr/cores/arduino/HardwareSerial.h"
+extern void serialEventRun(void) __attribute__((weak));
+# 234 "C:\\Arduino/hardware/arduino/avr/cores/arduino/Arduino.h" 2
+# 1 "C:\\Arduino/hardware/arduino/avr/cores/arduino/USBAPI.h" 1
+# 25 "C:\\Arduino/hardware/arduino/avr/cores/arduino/USBAPI.h"
+# 1 "c:\\arduino\\hardware\\tools\\avr\\avr\\include\\avr\\eeprom.h" 1 3
+# 50 "c:\\arduino\\hardware\\tools\\avr\\avr\\include\\avr\\eeprom.h" 3
+# 1 "c:\\arduino\\hardware\\tools\\avr\\lib\\gcc\\avr\\7.3.0\\include\\stddef.h" 1 3 4
+# 149 "c:\\arduino\\hardware\\tools\\avr\\lib\\gcc\\avr\\7.3.0\\include\\stddef.h" 3 4
+
+# 149 "c:\\arduino\\hardware\\tools\\avr\\lib\\gcc\\avr\\7.3.0\\include\\stddef.h" 3 4
+typedef int ptrdiff_t;
+# 426 "c:\\arduino\\hardware\\tools\\avr\\lib\\gcc\\avr\\7.3.0\\include\\stddef.h" 3 4
+typedef struct {
+  long long __max_align_ll __attribute__((__aligned__(__alignof__(long long))));
+  long double __max_align_ld __attribute__((__aligned__(__alignof__(long double))));
+# 437 "c:\\arduino\\hardware\\tools\\avr\\lib\\gcc\\avr\\7.3.0\\include\\stddef.h" 3 4
+} max_align_t;
+
+
+
+
+
+
+  typedef decltype(nullptr) nullptr_t;
+# 51 "c:\\arduino\\hardware\\tools\\avr\\avr\\include\\avr\\eeprom.h" 2 3
+# 92 "c:\\arduino\\hardware\\tools\\avr\\avr\\include\\avr\\eeprom.h" 3
+extern "C" {
+# 139 "c:\\arduino\\hardware\\tools\\avr\\avr\\include\\avr\\eeprom.h" 3
+uint8_t eeprom_read_byte (const uint8_t *__p) __attribute__((__pure__));
+
+
+
+
+uint16_t eeprom_read_word (const uint16_t *__p) __attribute__((__pure__));
+
+
+
+
+uint32_t eeprom_read_dword (const uint32_t *__p) __attribute__((__pure__));
+
+
+
+
+float eeprom_read_float (const float *__p) __attribute__((__pure__));
+
+
+
+
+
+void eeprom_read_block (void *__dst, const void *__src, size_t __n);
+
+
+
+
+
+void eeprom_write_byte (uint8_t *__p, uint8_t __value);
+
+
+
+
+void eeprom_write_word (uint16_t *__p, uint16_t __value);
+
+
+
+
+void eeprom_write_dword (uint32_t *__p, uint32_t __value);
+
+
+
+
+void eeprom_write_float (float *__p, float __value);
+
+
+
+
+
+void eeprom_write_block (const void *__src, void *__dst, size_t __n);
+
+
+
+
+
+void eeprom_update_byte (uint8_t *__p, uint8_t __value);
+
+
+
+
+void eeprom_update_word (uint16_t *__p, uint16_t __value);
+
+
+
+
+void eeprom_update_dword (uint32_t *__p, uint32_t __value);
+
+
+
+
+void eeprom_update_float (float *__p, float __value);
+
+
+
+
+
+void eeprom_update_block (const void *__src, void *__dst, size_t __n);
+# 243 "c:\\arduino\\hardware\\tools\\avr\\avr\\include\\avr\\eeprom.h" 3
+}
+# 26 "C:\\Arduino/hardware/arduino/avr/cores/arduino/USBAPI.h" 2
+
+# 1 "c:\\arduino\\hardware\\tools\\avr\\avr\\include\\util\\delay.h" 1 3
+# 45 "c:\\arduino\\hardware\\tools\\avr\\avr\\include\\util\\delay.h" 3
+# 1 "c:\\arduino\\hardware\\tools\\avr\\avr\\include\\util\\delay_basic.h" 1 3
+# 40 "c:\\arduino\\hardware\\tools\\avr\\avr\\include\\util\\delay_basic.h" 3
+static __inline__ void _delay_loop_1(uint8_t __count) __attribute__((__always_inline__));
+static __inline__ void _delay_loop_2(uint16_t __count) __attribute__((__always_inline__));
+# 80 "c:\\arduino\\hardware\\tools\\avr\\avr\\include\\util\\delay_basic.h" 3
+void
+_delay_loop_1(uint8_t __count)
+{
+ __asm__ volatile (
+  "1: dec %0" "\n\t"
+  "brne 1b"
+  : "=r" (__count)
+  : "0" (__count)
+ );
+}
+# 102 "c:\\arduino\\hardware\\tools\\avr\\avr\\include\\util\\delay_basic.h" 3
+void
+_delay_loop_2(uint16_t __count)
+{
+ __asm__ volatile (
+  "1: sbiw %0,1" "\n\t"
+  "brne 1b"
+  : "=w" (__count)
+  : "0" (__count)
+ );
+}
+# 46 "c:\\arduino\\hardware\\tools\\avr\\avr\\include\\util\\delay.h" 2 3
+# 86 "c:\\arduino\\hardware\\tools\\avr\\avr\\include\\util\\delay.h" 3
+static __inline__ void _delay_us(double __us) __attribute__((__always_inline__));
+static __inline__ void _delay_ms(double __ms) __attribute__((__always_inline__));
+# 165 "c:\\arduino\\hardware\\tools\\avr\\avr\\include\\util\\delay.h" 3
+void
+_delay_ms(double __ms)
+{
+ double __tmp ;
+
+
+
+ uint32_t __ticks_dc;
+ extern void __builtin_avr_delay_cycles(unsigned long);
+ __tmp = ((
+# 174 "c:\\arduino\\hardware\\tools\\avr\\avr\\include\\util\\delay.h"
+          16000000UL
+# 174 "c:\\arduino\\hardware\\tools\\avr\\avr\\include\\util\\delay.h" 3
+               ) / 1e3) * __ms;
+# 184 "c:\\arduino\\hardware\\tools\\avr\\avr\\include\\util\\delay.h" 3
+  __ticks_dc = (uint32_t)(ceil(fabs(__tmp)));
+
+
+ __builtin_avr_delay_cycles(__ticks_dc);
+# 210 "c:\\arduino\\hardware\\tools\\avr\\avr\\include\\util\\delay.h" 3
+}
+# 254 "c:\\arduino\\hardware\\tools\\avr\\avr\\include\\util\\delay.h" 3
+void
+_delay_us(double __us)
+{
+ double __tmp ;
+
+
+
+ uint32_t __ticks_dc;
+ extern void __builtin_avr_delay_cycles(unsigned long);
+ __tmp = ((
+# 263 "c:\\arduino\\hardware\\tools\\avr\\avr\\include\\util\\delay.h"
+          16000000UL
+# 263 "c:\\arduino\\hardware\\tools\\avr\\avr\\include\\util\\delay.h" 3
+               ) / 1e6) * __us;
+# 273 "c:\\arduino\\hardware\\tools\\avr\\avr\\include\\util\\delay.h" 3
+  __ticks_dc = (uint32_t)(ceil(fabs(__tmp)));
+
+
+ __builtin_avr_delay_cycles(__ticks_dc);
+# 299 "c:\\arduino\\hardware\\tools\\avr\\avr\\include\\util\\delay.h" 3
+}
+# 28 "C:\\Arduino/hardware/arduino/avr/cores/arduino/USBAPI.h" 2
+
+
+# 29 "C:\\Arduino/hardware/arduino/avr/cores/arduino/USBAPI.h"
+typedef unsigned char u8;
+typedef unsigned short u16;
+typedef unsigned long u32;
+
+# 1 "C:\\Arduino/hardware/arduino/avr/cores/arduino/Arduino.h" 1
+# 34 "C:\\Arduino/hardware/arduino/avr/cores/arduino/USBAPI.h" 2
+# 235 "C:\\Arduino/hardware/arduino/avr/cores/arduino/Arduino.h" 2
+
+
+
+
+uint16_t makeWord(uint16_t w);
+uint16_t makeWord(byte h, byte l);
+
+
+
+unsigned long pulseIn(uint8_t pin, uint8_t state, unsigned long timeout = 1000000L);
+unsigned long pulseInLong(uint8_t pin, uint8_t state, unsigned long timeout = 1000000L);
+
+void tone(uint8_t _pin, unsigned int frequency, unsigned long duration = 0);
+void noTone(uint8_t _pin);
+
+
+long random(long);
+long random(long, long);
+void randomSeed(unsigned long);
+long map(long, long, long, long, long);
+
+
+
+# 1 "C:\\Arduino/hardware/arduino/avr/variants/standard/pins_arduino.h" 1
+# 43 "C:\\Arduino/hardware/arduino/avr/variants/standard/pins_arduino.h"
+static const uint8_t SS = (10);
+static const uint8_t MOSI = (11);
+static const uint8_t MISO = (12);
+static const uint8_t SCK = (13);
+
+
+
+
+static const uint8_t SDA = (18);
+static const uint8_t SCL = (19);
+# 65 "C:\\Arduino/hardware/arduino/avr/variants/standard/pins_arduino.h"
+static const uint8_t A0 = (14);
+static const uint8_t A1 = (15);
+static const uint8_t A2 = (16);
+static const uint8_t A3 = (17);
+static const uint8_t A4 = (18);
+static const uint8_t A5 = (19);
+static const uint8_t A6 = (20);
+static const uint8_t A7 = (21);
+# 259 "C:\\Arduino/hardware/arduino/avr/cores/arduino/Arduino.h" 2
+# 19 "../lib/ACAN2517FD/CANMessage.h" 2
+
+
+
+class CANMessage {
+  public : uint32_t id = 0 ;
+  public : bool ext = false ;
+  public : bool rtr = false ;
+  public : uint8_t idx = 0 ;
+  public : uint8_t len = 0 ;
+  public : union {
+    uint64_t data64 ;
+    int64_t data_s64 ;
+    uint32_t data32 [2] ;
+    int32_t data_s32 [2] ;
+    float dataFloat [2] ;
+    uint16_t data16 [4] ;
+    int16_t data_s16 [4] ;
+    int8_t data_s8 [8] ;
+    uint8_t data [8] = {0, 0, 0, 0, 0, 0, 0, 0} ;
+  } ;
+} ;
+
+
+
+typedef enum {kStandard, kExtended} tFrameFormat ;
+typedef enum {kData, kRemote} tFrameKind ;
+typedef void (*ACANCallBackRoutine) (const CANMessage & inMessage) ;
+# 15 "../lib/ACAN2517FD/CANFDMessage.h" 2
+# 24 "../lib/ACAN2517FD/CANFDMessage.h"
+class CANFDMessage {
+
+
+
+
+
+  public : CANFDMessage (void) :
+  id (0),
+  ext (false),
+  type (CANFD_WITH_BIT_RATE_SWITCH),
+  idx (0),
+  len (0),
+  data () {
+  }
+
+
+
+  public : CANFDMessage (const CANMessage & inMessage) :
+  id (inMessage.id),
+  ext (inMessage.ext),
+  type (inMessage.rtr ? CAN_REMOTE : CAN_DATA),
+  idx (inMessage.idx),
+  len (inMessage.len),
+  data () {
+    data64 [0] = inMessage.data64 ;
+  }
+
+
+
+
+
+  public: typedef enum : uint8_t {
+    CAN_REMOTE,
+    CAN_DATA,
+    CANFD_NO_BIT_RATE_SWITCH,
+    CANFD_WITH_BIT_RATE_SWITCH
+  } Type ;
+
+
+
+
+
+  public : uint32_t id ;
+  public : bool ext ;
+  public : Type type ;
+  public : uint8_t idx ;
+  public : uint8_t len ;
+  public : union {
+    uint64_t data64 [ 8] ;
+    int64_t data_s64 [ 8] ;
+    uint32_t data32 [16] ;
+    int32_t data_s32 [16] ;
+    float dataFloat [16] ;
+    uint16_t data16 [32] ;
+    int16_t data_s16 [32] ;
+    int8_t data_s8 [64] ;
+    uint8_t data [64] ;
+  } ;
+
+
+
+
+
+  public: void pad (void) {
+    uint8_t paddedLength = len ;
+    if ((len > 8) && (len < 12)) {
+      paddedLength = 12 ;
+    }else if ((len > 12) && (len < 16)) {
+      paddedLength = 16 ;
+    }else if ((len > 16) && (len < 20)) {
+      paddedLength = 20 ;
+    }else if ((len > 20) && (len < 24)) {
+      paddedLength = 24 ;
+    }else if ((len > 24) && (len < 32)) {
+      paddedLength = 32 ;
+    }else if ((len > 32) && (len < 48)) {
+      paddedLength = 48 ;
+    }else if ((len > 48) && (len < 64)) {
+      paddedLength = 64 ;
+    }
+    while (len < paddedLength) {
+      data [len] = 0 ;
+      len += 1 ;
+    }
+  }
+
+
+
+  public: bool isValid (void) const {
+    if ((type == CAN_REMOTE) || (type == CAN_DATA)) {
+      return len <= 8 ;
+    }else{
+      return
+        (len <= 8) || (len == 12) || (len == 16) || (len == 20)
+      ||
+        (len == 24) || (len == 32) || (len == 48) || (len == 64)
+      ;
+    }
+  }
+
+
+
+} ;
+
+
+
+typedef void (*ACANFDCallBackRoutine) (const CANFDMessage & inMessage) ;
+# 14 "../lib/ACAN2517FD/ACANFDBuffer.h" 2
+
+
+
+class ACANFDBuffer {
+
+
+
+
+
+  public: ACANFDBuffer (void) :
+  mBuffer (
+# 24 "../lib/ACAN2517FD/ACANFDBuffer.h" 3 4
+          __null
+# 24 "../lib/ACAN2517FD/ACANFDBuffer.h"
+              ),
+  mSize (0),
+  mReadIndex (0),
+  mCount (0),
+  mPeakCount (0) {
+  }
+
+
+
+
+
+  public: ~ ACANFDBuffer (void) {
+    delete [] mBuffer ;
+  }
+
+
+
+
+
+  private: CANFDMessage * mBuffer ;
+  private: uint32_t mSize ;
+  private: uint32_t mReadIndex ;
+  private: uint32_t mCount ;
+  private: uint32_t mPeakCount ;
+
+
+
+
+
+  public: inline uint32_t size (void) const { return mSize ; }
+  public: inline uint32_t count (void) const { return mCount ; }
+  public: inline bool isFull (void) const { return mCount == mSize ; }
+  public: inline uint32_t peakCount (void) const { return mPeakCount ; }
+
+
+
+
+
+  public: void initWithSize (const uint32_t inSize) {
+    delete [] mBuffer ; mBuffer = new CANFDMessage [inSize] ;
+    mSize = inSize ;
+    mReadIndex = 0 ;
+    mCount = 0 ;
+    mPeakCount = 0 ;
+  }
+
+
+
+
+
+  public: bool append (const CANFDMessage & inMessage) {
+    const bool ok = mCount < mSize ;
+    if (ok) {
+      uint32_t writeIndex = mReadIndex + mCount ;
+      if (writeIndex >= mSize) {
+        writeIndex -= mSize ;
+      }
+      mBuffer [writeIndex] = inMessage ;
+      mCount += 1 ;
+      if (mPeakCount < mCount) {
+        mPeakCount = mCount ;
+      }
+    }else{
+      mPeakCount = mSize + 1 ;
+    }
+    return ok ;
+  }
+
+
+
+
+
+  public: bool remove (CANFDMessage & outMessage) {
+    const bool ok = mCount > 0 ;
+    if (ok) {
+      outMessage = mBuffer [mReadIndex] ;
+      mCount -= 1 ;
+      mReadIndex += 1 ;
+      if (mReadIndex == mSize) {
+        mReadIndex = 0 ;
+      }
+    }
+    return ok ;
+  }
+
+
+
+
+
+  private: ACANFDBuffer (const ACANFDBuffer &) = delete ;
+  private: ACANFDBuffer & operator = (const ACANFDBuffer &) = delete ;
+} ;
+# 14 "../lib/ACAN2517FD/ACAN2517FD.h" 2
+
+# 1 "../lib/ACAN2517FD/ACAN2517FDFilters.h" 1
+# 20 "../lib/ACAN2517FD/ACAN2517FDFilters.h"
+class ACAN2517FDFilters {
+
+
+
+
+
+  private: class Filter {
+    public: Filter * mNextFilter ;
+    public: const uint32_t mFilterMask ;
+    public: const uint32_t mAcceptanceFilter ;
+    public: const ACANFDCallBackRoutine mCallBackRoutine ;
+
+    public: Filter (const uint32_t inFilterMask,
+                    const uint32_t inAcceptanceFilter,
+                    const ACANFDCallBackRoutine inCallBackRoutine) :
+    mNextFilter (
+# 35 "../lib/ACAN2517FD/ACAN2517FDFilters.h" 3 4
+                __null
+# 35 "../lib/ACAN2517FD/ACAN2517FDFilters.h"
+                    ),
+    mFilterMask (inFilterMask),
+    mAcceptanceFilter (inAcceptanceFilter),
+    mCallBackRoutine (inCallBackRoutine) {
+    }
+
+
+    private: Filter (const Filter &) ;
+    private: Filter & operator = (const Filter &) ;
+  } ;
+
+
+
+
+
+  public: typedef enum {
+      kFiltersOk,
+      kStandardIdentifierTooLarge,
+      kExtendedIdentifierTooLarge,
+      kStandardAcceptanceTooLarge,
+      kExtendedAcceptanceTooLarge,
+      kStandardMaskTooLarge,
+      kExtendedMaskTooLarge,
+      kInconsistencyBetweenMaskAndAcceptance
+  } FilterStatus ;
+
+
+
+
+
+  public: ACAN2517FDFilters (void) {}
+
+
+
+
+
+  public: ~ ACAN2517FDFilters (void) {
+    while (mFirstFilter != 
+# 72 "../lib/ACAN2517FD/ACAN2517FDFilters.h" 3 4
+                          __null
+# 72 "../lib/ACAN2517FD/ACAN2517FDFilters.h"
+                              ) {
+      Filter * next = mFirstFilter->mNextFilter ;
+      delete mFirstFilter ;
+      mFirstFilter = next ;
+    }
+  }
+
+
+
+
+
+  public: void appendPassAllFilter (const ACANFDCallBackRoutine inCallBackRoutine) {
+    Filter * f = new Filter (0, 0, inCallBackRoutine) ;
+    if (mFirstFilter == 
+# 85 "../lib/ACAN2517FD/ACAN2517FDFilters.h" 3 4
+                       __null
+# 85 "../lib/ACAN2517FD/ACAN2517FDFilters.h"
+                           ) {
+      mFirstFilter = f ;
+    }else{
+      mLastFilter->mNextFilter = f ;
+    }
+    mLastFilter = f ;
+    mFilterCount += 1 ;
+  }
+
+
+
+  public: void appendFormatFilter (const tFrameFormat inFormat,
+                                   const ACANFDCallBackRoutine inCallBackRoutine) {
+    Filter * f = new Filter (((uint32_t) 1) << 30,
+                             (inFormat == kExtended) ? (((uint32_t) 1) << 30) : 0,
+                             inCallBackRoutine) ;
+    if (mFirstFilter == 
+# 101 "../lib/ACAN2517FD/ACAN2517FDFilters.h" 3 4
+                       __null
+# 101 "../lib/ACAN2517FD/ACAN2517FDFilters.h"
+                           ) {
+      mFirstFilter = f ;
+    }else{
+      mLastFilter->mNextFilter = f ;
+    }
+    mLastFilter = f ;
+    mFilterCount += 1 ;
+  }
+
+
+
+  public: void appendFrameFilter (const tFrameFormat inFormat,
+                                  const uint32_t inIdentifier,
+                                  const ACANFDCallBackRoutine inCallBackRoutine) {
+
+    if (inFormat == kExtended) {
+      if (inIdentifier > 0x1FFFFFFF) {
+        mFilterStatus = kExtendedIdentifierTooLarge ;
+        mFilterErrorIndex = mFilterCount ;
+      }
+    }else if (inIdentifier > 0x7FF) {
+      mFilterStatus = kStandardIdentifierTooLarge ;
+      mFilterErrorIndex = mFilterCount ;
+    }
+
+    const uint32_t mask = (((uint32_t) 1) << 30) | ((inFormat == kExtended) ? 0x1FFFFFFF : 0x7FF) ;
+    uint32_t acceptance ;
+    if (inFormat == kExtended) {
+      acceptance = ((inIdentifier >> 18) & 0x7FF) | ((inIdentifier & 0x3FFFF) << 11) | (((uint32_t) 1) << 30) ;
+    }else{
+      acceptance = inIdentifier ;
+    }
+
+    Filter * f = new Filter (mask, acceptance, inCallBackRoutine) ;
+    if (mFirstFilter == 
+# 135 "../lib/ACAN2517FD/ACAN2517FDFilters.h" 3 4
+                       __null
+# 135 "../lib/ACAN2517FD/ACAN2517FDFilters.h"
+                           ) {
+      mFirstFilter = f ;
+    }else{
+      mLastFilter->mNextFilter = f ;
+    }
+    mLastFilter = f ;
+    mFilterCount += 1 ;
+  }
+
+
+
+  public: void appendFilter (const tFrameFormat inFormat,
+                             const uint32_t inMask,
+                             const uint32_t inAcceptance,
+                             const ACANFDCallBackRoutine inCallBackRoutine) {
+
+    if ((inMask & inAcceptance) != inAcceptance) {
+      mFilterStatus = kInconsistencyBetweenMaskAndAcceptance ;
+      mFilterErrorIndex = mFilterCount ;
+    }
+
+    if (inFormat == kExtended) {
+      if (inAcceptance > 0x1FFFFFFF) {
+        mFilterStatus = kExtendedAcceptanceTooLarge ;
+        mFilterErrorIndex = mFilterCount ;
+      }
+    }else if (inAcceptance > 0x7FF) {
+      mFilterStatus = kStandardAcceptanceTooLarge ;
+      mFilterErrorIndex = mFilterCount ;
+    }
+
+    if (inFormat == kExtended) {
+      if (inMask > 0x1FFFFFFF) {
+        mFilterStatus = kExtendedMaskTooLarge ;
+        mFilterErrorIndex = mFilterCount ;
+      }
+    }else if (inMask > 0x7FF) {
+      mFilterStatus = kStandardMaskTooLarge ;
+      mFilterErrorIndex = mFilterCount ;
+    }
+
+    uint32_t mask = ((uint32_t) 1) << 30 ;
+    if (inFormat == kExtended) {
+      mask |= ((inMask >> 18) & 0x7FF) | ((inMask & 0x3FFFF) << 11) ;
+    }else{
+      mask |= inMask ;
+    }
+    uint32_t acceptance ;
+    if (inFormat == kExtended) {
+      acceptance = ((inAcceptance >> 18) & 0x7FF) | ((inAcceptance & 0x3FFFF) << 11) | (((uint32_t) 1) << 30) ;
+    }else{
+      acceptance = inAcceptance ;
+    }
+
+    Filter * f = new Filter (mask, acceptance, inCallBackRoutine) ;
+    if (mFirstFilter == 
+# 190 "../lib/ACAN2517FD/ACAN2517FDFilters.h" 3 4
+                       __null
+# 190 "../lib/ACAN2517FD/ACAN2517FDFilters.h"
+                           ) {
+      mFirstFilter = f ;
+    }else{
+      mLastFilter->mNextFilter = f ;
+    }
+    mLastFilter = f ;
+    mFilterCount += 1 ;
+  }
+
+
+
+
+
+  public: FilterStatus filterStatus (void) const { return mFilterStatus ; }
+
+  public: uint8_t filterErrorIndex (void) const { return mFilterErrorIndex ; }
+
+  public: uint8_t filterCount (void) const { return mFilterCount ; }
+
+
+
+
+
+  private: uint8_t mFilterCount = 0 ;
+  private: Filter * mFirstFilter = 
+# 214 "../lib/ACAN2517FD/ACAN2517FDFilters.h" 3 4
+                                  __null 
+# 214 "../lib/ACAN2517FD/ACAN2517FDFilters.h"
+                                       ;
+  private: Filter * mLastFilter = 
+# 215 "../lib/ACAN2517FD/ACAN2517FDFilters.h" 3 4
+                                  __null 
+# 215 "../lib/ACAN2517FD/ACAN2517FDFilters.h"
+                                       ;
+  private: FilterStatus mFilterStatus = kFiltersOk ;
+  private: uint8_t mFilterErrorIndex = 0 ;
+
+
+
+
+
+  private: ACAN2517FDFilters (const ACAN2517FDFilters &) = delete ;
+  private: ACAN2517FDFilters & operator = (const ACAN2517FDFilters &) = delete ;
+
+
+
+
+
+  friend class ACAN2517FD ;
+
+
+
+} ;
+# 16 "../lib/ACAN2517FD/ACAN2517FD.h" 2
+# 1 "C:\\Users\\HONGKE~1\\DOCUME~1\\GitHub\\test\\070D7E~1.MUL\\CAN_SEND/SPI.h" 1
+# 72 "C:\\Users\\HONGKE~1\\DOCUME~1\\GitHub\\test\\070D7E~1.MUL\\CAN_SEND/SPI.h"
+class SPISettings {
+public:
+  SPISettings(uint32_t clock, uint8_t bitOrder, uint8_t dataMode) {
+    if (__builtin_constant_p(clock)) {
+      init_AlwaysInline(clock, bitOrder, dataMode);
+    } else {
+      init_MightInline(clock, bitOrder, dataMode);
+    }
+  }
+  SPISettings() {
+    init_AlwaysInline(4000000, 1, 0x00);
+  }
+private:
+  void init_MightInline(uint32_t clock, uint8_t bitOrder, uint8_t dataMode) {
+    init_AlwaysInline(clock, bitOrder, dataMode);
+  }
+  void init_AlwaysInline(uint32_t clock, uint8_t bitOrder, uint8_t dataMode)
+    __attribute__((__always_inline__)) {
+# 107 "C:\\Users\\HONGKE~1\\DOCUME~1\\GitHub\\test\\070D7E~1.MUL\\CAN_SEND/SPI.h"
+    uint8_t clockDiv;
+
+
+
+
+
+    if (__builtin_constant_p(clock)) {
+      if (clock >= 16000000UL / 2) {
+        clockDiv = 0;
+      } else if (clock >= 16000000UL / 4) {
+        clockDiv = 1;
+      } else if (clock >= 16000000UL / 8) {
+        clockDiv = 2;
+      } else if (clock >= 16000000UL / 16) {
+        clockDiv = 3;
+      } else if (clock >= 16000000UL / 32) {
+        clockDiv = 4;
+      } else if (clock >= 16000000UL / 64) {
+        clockDiv = 5;
+      } else {
+        clockDiv = 6;
+      }
+    } else {
+      uint32_t clockSetting = 16000000UL / 2;
+      clockDiv = 0;
+      while (clockDiv < 6 && clock < clockSetting) {
+        clockSetting /= 2;
+        clockDiv++;
+      }
+    }
+
+
+    if (clockDiv == 6)
+    clockDiv = 7;
+
+
+    clockDiv ^= 0x1;
+
+
+    spcr = 
+# 146 "C:\\Users\\HONGKE~1\\DOCUME~1\\GitHub\\test\\070D7E~1.MUL\\CAN_SEND/SPI.h" 3
+          (1 << (6)) 
+# 146 "C:\\Users\\HONGKE~1\\DOCUME~1\\GitHub\\test\\070D7E~1.MUL\\CAN_SEND/SPI.h"
+                   | 
+# 146 "C:\\Users\\HONGKE~1\\DOCUME~1\\GitHub\\test\\070D7E~1.MUL\\CAN_SEND/SPI.h" 3
+                     (1 << (4)) 
+# 146 "C:\\Users\\HONGKE~1\\DOCUME~1\\GitHub\\test\\070D7E~1.MUL\\CAN_SEND/SPI.h"
+                               | ((bitOrder == 0) ? 
+# 146 "C:\\Users\\HONGKE~1\\DOCUME~1\\GitHub\\test\\070D7E~1.MUL\\CAN_SEND/SPI.h" 3
+                                                           (1 << (5)) 
+# 146 "C:\\Users\\HONGKE~1\\DOCUME~1\\GitHub\\test\\070D7E~1.MUL\\CAN_SEND/SPI.h"
+                                                                     : 0) |
+      (dataMode & 0x0C) | ((clockDiv >> 1) & 0x03);
+    spsr = clockDiv & 0x01;
+  }
+  uint8_t spcr;
+  uint8_t spsr;
+  friend class SPIClass;
+};
+
+
+class SPIClass {
+public:
+
+  static void begin();
+
+
+
+
+
+
+  static void usingInterrupt(uint8_t interruptNumber);
+
+  static void notUsingInterrupt(uint8_t interruptNumber);
+# 178 "C:\\Users\\HONGKE~1\\DOCUME~1\\GitHub\\test\\070D7E~1.MUL\\CAN_SEND/SPI.h"
+  inline static void beginTransaction(SPISettings settings) {
+    if (interruptMode > 0) {
+      uint8_t sreg = 
+# 180 "C:\\Users\\HONGKE~1\\DOCUME~1\\GitHub\\test\\070D7E~1.MUL\\CAN_SEND/SPI.h" 3
+                    (*(volatile uint8_t *)((0x3F) + 0x20))
+# 180 "C:\\Users\\HONGKE~1\\DOCUME~1\\GitHub\\test\\070D7E~1.MUL\\CAN_SEND/SPI.h"
+                        ;
+      
+# 181 "C:\\Users\\HONGKE~1\\DOCUME~1\\GitHub\\test\\070D7E~1.MUL\\CAN_SEND/SPI.h" 3
+     __asm__ __volatile__ ("cli" ::: "memory")
+# 181 "C:\\Users\\HONGKE~1\\DOCUME~1\\GitHub\\test\\070D7E~1.MUL\\CAN_SEND/SPI.h"
+                   ;
+
+
+      if (interruptMode == 1) {
+        interruptSave = 
+# 185 "C:\\Users\\HONGKE~1\\DOCUME~1\\GitHub\\test\\070D7E~1.MUL\\CAN_SEND/SPI.h" 3
+                       (*(volatile uint8_t *)((0x1D) + 0x20))
+# 185 "C:\\Users\\HONGKE~1\\DOCUME~1\\GitHub\\test\\070D7E~1.MUL\\CAN_SEND/SPI.h"
+                                    ;
+        
+# 186 "C:\\Users\\HONGKE~1\\DOCUME~1\\GitHub\\test\\070D7E~1.MUL\\CAN_SEND/SPI.h" 3
+       (*(volatile uint8_t *)((0x1D) + 0x20)) 
+# 186 "C:\\Users\\HONGKE~1\\DOCUME~1\\GitHub\\test\\070D7E~1.MUL\\CAN_SEND/SPI.h"
+                     &= ~interruptMask;
+        
+# 187 "C:\\Users\\HONGKE~1\\DOCUME~1\\GitHub\\test\\070D7E~1.MUL\\CAN_SEND/SPI.h" 3
+       (*(volatile uint8_t *)((0x3F) + 0x20)) 
+# 187 "C:\\Users\\HONGKE~1\\DOCUME~1\\GitHub\\test\\070D7E~1.MUL\\CAN_SEND/SPI.h"
+            = sreg;
+      } else
+
+      {
+        interruptSave = sreg;
+      }
+    }
+# 203 "C:\\Users\\HONGKE~1\\DOCUME~1\\GitHub\\test\\070D7E~1.MUL\\CAN_SEND/SPI.h"
+    
+# 203 "C:\\Users\\HONGKE~1\\DOCUME~1\\GitHub\\test\\070D7E~1.MUL\\CAN_SEND/SPI.h" 3
+   (*(volatile uint8_t *)((0x2C) + 0x20)) 
+# 203 "C:\\Users\\HONGKE~1\\DOCUME~1\\GitHub\\test\\070D7E~1.MUL\\CAN_SEND/SPI.h"
+        = settings.spcr;
+    
+# 204 "C:\\Users\\HONGKE~1\\DOCUME~1\\GitHub\\test\\070D7E~1.MUL\\CAN_SEND/SPI.h" 3
+   (*(volatile uint8_t *)((0x2D) + 0x20)) 
+# 204 "C:\\Users\\HONGKE~1\\DOCUME~1\\GitHub\\test\\070D7E~1.MUL\\CAN_SEND/SPI.h"
+        = settings.spsr;
+  }
+
+
+  inline static uint8_t transfer(uint8_t data) {
+    
+# 209 "C:\\Users\\HONGKE~1\\DOCUME~1\\GitHub\\test\\070D7E~1.MUL\\CAN_SEND/SPI.h" 3
+   (*(volatile uint8_t *)((0x2E) + 0x20)) 
+# 209 "C:\\Users\\HONGKE~1\\DOCUME~1\\GitHub\\test\\070D7E~1.MUL\\CAN_SEND/SPI.h"
+        = data;
+
+
+
+
+
+
+    asm volatile("nop");
+    while (!(
+# 217 "C:\\Users\\HONGKE~1\\DOCUME~1\\GitHub\\test\\070D7E~1.MUL\\CAN_SEND/SPI.h" 3
+            (*(volatile uint8_t *)((0x2D) + 0x20)) 
+# 217 "C:\\Users\\HONGKE~1\\DOCUME~1\\GitHub\\test\\070D7E~1.MUL\\CAN_SEND/SPI.h"
+                 & 
+# 217 "C:\\Users\\HONGKE~1\\DOCUME~1\\GitHub\\test\\070D7E~1.MUL\\CAN_SEND/SPI.h" 3
+                   (1 << (7))
+# 217 "C:\\Users\\HONGKE~1\\DOCUME~1\\GitHub\\test\\070D7E~1.MUL\\CAN_SEND/SPI.h"
+                            )) ;
+    return 
+# 218 "C:\\Users\\HONGKE~1\\DOCUME~1\\GitHub\\test\\070D7E~1.MUL\\CAN_SEND/SPI.h" 3
+          (*(volatile uint8_t *)((0x2E) + 0x20))
+# 218 "C:\\Users\\HONGKE~1\\DOCUME~1\\GitHub\\test\\070D7E~1.MUL\\CAN_SEND/SPI.h"
+              ;
+  }
+  inline static uint16_t transfer16(uint16_t data) {
+    union { uint16_t val; struct { uint8_t lsb; uint8_t msb; }; } in, out;
+    in.val = data;
+    if (!(
+# 223 "C:\\Users\\HONGKE~1\\DOCUME~1\\GitHub\\test\\070D7E~1.MUL\\CAN_SEND/SPI.h" 3
+         (*(volatile uint8_t *)((0x2C) + 0x20)) 
+# 223 "C:\\Users\\HONGKE~1\\DOCUME~1\\GitHub\\test\\070D7E~1.MUL\\CAN_SEND/SPI.h"
+              & 
+# 223 "C:\\Users\\HONGKE~1\\DOCUME~1\\GitHub\\test\\070D7E~1.MUL\\CAN_SEND/SPI.h" 3
+                (1 << (5))
+# 223 "C:\\Users\\HONGKE~1\\DOCUME~1\\GitHub\\test\\070D7E~1.MUL\\CAN_SEND/SPI.h"
+                         )) {
+      
+# 224 "C:\\Users\\HONGKE~1\\DOCUME~1\\GitHub\\test\\070D7E~1.MUL\\CAN_SEND/SPI.h" 3
+     (*(volatile uint8_t *)((0x2E) + 0x20)) 
+# 224 "C:\\Users\\HONGKE~1\\DOCUME~1\\GitHub\\test\\070D7E~1.MUL\\CAN_SEND/SPI.h"
+          = in.msb;
+      asm volatile("nop");
+      while (!(
+# 226 "C:\\Users\\HONGKE~1\\DOCUME~1\\GitHub\\test\\070D7E~1.MUL\\CAN_SEND/SPI.h" 3
+              (*(volatile uint8_t *)((0x2D) + 0x20)) 
+# 226 "C:\\Users\\HONGKE~1\\DOCUME~1\\GitHub\\test\\070D7E~1.MUL\\CAN_SEND/SPI.h"
+                   & 
+# 226 "C:\\Users\\HONGKE~1\\DOCUME~1\\GitHub\\test\\070D7E~1.MUL\\CAN_SEND/SPI.h" 3
+                     (1 << (7))
+# 226 "C:\\Users\\HONGKE~1\\DOCUME~1\\GitHub\\test\\070D7E~1.MUL\\CAN_SEND/SPI.h"
+                              )) ;
+      out.msb = 
+# 227 "C:\\Users\\HONGKE~1\\DOCUME~1\\GitHub\\test\\070D7E~1.MUL\\CAN_SEND/SPI.h" 3
+               (*(volatile uint8_t *)((0x2E) + 0x20))
+# 227 "C:\\Users\\HONGKE~1\\DOCUME~1\\GitHub\\test\\070D7E~1.MUL\\CAN_SEND/SPI.h"
+                   ;
+      
+# 228 "C:\\Users\\HONGKE~1\\DOCUME~1\\GitHub\\test\\070D7E~1.MUL\\CAN_SEND/SPI.h" 3
+     (*(volatile uint8_t *)((0x2E) + 0x20)) 
+# 228 "C:\\Users\\HONGKE~1\\DOCUME~1\\GitHub\\test\\070D7E~1.MUL\\CAN_SEND/SPI.h"
+          = in.lsb;
+      asm volatile("nop");
+      while (!(
+# 230 "C:\\Users\\HONGKE~1\\DOCUME~1\\GitHub\\test\\070D7E~1.MUL\\CAN_SEND/SPI.h" 3
+              (*(volatile uint8_t *)((0x2D) + 0x20)) 
+# 230 "C:\\Users\\HONGKE~1\\DOCUME~1\\GitHub\\test\\070D7E~1.MUL\\CAN_SEND/SPI.h"
+                   & 
+# 230 "C:\\Users\\HONGKE~1\\DOCUME~1\\GitHub\\test\\070D7E~1.MUL\\CAN_SEND/SPI.h" 3
+                     (1 << (7))
+# 230 "C:\\Users\\HONGKE~1\\DOCUME~1\\GitHub\\test\\070D7E~1.MUL\\CAN_SEND/SPI.h"
+                              )) ;
+      out.lsb = 
+# 231 "C:\\Users\\HONGKE~1\\DOCUME~1\\GitHub\\test\\070D7E~1.MUL\\CAN_SEND/SPI.h" 3
+               (*(volatile uint8_t *)((0x2E) + 0x20))
+# 231 "C:\\Users\\HONGKE~1\\DOCUME~1\\GitHub\\test\\070D7E~1.MUL\\CAN_SEND/SPI.h"
+                   ;
+    } else {
+      
+# 233 "C:\\Users\\HONGKE~1\\DOCUME~1\\GitHub\\test\\070D7E~1.MUL\\CAN_SEND/SPI.h" 3
+     (*(volatile uint8_t *)((0x2E) + 0x20)) 
+# 233 "C:\\Users\\HONGKE~1\\DOCUME~1\\GitHub\\test\\070D7E~1.MUL\\CAN_SEND/SPI.h"
+          = in.lsb;
+      asm volatile("nop");
+      while (!(
+# 235 "C:\\Users\\HONGKE~1\\DOCUME~1\\GitHub\\test\\070D7E~1.MUL\\CAN_SEND/SPI.h" 3
+              (*(volatile uint8_t *)((0x2D) + 0x20)) 
+# 235 "C:\\Users\\HONGKE~1\\DOCUME~1\\GitHub\\test\\070D7E~1.MUL\\CAN_SEND/SPI.h"
+                   & 
+# 235 "C:\\Users\\HONGKE~1\\DOCUME~1\\GitHub\\test\\070D7E~1.MUL\\CAN_SEND/SPI.h" 3
+                     (1 << (7))
+# 235 "C:\\Users\\HONGKE~1\\DOCUME~1\\GitHub\\test\\070D7E~1.MUL\\CAN_SEND/SPI.h"
+                              )) ;
+      out.lsb = 
+# 236 "C:\\Users\\HONGKE~1\\DOCUME~1\\GitHub\\test\\070D7E~1.MUL\\CAN_SEND/SPI.h" 3
+               (*(volatile uint8_t *)((0x2E) + 0x20))
+# 236 "C:\\Users\\HONGKE~1\\DOCUME~1\\GitHub\\test\\070D7E~1.MUL\\CAN_SEND/SPI.h"
+                   ;
+      
+# 237 "C:\\Users\\HONGKE~1\\DOCUME~1\\GitHub\\test\\070D7E~1.MUL\\CAN_SEND/SPI.h" 3
+     (*(volatile uint8_t *)((0x2E) + 0x20)) 
+# 237 "C:\\Users\\HONGKE~1\\DOCUME~1\\GitHub\\test\\070D7E~1.MUL\\CAN_SEND/SPI.h"
+          = in.msb;
+      asm volatile("nop");
+      while (!(
+# 239 "C:\\Users\\HONGKE~1\\DOCUME~1\\GitHub\\test\\070D7E~1.MUL\\CAN_SEND/SPI.h" 3
+              (*(volatile uint8_t *)((0x2D) + 0x20)) 
+# 239 "C:\\Users\\HONGKE~1\\DOCUME~1\\GitHub\\test\\070D7E~1.MUL\\CAN_SEND/SPI.h"
+                   & 
+# 239 "C:\\Users\\HONGKE~1\\DOCUME~1\\GitHub\\test\\070D7E~1.MUL\\CAN_SEND/SPI.h" 3
+                     (1 << (7))
+# 239 "C:\\Users\\HONGKE~1\\DOCUME~1\\GitHub\\test\\070D7E~1.MUL\\CAN_SEND/SPI.h"
+                              )) ;
+      out.msb = 
+# 240 "C:\\Users\\HONGKE~1\\DOCUME~1\\GitHub\\test\\070D7E~1.MUL\\CAN_SEND/SPI.h" 3
+               (*(volatile uint8_t *)((0x2E) + 0x20))
+# 240 "C:\\Users\\HONGKE~1\\DOCUME~1\\GitHub\\test\\070D7E~1.MUL\\CAN_SEND/SPI.h"
+                   ;
+    }
+    return out.val;
+  }
+  inline static void transfer(void *buf, size_t count) {
+    if (count == 0) return;
+    uint8_t *p = (uint8_t *)buf;
+    
+# 247 "C:\\Users\\HONGKE~1\\DOCUME~1\\GitHub\\test\\070D7E~1.MUL\\CAN_SEND/SPI.h" 3
+   (*(volatile uint8_t *)((0x2E) + 0x20)) 
+# 247 "C:\\Users\\HONGKE~1\\DOCUME~1\\GitHub\\test\\070D7E~1.MUL\\CAN_SEND/SPI.h"
+        = *p;
+    while (--count > 0) {
+      uint8_t out = *(p + 1);
+      while (!(
+# 250 "C:\\Users\\HONGKE~1\\DOCUME~1\\GitHub\\test\\070D7E~1.MUL\\CAN_SEND/SPI.h" 3
+              (*(volatile uint8_t *)((0x2D) + 0x20)) 
+# 250 "C:\\Users\\HONGKE~1\\DOCUME~1\\GitHub\\test\\070D7E~1.MUL\\CAN_SEND/SPI.h"
+                   & 
+# 250 "C:\\Users\\HONGKE~1\\DOCUME~1\\GitHub\\test\\070D7E~1.MUL\\CAN_SEND/SPI.h" 3
+                     (1 << (7))
+# 250 "C:\\Users\\HONGKE~1\\DOCUME~1\\GitHub\\test\\070D7E~1.MUL\\CAN_SEND/SPI.h"
+                              )) ;
+      uint8_t in = 
+# 251 "C:\\Users\\HONGKE~1\\DOCUME~1\\GitHub\\test\\070D7E~1.MUL\\CAN_SEND/SPI.h" 3
+                  (*(volatile uint8_t *)((0x2E) + 0x20))
+# 251 "C:\\Users\\HONGKE~1\\DOCUME~1\\GitHub\\test\\070D7E~1.MUL\\CAN_SEND/SPI.h"
+                      ;
+      
+# 252 "C:\\Users\\HONGKE~1\\DOCUME~1\\GitHub\\test\\070D7E~1.MUL\\CAN_SEND/SPI.h" 3
+     (*(volatile uint8_t *)((0x2E) + 0x20)) 
+# 252 "C:\\Users\\HONGKE~1\\DOCUME~1\\GitHub\\test\\070D7E~1.MUL\\CAN_SEND/SPI.h"
+          = out;
+      *p++ = in;
+    }
+    while (!(
+# 255 "C:\\Users\\HONGKE~1\\DOCUME~1\\GitHub\\test\\070D7E~1.MUL\\CAN_SEND/SPI.h" 3
+            (*(volatile uint8_t *)((0x2D) + 0x20)) 
+# 255 "C:\\Users\\HONGKE~1\\DOCUME~1\\GitHub\\test\\070D7E~1.MUL\\CAN_SEND/SPI.h"
+                 & 
+# 255 "C:\\Users\\HONGKE~1\\DOCUME~1\\GitHub\\test\\070D7E~1.MUL\\CAN_SEND/SPI.h" 3
+                   (1 << (7))
+# 255 "C:\\Users\\HONGKE~1\\DOCUME~1\\GitHub\\test\\070D7E~1.MUL\\CAN_SEND/SPI.h"
+                            )) ;
+    *p = 
+# 256 "C:\\Users\\HONGKE~1\\DOCUME~1\\GitHub\\test\\070D7E~1.MUL\\CAN_SEND/SPI.h" 3
+        (*(volatile uint8_t *)((0x2E) + 0x20))
+# 256 "C:\\Users\\HONGKE~1\\DOCUME~1\\GitHub\\test\\070D7E~1.MUL\\CAN_SEND/SPI.h"
+            ;
+  }
+
+
+  inline static void endTransaction(void) {
+# 269 "C:\\Users\\HONGKE~1\\DOCUME~1\\GitHub\\test\\070D7E~1.MUL\\CAN_SEND/SPI.h"
+    if (interruptMode > 0) {
+
+      uint8_t sreg = 
+# 271 "C:\\Users\\HONGKE~1\\DOCUME~1\\GitHub\\test\\070D7E~1.MUL\\CAN_SEND/SPI.h" 3
+                    (*(volatile uint8_t *)((0x3F) + 0x20))
+# 271 "C:\\Users\\HONGKE~1\\DOCUME~1\\GitHub\\test\\070D7E~1.MUL\\CAN_SEND/SPI.h"
+                        ;
+
+      
+# 273 "C:\\Users\\HONGKE~1\\DOCUME~1\\GitHub\\test\\070D7E~1.MUL\\CAN_SEND/SPI.h" 3
+     __asm__ __volatile__ ("cli" ::: "memory")
+# 273 "C:\\Users\\HONGKE~1\\DOCUME~1\\GitHub\\test\\070D7E~1.MUL\\CAN_SEND/SPI.h"
+                   ;
+
+      if (interruptMode == 1) {
+        
+# 276 "C:\\Users\\HONGKE~1\\DOCUME~1\\GitHub\\test\\070D7E~1.MUL\\CAN_SEND/SPI.h" 3
+       (*(volatile uint8_t *)((0x1D) + 0x20)) 
+# 276 "C:\\Users\\HONGKE~1\\DOCUME~1\\GitHub\\test\\070D7E~1.MUL\\CAN_SEND/SPI.h"
+                     = interruptSave;
+        
+# 277 "C:\\Users\\HONGKE~1\\DOCUME~1\\GitHub\\test\\070D7E~1.MUL\\CAN_SEND/SPI.h" 3
+       (*(volatile uint8_t *)((0x3F) + 0x20)) 
+# 277 "C:\\Users\\HONGKE~1\\DOCUME~1\\GitHub\\test\\070D7E~1.MUL\\CAN_SEND/SPI.h"
+            = sreg;
+      } else
+
+      {
+        
+# 281 "C:\\Users\\HONGKE~1\\DOCUME~1\\GitHub\\test\\070D7E~1.MUL\\CAN_SEND/SPI.h" 3
+       (*(volatile uint8_t *)((0x3F) + 0x20)) 
+# 281 "C:\\Users\\HONGKE~1\\DOCUME~1\\GitHub\\test\\070D7E~1.MUL\\CAN_SEND/SPI.h"
+            = interruptSave;
+      }
+    }
+  }
+
+
+  static void end();
+
+
+
+  inline static void setBitOrder(uint8_t bitOrder) {
+    if (bitOrder == 0) 
+# 292 "C:\\Users\\HONGKE~1\\DOCUME~1\\GitHub\\test\\070D7E~1.MUL\\CAN_SEND/SPI.h" 3
+                             (*(volatile uint8_t *)((0x2C) + 0x20)) 
+# 292 "C:\\Users\\HONGKE~1\\DOCUME~1\\GitHub\\test\\070D7E~1.MUL\\CAN_SEND/SPI.h"
+                                  |= 
+# 292 "C:\\Users\\HONGKE~1\\DOCUME~1\\GitHub\\test\\070D7E~1.MUL\\CAN_SEND/SPI.h" 3
+                                     (1 << (5))
+# 292 "C:\\Users\\HONGKE~1\\DOCUME~1\\GitHub\\test\\070D7E~1.MUL\\CAN_SEND/SPI.h"
+                                              ;
+    else 
+# 293 "C:\\Users\\HONGKE~1\\DOCUME~1\\GitHub\\test\\070D7E~1.MUL\\CAN_SEND/SPI.h" 3
+        (*(volatile uint8_t *)((0x2C) + 0x20)) 
+# 293 "C:\\Users\\HONGKE~1\\DOCUME~1\\GitHub\\test\\070D7E~1.MUL\\CAN_SEND/SPI.h"
+             &= ~(
+# 293 "C:\\Users\\HONGKE~1\\DOCUME~1\\GitHub\\test\\070D7E~1.MUL\\CAN_SEND/SPI.h" 3
+                  (1 << (5))
+# 293 "C:\\Users\\HONGKE~1\\DOCUME~1\\GitHub\\test\\070D7E~1.MUL\\CAN_SEND/SPI.h"
+                           );
+  }
+
+
+  inline static void setDataMode(uint8_t dataMode) {
+    
+# 298 "C:\\Users\\HONGKE~1\\DOCUME~1\\GitHub\\test\\070D7E~1.MUL\\CAN_SEND/SPI.h" 3
+   (*(volatile uint8_t *)((0x2C) + 0x20)) 
+# 298 "C:\\Users\\HONGKE~1\\DOCUME~1\\GitHub\\test\\070D7E~1.MUL\\CAN_SEND/SPI.h"
+        = (
+# 298 "C:\\Users\\HONGKE~1\\DOCUME~1\\GitHub\\test\\070D7E~1.MUL\\CAN_SEND/SPI.h" 3
+           (*(volatile uint8_t *)((0x2C) + 0x20)) 
+# 298 "C:\\Users\\HONGKE~1\\DOCUME~1\\GitHub\\test\\070D7E~1.MUL\\CAN_SEND/SPI.h"
+                & ~0x0C) | dataMode;
+  }
+
+
+  inline static void setClockDivider(uint8_t clockDiv) {
+    
+# 303 "C:\\Users\\HONGKE~1\\DOCUME~1\\GitHub\\test\\070D7E~1.MUL\\CAN_SEND/SPI.h" 3
+   (*(volatile uint8_t *)((0x2C) + 0x20)) 
+# 303 "C:\\Users\\HONGKE~1\\DOCUME~1\\GitHub\\test\\070D7E~1.MUL\\CAN_SEND/SPI.h"
+        = (
+# 303 "C:\\Users\\HONGKE~1\\DOCUME~1\\GitHub\\test\\070D7E~1.MUL\\CAN_SEND/SPI.h" 3
+           (*(volatile uint8_t *)((0x2C) + 0x20)) 
+# 303 "C:\\Users\\HONGKE~1\\DOCUME~1\\GitHub\\test\\070D7E~1.MUL\\CAN_SEND/SPI.h"
+                & ~0x03) | (clockDiv & 0x03);
+    
+# 304 "C:\\Users\\HONGKE~1\\DOCUME~1\\GitHub\\test\\070D7E~1.MUL\\CAN_SEND/SPI.h" 3
+   (*(volatile uint8_t *)((0x2D) + 0x20)) 
+# 304 "C:\\Users\\HONGKE~1\\DOCUME~1\\GitHub\\test\\070D7E~1.MUL\\CAN_SEND/SPI.h"
+        = (
+# 304 "C:\\Users\\HONGKE~1\\DOCUME~1\\GitHub\\test\\070D7E~1.MUL\\CAN_SEND/SPI.h" 3
+           (*(volatile uint8_t *)((0x2D) + 0x20)) 
+# 304 "C:\\Users\\HONGKE~1\\DOCUME~1\\GitHub\\test\\070D7E~1.MUL\\CAN_SEND/SPI.h"
+                & ~0x01) | ((clockDiv >> 2) & 0x01);
+  }
+
+
+
+  inline static void attachInterrupt() { 
+# 309 "C:\\Users\\HONGKE~1\\DOCUME~1\\GitHub\\test\\070D7E~1.MUL\\CAN_SEND/SPI.h" 3
+                                        (*(volatile uint8_t *)((0x2C) + 0x20)) 
+# 309 "C:\\Users\\HONGKE~1\\DOCUME~1\\GitHub\\test\\070D7E~1.MUL\\CAN_SEND/SPI.h"
+                                             |= 
+# 309 "C:\\Users\\HONGKE~1\\DOCUME~1\\GitHub\\test\\070D7E~1.MUL\\CAN_SEND/SPI.h" 3
+                                                (1 << (7))
+# 309 "C:\\Users\\HONGKE~1\\DOCUME~1\\GitHub\\test\\070D7E~1.MUL\\CAN_SEND/SPI.h"
+                                                         ; }
+  inline static void detachInterrupt() { 
+# 310 "C:\\Users\\HONGKE~1\\DOCUME~1\\GitHub\\test\\070D7E~1.MUL\\CAN_SEND/SPI.h" 3
+                                        (*(volatile uint8_t *)((0x2C) + 0x20)) 
+# 310 "C:\\Users\\HONGKE~1\\DOCUME~1\\GitHub\\test\\070D7E~1.MUL\\CAN_SEND/SPI.h"
+                                             &= ~
+# 310 "C:\\Users\\HONGKE~1\\DOCUME~1\\GitHub\\test\\070D7E~1.MUL\\CAN_SEND/SPI.h" 3
+                                                 (1 << (7))
+# 310 "C:\\Users\\HONGKE~1\\DOCUME~1\\GitHub\\test\\070D7E~1.MUL\\CAN_SEND/SPI.h"
+                                                          ; }
+
+private:
+  static uint8_t initialized;
+  static uint8_t interruptMode;
+  static uint8_t interruptMask;
+  static uint8_t interruptSave;
+
+
+
+};
+
+extern SPIClass SPI;
+# 17 "../lib/ACAN2517FD/ACAN2517FD.h" 2
+
+
+
+
+
+class ACAN2517FD {
+
+
+
+
+
+  public: ACAN2517FD (const uint8_t inCS,
+                      SPIClass & inSPI,
+                      const uint8_t inINT) ;
+
+
+
+
+
+  public: uint32_t begin (const ACAN2517FDSettings & inSettings,
+                          void (* inInterruptServiceRoutine) (void)) ;
+
+  public: uint32_t begin (const ACAN2517FDSettings & inSettings,
+                          void (* inInterruptServiceRoutine) (void),
+                          const ACAN2517FDFilters & inFilters) ;
+
+
+  public: static const uint32_t kRequestedConfigurationModeTimeOut = uint32_t (1) << 0 ;
+  public: static const uint32_t kReadBackErrorWith1MHzSPIClock = uint32_t (1) << 1 ;
+  public: static const uint32_t kTooFarFromDesiredBitRate = uint32_t (1) << 2 ;
+  public: static const uint32_t kInconsistentBitRateSettings = uint32_t (1) << 3 ;
+  public: static const uint32_t kINTPinIsNotAnInterrupt = uint32_t (1) << 4 ;
+  public: static const uint32_t kISRIsNull = uint32_t (1) << 5 ;
+  public: static const uint32_t kFilterDefinitionError = uint32_t (1) << 6 ;
+  public: static const uint32_t kMoreThan32Filters = uint32_t (1) << 7 ;
+  public: static const uint32_t kControllerReceiveFIFOSizeIsZero = uint32_t (1) << 8 ;
+  public: static const uint32_t kControllerReceiveFIFOSizeGreaterThan32 = uint32_t (1) << 9 ;
+  public: static const uint32_t kControllerTransmitFIFOSizeIsZero = uint32_t (1) << 10 ;
+  public: static const uint32_t kControllerTransmitFIFOSizeGreaterThan32 = uint32_t (1) << 11 ;
+  public: static const uint32_t kControllerRamUsageGreaterThan2048 = uint32_t (1) << 12 ;
+  public: static const uint32_t kControllerTXQPriorityGreaterThan31 = uint32_t (1) << 13 ;
+  public: static const uint32_t kControllerTransmitFIFOPriorityGreaterThan31 = uint32_t (1) << 14 ;
+  public: static const uint32_t kControllerTXQSizeGreaterThan32 = uint32_t (1) << 15 ;
+  public: static const uint32_t kRequestedModeTimeOut = uint32_t (1) << 16 ;
+  public: static const uint32_t kX10PLLNotReadyWithin1MS = uint32_t (1) << 17 ;
+  public: static const uint32_t kReadBackErrorWithFullSpeedSPIClock = uint32_t (1) << 18 ;
+  public: static const uint32_t kISRNotNullAndNoIntPin = uint32_t (1) << 19 ;
+  public: static const uint32_t kInvalidTDCO = uint32_t (1) << 20 ;
+
+
+
+
+
+
+  public: bool end (void) ;
+
+
+
+
+
+  public: bool tryToSend (const CANFDMessage & inMessage) ;
+
+
+
+
+
+  public: bool receive (CANFDMessage & outMessage) ;
+  public: bool available (void) ;
+  public: typedef void (*tFilterMatchCallBack) (const uint32_t inFilterIndex) ;
+  public: bool dispatchReceivedMessage (const tFilterMatchCallBack inFilterMatchCallBack = 
+# 86 "../lib/ACAN2517FD/ACAN2517FD.h" 3 4
+                                                                                          __null
+# 86 "../lib/ACAN2517FD/ACAN2517FD.h"
+                                                                                              ) ;
+
+
+  private: ACANFDCallBackRoutine * mCallBackFunctionArray = 
+# 89 "../lib/ACAN2517FD/ACAN2517FD.h" 3 4
+                                                           __null 
+# 89 "../lib/ACAN2517FD/ACAN2517FD.h"
+                                                                ;
+
+
+
+
+
+  public: uint32_t errorCounters (void) ;
+
+
+
+
+
+
+
+  public: uint32_t diagInfos (const int inIndex = 1) ;
+
+
+
+
+
+  public: ACAN2517FDSettings::OperationMode currentOperationMode (void) ;
+
+  public: void setOperationMode (const ACAN2517FDSettings::OperationMode inMode) ;
+
+
+
+
+
+  public: bool recoverFromRestrictedOperationMode (void) ;
+
+
+
+
+
+
+  public: bool performSleepModeToConfigurationMode (void) ;
+# 133 "../lib/ACAN2517FD/ACAN2517FD.h"
+  private: SPISettings mSPISettings ;
+  private: SPIClass & mSPI ;
+  private: const uint8_t mCS ;
+  private: const uint8_t mINT ;
+  private: bool mUsesTXQ ;
+  private: bool mHardwareTxFIFOFull ;
+  private: bool mRxInterruptEnabled ;
+  private: bool mHasDataBitRate ;
+  private: uint8_t mTransmitFIFOPayload ;
+  private: uint8_t mTXQBufferPayload ;
+  private: uint8_t mReceiveFIFOPayload ;
+  private: uint8_t mTXBWS_RequestedMode ;
+  private: uint8_t mHardwareReceiveBufferOverflowCount ;
+
+
+
+
+
+  private: ACANFDBuffer mDriverReceiveBuffer ;
+
+  public: uint32_t driverReceiveBufferPeakCount (void) const { return mDriverReceiveBuffer.peakCount () ; }
+
+  public: uint8_t hardwareReceiveBufferOverflowCount (void) const { return mHardwareReceiveBufferOverflowCount ; }
+
+  public: void resetHardwareReceiveBufferOverflowCount (void) { mHardwareReceiveBufferOverflowCount = 0 ; }
+
+
+
+
+
+  private: ACANFDBuffer mDriverTransmitBuffer ;
+
+  public: uint32_t driverTransmitBufferSize (void) const { return mDriverTransmitBuffer.size () ; }
+
+  public: uint32_t driverTransmitBufferCount (void) const { return mDriverTransmitBuffer.count () ; }
+
+  public: uint32_t driverTransmitBufferPeakCount (void) const { return mDriverTransmitBuffer.peakCount () ; }
+
+
+
+
+
+  private: void writeRegister32Assume_SPI_transaction (const uint16_t inRegisterAddress, const uint32_t inValue) ;
+  private: void writeRegister8Assume_SPI_transaction (const uint16_t inRegisterAddress, const uint8_t inValue) ;
+
+  private: uint32_t readRegister32Assume_SPI_transaction (const uint16_t inRegisterAddress) ;
+  private: uint8_t readRegister8Assume_SPI_transaction (const uint16_t inRegisterAddress) ;
+  private: uint16_t readRegister16Assume_SPI_transaction (const uint16_t inRegisterAddress) ;
+
+  private: void reset2517FD (void) ;
+
+  private: void writeRegister8 (const uint16_t inRegisterAddress, const uint8_t inValue) ;
+  private: void writeRegister32 (const uint16_t inAddress, const uint32_t inValue) ;
+
+  private: uint8_t readRegister8 (const uint16_t inAddress) ;
+  private: uint16_t readRegister16 (const uint16_t inAddress) ;
+  private: uint32_t readRegister32 (const uint16_t inAddress) ;
+
+  private: bool sendViaTXQ (const CANFDMessage & inMessage) ;
+  private: bool enterInTransmitBuffer (const CANFDMessage & inMessage) ;
+  private: void appendInControllerTxFIFO (const CANFDMessage & inMessage) ;
+
+
+
+
+
+  public: void poll (void) ;
+
+
+
+
+
+  public: void isr (void) ;
+  public: void isr_poll_core (void) ;
+  private: void receiveInterrupt (void) ;
+  private: void transmitInterrupt (void) ;
+# 218 "../lib/ACAN2517FD/ACAN2517FD.h"
+    private: volatile uint8_t *cs_pin_reg;
+    private: uint8_t cs_pin_mask;
+    private: inline void initCS () {
+      cs_pin_reg = ( (volatile uint8_t *)( 
+# 221 "../lib/ACAN2517FD/ACAN2517FD.h" 3
+                  (__extension__({ uint16_t __addr16 = (uint16_t)((uint16_t)(
+# 221 "../lib/ACAN2517FD/ACAN2517FD.h"
+                  port_to_output_PGM + (( 
+# 221 "../lib/ACAN2517FD/ACAN2517FD.h" 3
+                  (__extension__({ uint16_t __addr16 = (uint16_t)((uint16_t)(
+# 221 "../lib/ACAN2517FD/ACAN2517FD.h"
+                  digital_pin_to_port_PGM + (mCS)
+# 221 "../lib/ACAN2517FD/ACAN2517FD.h" 3
+                  )); uint8_t __result; __asm__ __volatile__ ( "lpm %0, Z" "\n\t" : "=r" (__result) : "z" (__addr16) ); __result; })) 
+# 221 "../lib/ACAN2517FD/ACAN2517FD.h"
+                  ))
+# 221 "../lib/ACAN2517FD/ACAN2517FD.h" 3
+                  )); uint16_t __result; __asm__ __volatile__ ( "lpm %A0, Z+" "\n\t" "lpm %B0, Z" "\n\t" : "=r" (__result), "=z" (__addr16) : "1" (__addr16) ); __result; }))
+# 221 "../lib/ACAN2517FD/ACAN2517FD.h"
+                  ) );
+      cs_pin_mask = ( 
+# 222 "../lib/ACAN2517FD/ACAN2517FD.h" 3
+                   (__extension__({ uint16_t __addr16 = (uint16_t)((uint16_t)(
+# 222 "../lib/ACAN2517FD/ACAN2517FD.h"
+                   digital_pin_to_bit_mask_PGM + (mCS)
+# 222 "../lib/ACAN2517FD/ACAN2517FD.h" 3
+                   )); uint8_t __result; __asm__ __volatile__ ( "lpm %0, Z" "\n\t" : "=r" (__result) : "z" (__addr16) ); __result; })) 
+# 222 "../lib/ACAN2517FD/ACAN2517FD.h"
+                   );
+      pinMode(mCS, 0x1);
+    }
+    private: inline void assertCS() {
+      *(cs_pin_reg) &= ~cs_pin_mask;
+    }
+    private: inline void deassertCS() {
+      *(cs_pin_reg) |= cs_pin_mask;
+    }
+# 330 "../lib/ACAN2517FD/ACAN2517FD.h"
+  public: void gpioSetMode (const uint8_t inPin, const uint8_t inMode) ;
+
+  public: void gpioWrite (const uint8_t inPin, const uint8_t inLevel) ;
+
+  public: bool gpioRead (const uint8_t inPin) ;
+
+  public: void configureGPIO0AsXSTBY (void) ;
+
+
+
+
+
+  private: ACAN2517FD (const ACAN2517FD &) = delete ;
+  private: ACAN2517FD & operator = (const ACAN2517FD &) = delete ;
+
+
+
+} ;
+# 9 "C:\\Users\\hongkerous2619\\Documents\\GitHub\\test\\07.MultiPacket_can\\CAN_SEND\\lib\\ACAN2517FD\\ACAN2517FD.cpp" 2
+
+
+
+static const uint8_t TXBWS = 0 ;
+# 61 "C:\\Users\\hongkerous2619\\Documents\\GitHub\\test\\07.MultiPacket_can\\CAN_SEND\\lib\\ACAN2517FD\\ACAN2517FD.cpp"
+static const uint16_t CON_REGISTER = 0x000 ;
+static const uint16_t NBTCFG_REGISTER = 0x004 ;
+static const uint16_t DBTCFG_REGISTER = 0x008 ;
+static const uint16_t TDC_REGISTER = 0x00C ;
+
+static const uint16_t TREC_REGISTER = 0x034 ;
+static const uint16_t BDIAG0_REGISTER = 0x038 ;
+static const uint16_t BDIAG1_REGISTER = 0x03C ;
+
+
+
+
+
+static const uint16_t TXQCON_REGISTER = 0x050 ;
+static const uint16_t TXQSTA_REGISTER = 0x054 ;
+static const uint16_t TXQUA_REGISTER = 0x058 ;
+
+
+
+
+
+static const uint16_t INT_REGISTER = 0x01C ;
+
+
+
+
+
+static uint16_t FIFOCON_REGISTER (const uint16_t inFIFOIndex) {
+  return 0x05C + 12 * (inFIFOIndex - 1) ;
+}
+
+
+
+static uint16_t FIFOSTA_REGISTER (const uint16_t inFIFOIndex) {
+  return 0x060 + 12 * (inFIFOIndex - 1) ;
+}
+
+
+
+static uint16_t FIFOUA_REGISTER (const uint16_t inFIFOIndex) {
+  return 0x064 + 12 * (inFIFOIndex - 1) ;
+}
+
+
+
+
+
+static uint16_t FLTCON_REGISTER (const uint16_t inFilterIndex) {
+  return 0x1D0 + inFilterIndex ;
+}
+
+
+
+static uint16_t FLTOBJ_REGISTER (const uint16_t inFilterIndex) {
+  return 0x1F0 + 8 * inFilterIndex ;
+}
+
+
+
+static uint16_t MASK_REGISTER (const uint16_t inFilterIndex) {
+  return 0x1F4 + 8 * inFilterIndex ;
+}
+
+
+
+
+
+static const uint16_t OSC_REGISTER = 0xE00 ;
+
+
+
+
+
+static const uint16_t IOCON_REGISTER_00_07 = 0xE04 ;
+static const uint16_t IOCON_REGISTER_08_15 = 0xE05 ;
+static const uint16_t IOCON_REGISTER_16_23 = 0xE06 ;
+static const uint16_t IOCON_REGISTER_24_31 = 0xE07 ;
+
+
+
+
+
+static const uint8_t RECEIVE_FIFO_INDEX = 1 ;
+static const uint8_t TRANSMIT_FIFO_INDEX = 2 ;
+
+
+
+
+
+static void enterU32InBufferAtIndex (const uint32_t inValue, uint8_t ioBuffer [], const uint8_t inIndex) {
+  ioBuffer [inIndex + 0] = (uint8_t) inValue ;
+  ioBuffer [inIndex + 1] = (uint8_t) (inValue >> 8) ;
+  ioBuffer [inIndex + 2] = (uint8_t) (inValue >> 16) ;
+  ioBuffer [inIndex + 3] = (uint8_t) (inValue >> 24) ;
+}
+
+
+
+static uint32_t u32FromBufferAtIndex (uint8_t ioBuffer [], const uint8_t inIndex) {
+  uint32_t result = (uint32_t) ioBuffer [inIndex + 0] ;
+  result |= ((uint32_t) ioBuffer [inIndex + 1]) << 8 ;
+  result |= ((uint32_t) ioBuffer [inIndex + 2]) << 16 ;
+  result |= ((uint32_t) ioBuffer [inIndex + 3]) << 24 ;
+  return result ;
+}
+
+
+
+static uint16_t u16FromBufferAtIndex (uint8_t ioBuffer [], const uint8_t inIndex) {
+  uint16_t result = (uint16_t) ioBuffer [inIndex + 0] ;
+  result |= ((uint16_t) ioBuffer [inIndex + 1]) << 8 ;
+  return result ;
+}
+
+
+
+ACAN2517FD::ACAN2517FD (const uint8_t inCS,
+                        SPIClass & inSPI,
+                        const uint8_t inINT) :
+mSPISettings (),
+mSPI (inSPI),
+mCS (inCS),
+mINT (inINT),
+mUsesTXQ (false),
+mHardwareTxFIFOFull (false),
+mRxInterruptEnabled (true),
+mHasDataBitRate (false),
+mTransmitFIFOPayload (0),
+mTXQBufferPayload (0),
+mReceiveFIFOPayload (0),
+mTXBWS_RequestedMode (0),
+mHardwareReceiveBufferOverflowCount (0),
+mDriverReceiveBuffer (),
+mDriverTransmitBuffer ()
+
+
+
+{
+}
+
+
+
+uint32_t ACAN2517FD::begin (const ACAN2517FDSettings & inSettings,
+                            void (* inInterruptServiceRoutine) (void)) {
+
+  ACAN2517FDFilters filters ;
+  filters.appendPassAllFilter (
+# 207 "C:\\Users\\hongkerous2619\\Documents\\GitHub\\test\\07.MultiPacket_can\\CAN_SEND\\lib\\ACAN2517FD\\ACAN2517FD.cpp" 3 4
+                              __null
+# 207 "C:\\Users\\hongkerous2619\\Documents\\GitHub\\test\\07.MultiPacket_can\\CAN_SEND\\lib\\ACAN2517FD\\ACAN2517FD.cpp"
+                                  ) ;
+
+  return begin (inSettings, inInterruptServiceRoutine, filters) ;
+}
+
+
+
+uint32_t ACAN2517FD::begin (const ACAN2517FDSettings & inSettings,
+                            void (* inInterruptServiceRoutine) (void),
+                            const ACAN2517FDFilters & inFilters) {
+  uint32_t errorCode = 0 ;
+
+  if (!inSettings.mArbitrationBitRateClosedToDesiredRate) {
+    errorCode |= kTooFarFromDesiredBitRate ;
+  }
+  if (inSettings.CANBitSettingConsistency () != 0) {
+    errorCode |= kInconsistentBitRateSettings ;
+  }
+
+  const int8_t itPin = ((mINT) == 2 ? 0 : ((mINT) == 3 ? 1 : -1)) ;
+  if ((mINT != 255) && (itPin == -1)) {
+    errorCode = kINTPinIsNotAnInterrupt ;
+  }
+
+  if ((mINT != 255) && (inInterruptServiceRoutine == 
+# 231 "C:\\Users\\hongkerous2619\\Documents\\GitHub\\test\\07.MultiPacket_can\\CAN_SEND\\lib\\ACAN2517FD\\ACAN2517FD.cpp" 3 4
+                                                    __null
+# 231 "C:\\Users\\hongkerous2619\\Documents\\GitHub\\test\\07.MultiPacket_can\\CAN_SEND\\lib\\ACAN2517FD\\ACAN2517FD.cpp"
+                                                        )) {
+    errorCode |= kISRIsNull ;
+  }
+
+  if ((mINT == 255) && (inInterruptServiceRoutine != 
+# 235 "C:\\Users\\hongkerous2619\\Documents\\GitHub\\test\\07.MultiPacket_can\\CAN_SEND\\lib\\ACAN2517FD\\ACAN2517FD.cpp" 3 4
+                                                    __null
+# 235 "C:\\Users\\hongkerous2619\\Documents\\GitHub\\test\\07.MultiPacket_can\\CAN_SEND\\lib\\ACAN2517FD\\ACAN2517FD.cpp"
+                                                        )) {
+    errorCode |= kISRNotNullAndNoIntPin ;
+  }
+
+  if (inSettings.mControllerTXQSize > 32) {
+    errorCode |= kControllerTXQSizeGreaterThan32 ;
+  }
+
+  if (inSettings.mControllerTXQBufferPriority > 31) {
+    errorCode |= kControllerTXQPriorityGreaterThan31 ;
+  }
+
+  if (inSettings.mControllerReceiveFIFOSize == 0) {
+    errorCode |= kControllerReceiveFIFOSizeIsZero ;
+  }else if (inSettings.mControllerReceiveFIFOSize > 32) {
+    errorCode |= kControllerReceiveFIFOSizeGreaterThan32 ;
+  }
+
+  if (inSettings.mControllerTransmitFIFOSize == 0) {
+    errorCode |= kControllerTransmitFIFOSizeIsZero ;
+  }else if (inSettings.mControllerTransmitFIFOSize > 32) {
+    errorCode |= kControllerTransmitFIFOSizeGreaterThan32 ;
+  }
+
+  if (inSettings.mControllerTransmitFIFOPriority > 31) {
+    errorCode |= kControllerTransmitFIFOPriorityGreaterThan31 ;
+  }
+
+  if (inSettings.ramUsage () > 2048) {
+    errorCode |= kControllerRamUsageGreaterThan2048 ;
+  }
+
+  if (inFilters.filterCount () > 32) {
+    errorCode |= kMoreThan32Filters ;
+  }
+  if (inFilters.filterStatus () != ACAN2517FDFilters::kFiltersOk) {
+    errorCode |= kFilterDefinitionError ;
+  }
+
+  if ((inSettings.mTDCO > 63) || (inSettings.mTDCO < -64)) {
+    errorCode |= kInvalidTDCO ;
+  }
+
+  if (errorCode == 0) {
+    if (mINT != 255) {
+      pinMode (mINT, 0x2) ;
+    }
+    initCS () ;
+
+    mSPISettings = SPISettings (800UL * 1000, 1, 0x00) ;
+
+    bool wait = true ;
+    const uint32_t startTime = millis () ;
+    while (wait) {
+      writeRegister8 (CON_REGISTER + 3, 0x04 | (1 << 3)) ;
+      const uint8_t actualMode = (readRegister8 (CON_REGISTER + 2) >> 5) & 0x07 ;
+      wait = actualMode != 0x04 ;
+      if (wait && ((millis () - startTime) > 2)) {
+        errorCode |= kRequestedConfigurationModeTimeOut ;
+        wait = false ;
+      }
+    }
+
+    reset2517FD () ;
+  }
+
+
+  for (uint32_t i=1 ; (i != 0) && (errorCode == 0) ; i <<= 1) {
+    const uint16_t RAM_WORD_ADDRESS = 0x400 ;
+    writeRegister32 (RAM_WORD_ADDRESS, i) ;
+    const uint32_t readBackValue = readRegister32 (RAM_WORD_ADDRESS) ;
+    if (readBackValue != i) {
+      errorCode = kReadBackErrorWith1MHzSPIClock ;
+    }
+  }
+
+
+
+
+  if (errorCode == 0) {
+    uint8_t pll = 0 ;
+    uint8_t osc = 0 ;
+    switch (inSettings.oscillator ()) {
+    case ACAN2517FDSettings::OSC_4MHz:
+    case ACAN2517FDSettings::OSC_20MHz:
+    case ACAN2517FDSettings::OSC_40MHz:
+      break ;
+    case ACAN2517FDSettings::OSC_4MHz_DIVIDED_BY_2:
+    case ACAN2517FDSettings::OSC_20MHz_DIVIDED_BY_2:
+    case ACAN2517FDSettings::OSC_40MHz_DIVIDED_BY_2:
+      osc = 1 << 4 ;
+      break ;
+    case ACAN2517FDSettings::OSC_4MHz10xPLL_DIVIDED_BY_2 :
+      pll = 1 ;
+      osc = 1 << 4 ;
+      break ;
+    case ACAN2517FDSettings::OSC_4MHz10xPLL :
+      pll = 1 ;
+      break ;
+    }
+    osc |= pll ;
+    if (inSettings.mCLKOPin != ACAN2517FDSettings::SOF) {
+      osc |= ((uint8_t) inSettings.mCLKOPin) << 5 ;
+    }
+    writeRegister8 (OSC_REGISTER, osc) ;
+
+    if (pll != 0) {
+      bool wait = true ;
+      const uint32_t startTime = millis () ;
+      while (wait) {
+        wait = (readRegister8 (OSC_REGISTER + 1) & 0x1) == 0 ;
+        if (wait && ((millis () - startTime) > 2)) {
+          errorCode = kX10PLLNotReadyWithin1MS ;
+          wait = false ;
+        }
+      }
+    }
+  }
+
+  mSPISettings = SPISettings ((inSettings.sysClock () * 2) / 5, 1, 0x00) ;
+
+
+  for (uint32_t i=1 ; (i != 0) && (errorCode == 0) ; i <<= 1) {
+    writeRegister32 (0x400, i) ;
+    const uint32_t readBackValue = readRegister32 (0x400) ;
+    if (readBackValue != i) {
+      errorCode = kReadBackErrorWithFullSpeedSPIClock ;
+    }
+  }
+
+  if (errorCode == 0) {
+
+    mDriverTransmitBuffer.initWithSize (inSettings.mDriverTransmitFIFOSize) ;
+    mDriverReceiveBuffer.initWithSize (inSettings.mDriverReceiveFIFOSize) ;
+
+    for (uint16_t address = 0x400 ; address < 0xC00 ; address += 4) {
+      writeRegister32 (address, 0) ;
+    }
+
+    uint8_t data8 = 0x03 ;
+    if (inSettings.mCLKOPin == ACAN2517FDSettings::SOF) {
+      data8 |= 1 << 5 ;
+    }
+    if (inSettings.mTXCANIsOpenDrain) {
+      data8 |= 1 << 4 ;
+    }
+    if (inSettings.mINTIsOpenDrain) {
+      data8 |= 1 << 6 ;
+    }
+    writeRegister8 (IOCON_REGISTER_24_31, data8) ;
+
+    data8 = 1 << 6 ;
+    if (inSettings.mISOCRCEnabled) {
+      data8 |= 1 << 5 ;
+    }
+    writeRegister8 (CON_REGISTER, data8) ;
+
+    uint32_t data32 = 1UL << 25 ;
+    if (inSettings.mTDCO != 0) {
+      data32 |= 1UL << 17 ;
+      const uint32_t TCDO = uint32_t (inSettings.mTDCO) & 0x7F ;
+      data32 |= TCDO << 8 ;
+    }
+    writeRegister32 (TDC_REGISTER, data32) ;
+
+    data8 = inSettings.mControllerTXQBufferRetransmissionAttempts ;
+    data8 <<= 5 ;
+    data8 |= inSettings.mControllerTXQBufferPriority ;
+    writeRegister8 (TXQCON_REGISTER + 2, data8) ;
+
+
+    mUsesTXQ = inSettings.mControllerTXQSize > 0 ;
+    data8 = inSettings.mControllerTXQSize - 1 ;
+    data8 |= inSettings.mControllerTXQBufferPayload << 5 ;
+    writeRegister8 (TXQCON_REGISTER + 3, data8) ;
+    mTXQBufferPayload = ACAN2517FDSettings::objectSizeForPayload (inSettings.mControllerTXQBufferPayload) ;
+
+
+
+
+    data8 = 0x01 ;
+    data8 |= mUsesTXQ ? (1 << 4) : 0x00 ;
+    writeRegister8 (CON_REGISTER + 2, data8) ;
+
+    data8 = inSettings.mControllerReceiveFIFOSize - 1 ;
+    data8 |= inSettings.mControllerReceiveFIFOPayload << 5 ;
+    writeRegister8 (FIFOCON_REGISTER (RECEIVE_FIFO_INDEX) + 3, data8) ;
+    data8 = 1 << 0 ;
+    data8 |= 1 << 3 ;
+    writeRegister8 (FIFOCON_REGISTER (RECEIVE_FIFO_INDEX), data8) ;
+    mReceiveFIFOPayload = ACAN2517FDSettings::objectSizeForPayload (inSettings.mControllerReceiveFIFOPayload) ;
+
+    data8 = inSettings.mControllerTransmitFIFORetransmissionAttempts ;
+    data8 <<= 5 ;
+    data8 |= inSettings.mControllerTransmitFIFOPriority ;
+    writeRegister8 (FIFOCON_REGISTER (TRANSMIT_FIFO_INDEX) + 2, data8) ;
+    data8 = inSettings.mControllerTransmitFIFOSize - 1 ;
+    data8 |= inSettings.mControllerTransmitFIFOPayload << 5 ;
+    writeRegister8 (FIFOCON_REGISTER (TRANSMIT_FIFO_INDEX) + 3, data8) ;
+    data8 = 1 << 7 ;
+    data8 |= 1 << 4 ;
+    writeRegister8 (FIFOCON_REGISTER (TRANSMIT_FIFO_INDEX), data8) ;
+    mTransmitFIFOPayload = ACAN2517FDSettings::objectSizeForPayload (inSettings.mControllerTransmitFIFOPayload) ;
+
+    uint8_t filterIndex = 0 ;
+    ACAN2517FDFilters::Filter * filter = inFilters.mFirstFilter ;
+    mCallBackFunctionArray = new ACANFDCallBackRoutine [inFilters.filterCount ()] ;
+    while (
+# 442 "C:\\Users\\hongkerous2619\\Documents\\GitHub\\test\\07.MultiPacket_can\\CAN_SEND\\lib\\ACAN2517FD\\ACAN2517FD.cpp" 3 4
+          __null 
+# 442 "C:\\Users\\hongkerous2619\\Documents\\GitHub\\test\\07.MultiPacket_can\\CAN_SEND\\lib\\ACAN2517FD\\ACAN2517FD.cpp"
+               != filter) {
+      mCallBackFunctionArray [filterIndex] = filter->mCallBackRoutine ;
+      writeRegister32 (MASK_REGISTER (filterIndex), filter->mFilterMask) ;
+      writeRegister32 (FLTOBJ_REGISTER (filterIndex), filter->mAcceptanceFilter) ;
+      data8 = 1 << 7 ;
+      data8 |= 1 ;
+      writeRegister8 (FLTCON_REGISTER (filterIndex), data8) ;
+      filter = filter->mNextFilter ;
+      filterIndex += 1 ;
+    }
+
+    data8 = (1 << 1) ;
+    data8 |= (1 << 0) ;
+    writeRegister8 (INT_REGISTER + 2, data8) ;
+    data8 = (1 << 2) ;
+    writeRegister8 (INT_REGISTER + 3, data8) ;
+
+
+
+
+
+
+
+    uint32_t data = inSettings.mBitRatePrescaler - 1 ;
+    data <<= 8 ;
+    data |= inSettings.mArbitrationPhaseSegment1 - 1 ;
+    data <<= 8 ;
+    data |= inSettings.mArbitrationPhaseSegment2 - 1 ;
+    data <<= 8 ;
+    data |= inSettings.mArbitrationSJW - 1 ;
+    writeRegister32 (NBTCFG_REGISTER, data);
+# 481 "C:\\Users\\hongkerous2619\\Documents\\GitHub\\test\\07.MultiPacket_can\\CAN_SEND\\lib\\ACAN2517FD\\ACAN2517FD.cpp"
+    mHasDataBitRate = inSettings.mDataBitRateFactor != ::DataBitRateFactor::x1 ;
+    if (mHasDataBitRate) {
+      data = inSettings.mBitRatePrescaler - 1 ;
+      data <<= 8 ;
+      data |= inSettings.mDataPhaseSegment1 - 1 ;
+      data <<= 8 ;
+      data |= inSettings.mDataPhaseSegment2 - 1 ;
+      data <<= 8 ;
+      data |= inSettings.mDataSJW - 1 ;
+      writeRegister32 (DBTCFG_REGISTER, data) ;
+    }
+
+
+
+    mTXBWS_RequestedMode = inSettings.mRequestedMode | (TXBWS << 4) ;
+    writeRegister8 (CON_REGISTER + 3, mTXBWS_RequestedMode);
+
+    bool wait = true ;
+    const uint32_t startTime = millis () ;
+    while (wait) {
+     const uint8_t actualMode = (readRegister8 (CON_REGISTER + 2) >> 5) & 0x07 ;
+      wait = actualMode != inSettings.mRequestedMode ;
+      if (wait && ((millis () - startTime) > 10)) {
+        errorCode |= kRequestedModeTimeOut ;
+        wait = false ;
+      }
+    }
+
+
+
+    if (mINT != 255) {
+
+
+
+        attachInterrupt (itPin, inInterruptServiceRoutine, 0x0) ;
+        mSPI.usingInterrupt (itPin) ;
+
+    }
+
+
+    mHardwareTxFIFOFull = false ;
+    mHardwareReceiveBufferOverflowCount = 0 ;
+  }
+
+  return errorCode ;
+}
+
+
+
+
+
+bool ACAN2517FD::end (void) {
+  mSPI.beginTransaction (mSPISettings) ;
+
+
+
+      
+# 537 "C:\\Users\\hongkerous2619\\Documents\\GitHub\\test\\07.MultiPacket_can\\CAN_SEND\\lib\\ACAN2517FD\\ACAN2517FD.cpp" 3
+     __asm__ __volatile__ ("cli" ::: "memory") 
+# 537 "C:\\Users\\hongkerous2619\\Documents\\GitHub\\test\\07.MultiPacket_can\\CAN_SEND\\lib\\ACAN2517FD\\ACAN2517FD.cpp"
+                     ;
+
+
+    if (mINT != 255) {
+      const int8_t itPin = ((mINT) == 2 ? 0 : ((mINT) == 3 ? 1 : -1)) ;
+      detachInterrupt (itPin) ;
+    }
+
+    bool wait = true ;
+    bool ok = false ;
+    const uint32_t startTime = millis () ;
+    while (wait) {
+      writeRegister8Assume_SPI_transaction (CON_REGISTER + 3, 0x04 | (1 << 3)) ;
+      const uint8_t actualMode = (readRegister8Assume_SPI_transaction (CON_REGISTER + 2) >> 5) & 0x07 ;
+      ok = actualMode == 0x04 ;
+      wait = !ok ;
+      if (wait && ((millis () - startTime) > 2)) {
+        wait = false ;
+      }
+    }
+
+    assertCS () ;
+      mSPI.transfer16 (0x00) ;
+    deassertCS () ;
+# 569 "C:\\Users\\hongkerous2619\\Documents\\GitHub\\test\\07.MultiPacket_can\\CAN_SEND\\lib\\ACAN2517FD\\ACAN2517FD.cpp"
+    delete [] mCallBackFunctionArray ; mCallBackFunctionArray = nullptr ;
+    mDriverReceiveBuffer.initWithSize (0) ;
+    mDriverTransmitBuffer.initWithSize (0) ;
+
+
+
+
+      
+# 576 "C:\\Users\\hongkerous2619\\Documents\\GitHub\\test\\07.MultiPacket_can\\CAN_SEND\\lib\\ACAN2517FD\\ACAN2517FD.cpp" 3
+     __asm__ __volatile__ ("sei" ::: "memory") 
+# 576 "C:\\Users\\hongkerous2619\\Documents\\GitHub\\test\\07.MultiPacket_can\\CAN_SEND\\lib\\ACAN2517FD\\ACAN2517FD.cpp"
+                   ;
+
+  mSPI.endTransaction () ;
+
+  return ok ;
+}
+
+
+
+
+
+bool ACAN2517FD::tryToSend (const CANFDMessage & inMessage) {
+  bool ok = inMessage.isValid () ;
+  if (ok) {
+    mSPI.beginTransaction (mSPISettings) ;
+
+
+
+        
+# 594 "C:\\Users\\hongkerous2619\\Documents\\GitHub\\test\\07.MultiPacket_can\\CAN_SEND\\lib\\ACAN2517FD\\ACAN2517FD.cpp" 3
+       __asm__ __volatile__ ("cli" ::: "memory") 
+# 594 "C:\\Users\\hongkerous2619\\Documents\\GitHub\\test\\07.MultiPacket_can\\CAN_SEND\\lib\\ACAN2517FD\\ACAN2517FD.cpp"
+                       ;
+
+        if (inMessage.idx == 0) {
+          ok = inMessage.len <= mTransmitFIFOPayload ;
+          if (ok) {
+            ok = enterInTransmitBuffer (inMessage) ;
+          }
+        }else if (inMessage.idx == 255) {
+          ok = inMessage.len <= mTXQBufferPayload ;
+          if (ok) {
+            ok = sendViaTXQ (inMessage) ;
+          }
+        }
+
+
+
+        
+# 610 "C:\\Users\\hongkerous2619\\Documents\\GitHub\\test\\07.MultiPacket_can\\CAN_SEND\\lib\\ACAN2517FD\\ACAN2517FD.cpp" 3
+       __asm__ __volatile__ ("sei" ::: "memory") 
+# 610 "C:\\Users\\hongkerous2619\\Documents\\GitHub\\test\\07.MultiPacket_can\\CAN_SEND\\lib\\ACAN2517FD\\ACAN2517FD.cpp"
+                     ;
+
+    mSPI.endTransaction () ;
+  }
+  return ok ;
+}
+
+
+
+bool ACAN2517FD::enterInTransmitBuffer (const CANFDMessage & inMessage) {
+  bool result ;
+  if (mHardwareTxFIFOFull) {
+    result = mDriverTransmitBuffer.append (inMessage) ;
+  }else{
+    result = true ;
+    appendInControllerTxFIFO (inMessage) ;
+
+    const uint8_t status = readRegister8Assume_SPI_transaction (FIFOSTA_REGISTER (TRANSMIT_FIFO_INDEX)) ;
+    if ((status & 1) == 0) {
+      uint8_t data8 = 1 << 7 ;
+      data8 |= 1 ;
+      data8 |= 1 << 4 ;
+      writeRegister8Assume_SPI_transaction (FIFOCON_REGISTER (TRANSMIT_FIFO_INDEX), data8) ;
+      mHardwareTxFIFOFull = true ;
+    }
+  }
+  return result ;
+}
+
+
+
+static uint32_t lengthCodeForLength (const uint8_t inLength) {
+  uint32_t result = inLength & 0x0F ;
+  switch (inLength) {
+    case 12 : result = 9 ; break ;
+    case 16 : result = 10 ; break ;
+    case 20 : result = 11 ; break ;
+    case 24 : result = 12 ; break ;
+    case 32 : result = 13 ; break ;
+    case 48 : result = 14 ; break ;
+    case 64 : result = 15 ; break ;
+  }
+  return result ;
+}
+
+
+
+void ACAN2517FD::appendInControllerTxFIFO (const CANFDMessage & inMessage) {
+  const uint16_t ramAddr = uint16_t (0x400 + readRegister32Assume_SPI_transaction (FIFOUA_REGISTER (TRANSMIT_FIFO_INDEX))) ;
+
+  uint32_t idf = inMessage.id ;
+  if (inMessage.ext) {
+    idf = ((inMessage.id >> 18) & 0x7FF) | ((inMessage.id & 0x3FFFF) << 11) ;
+  }
+
+  uint32_t flags = lengthCodeForLength (inMessage.len) ;
+  if (inMessage.ext) {
+    flags |= 1 << 4 ;
+  }
+  switch (inMessage.type) {
+  case CANFDMessage::CAN_REMOTE :
+    flags |= 1 << 5 ;
+    break ;
+  case CANFDMessage::CAN_DATA :
+   break ;
+  case CANFDMessage::CANFD_NO_BIT_RATE_SWITCH :
+    flags |= 1 << 7 ;
+    break ;
+  case CANFDMessage::CANFD_WITH_BIT_RATE_SWITCH :
+    flags |= 1 << 7 ;
+    if (mHasDataBitRate) {
+      flags |= 1 << 6 ;
+    }
+    break ;
+  }
+
+  const uint32_t wordCount = (inMessage.len + 3) / 4 ;
+
+  uint8_t buffer [74] = {0} ;
+
+  const uint16_t writeCommand = (ramAddr & 0x0FFF) | (0b0010 << 12) ;
+  buffer [0] = writeCommand >> 8 ;
+  buffer [1] = writeCommand & 0xFF ;
+
+  enterU32InBufferAtIndex (idf, buffer, 2) ;
+  enterU32InBufferAtIndex (flags, buffer, 6) ;
+  for (uint32_t i=0 ; i < wordCount ; i++) {
+    enterU32InBufferAtIndex (inMessage.data32 [i], buffer, 10 + 4 * i) ;
+  }
+
+  assertCS () ;
+    mSPI.transfer (buffer, 10 + 4 * wordCount) ;
+  deassertCS () ;
+
+  const uint8_t data8 = (1 << 0) | (1 << 1) ;
+  writeRegister8Assume_SPI_transaction (FIFOCON_REGISTER (TRANSMIT_FIFO_INDEX) + 1, data8);
+}
+
+
+
+bool ACAN2517FD::sendViaTXQ (const CANFDMessage & inMessage) {
+  bool ok = mUsesTXQ ;
+  if (ok) {
+    uint8_t sta = readRegister8Assume_SPI_transaction (TXQSTA_REGISTER) ;
+
+    ok = (sta & (1 << 4)) != 0 ;
+    if (ok) {
+      writeRegister8Assume_SPI_transaction (TXQSTA_REGISTER, ~ (1 << 4)) ;
+    }else{
+
+      ok = (sta & 1) != 0 ;
+    }
+    if (ok) {
+      const uint16_t ramAddress = (uint16_t) (0x400 + readRegister32Assume_SPI_transaction (TXQUA_REGISTER)) ;
+
+      uint32_t idf = inMessage.id ;
+      if (inMessage.ext) {
+        idf = ((inMessage.id >> 18) & 0x7FF) | ((inMessage.id & 0x3FFFF) << 11) ;
+      }
+
+      uint32_t flags = lengthCodeForLength (inMessage.len) ;
+      if (inMessage.ext) {
+        flags |= 1 << 4 ;
+      }
+      switch (inMessage.type) {
+      case CANFDMessage::CAN_REMOTE :
+        flags |= 1 << 5 ;
+        break ;
+      case CANFDMessage::CAN_DATA :
+       break ;
+      case CANFDMessage::CANFD_NO_BIT_RATE_SWITCH :
+        flags |= 1 << 7 ;
+        break ;
+      case CANFDMessage::CANFD_WITH_BIT_RATE_SWITCH :
+        flags |= 1 << 7 ;
+        if (mHasDataBitRate) {
+          flags |= 1 << 6 ;
+        }
+        break ;
+      }
+
+      const uint32_t wordCount = (inMessage.len + 3) / 4 ;
+
+      uint8_t buffer [74] = {0} ;
+
+      const uint16_t writeCommand = (ramAddress & 0x0FFF) | (0b0010 << 12) ;
+      buffer [0] = writeCommand >> 8 ;
+      buffer [1] = writeCommand & 0xFF ;
+
+      enterU32InBufferAtIndex (idf, buffer, 2) ;
+      enterU32InBufferAtIndex (flags, buffer, 6) ;
+      for (uint32_t i=0 ; i < wordCount ; i++) {
+        enterU32InBufferAtIndex (inMessage.data32 [i], buffer, 10 + 4 * i) ;
+      }
+
+      assertCS () ;
+        mSPI.transfer (buffer, 10 + 4 * wordCount) ;
+      deassertCS () ;
+
+      const uint8_t data8 = (1 << 0) | (1 << 1) ;
+      writeRegister8Assume_SPI_transaction (TXQCON_REGISTER + 1, data8);
+    }
+  }
+  return ok ;
+}
+
+
+
+
+
+bool ACAN2517FD::available (void) {
+  mSPI.beginTransaction (mSPISettings) ;
+
+
+
+      
+# 785 "C:\\Users\\hongkerous2619\\Documents\\GitHub\\test\\07.MultiPacket_can\\CAN_SEND\\lib\\ACAN2517FD\\ACAN2517FD.cpp" 3
+     __asm__ __volatile__ ("cli" ::: "memory") 
+# 785 "C:\\Users\\hongkerous2619\\Documents\\GitHub\\test\\07.MultiPacket_can\\CAN_SEND\\lib\\ACAN2517FD\\ACAN2517FD.cpp"
+                     ;
+
+      const bool hasReceivedMessage = mDriverReceiveBuffer.count () > 0 ;
+
+
+
+      
+# 791 "C:\\Users\\hongkerous2619\\Documents\\GitHub\\test\\07.MultiPacket_can\\CAN_SEND\\lib\\ACAN2517FD\\ACAN2517FD.cpp" 3
+     __asm__ __volatile__ ("sei" ::: "memory") 
+# 791 "C:\\Users\\hongkerous2619\\Documents\\GitHub\\test\\07.MultiPacket_can\\CAN_SEND\\lib\\ACAN2517FD\\ACAN2517FD.cpp"
+                   ;
+
+  mSPI.endTransaction () ;
+  return hasReceivedMessage ;
+}
+
+
+
+bool ACAN2517FD::receive (CANFDMessage & outMessage) {
+  mSPI.beginTransaction (mSPISettings) ;
+
+
+
+      
+# 804 "C:\\Users\\hongkerous2619\\Documents\\GitHub\\test\\07.MultiPacket_can\\CAN_SEND\\lib\\ACAN2517FD\\ACAN2517FD.cpp" 3
+     __asm__ __volatile__ ("cli" ::: "memory") 
+# 804 "C:\\Users\\hongkerous2619\\Documents\\GitHub\\test\\07.MultiPacket_can\\CAN_SEND\\lib\\ACAN2517FD\\ACAN2517FD.cpp"
+                     ;
+
+      const bool hasReceivedMessage = mDriverReceiveBuffer.remove (outMessage) ;
+
+      if (mINT == 255) {
+        mRxInterruptEnabled = true ;
+        isr_poll_core () ;
+      }else if (!mRxInterruptEnabled) {
+        mRxInterruptEnabled = true ;
+        uint8_t data8 = readRegister8Assume_SPI_transaction (INT_REGISTER + 2) ;
+        data8 |= (1 << 1) ;
+        writeRegister8Assume_SPI_transaction (INT_REGISTER + 2, data8) ;
+      }
+
+
+
+      
+# 820 "C:\\Users\\hongkerous2619\\Documents\\GitHub\\test\\07.MultiPacket_can\\CAN_SEND\\lib\\ACAN2517FD\\ACAN2517FD.cpp" 3
+     __asm__ __volatile__ ("sei" ::: "memory") 
+# 820 "C:\\Users\\hongkerous2619\\Documents\\GitHub\\test\\07.MultiPacket_can\\CAN_SEND\\lib\\ACAN2517FD\\ACAN2517FD.cpp"
+                   ;
+
+  mSPI.endTransaction () ;
+  return hasReceivedMessage ;
+}
+
+
+
+bool ACAN2517FD::dispatchReceivedMessage (const tFilterMatchCallBack inFilterMatchCallBack) {
+  CANFDMessage receivedMessage ;
+  const bool hasReceived = receive (receivedMessage) ;
+  if (hasReceived) {
+    const uint32_t filterIndex = receivedMessage.idx ;
+    if (
+# 833 "C:\\Users\\hongkerous2619\\Documents\\GitHub\\test\\07.MultiPacket_can\\CAN_SEND\\lib\\ACAN2517FD\\ACAN2517FD.cpp" 3 4
+       __null 
+# 833 "C:\\Users\\hongkerous2619\\Documents\\GitHub\\test\\07.MultiPacket_can\\CAN_SEND\\lib\\ACAN2517FD\\ACAN2517FD.cpp"
+            != inFilterMatchCallBack) {
+      inFilterMatchCallBack (filterIndex) ;
+    }
+    ACANFDCallBackRoutine callBackFunction = (mCallBackFunctionArray == 
+# 836 "C:\\Users\\hongkerous2619\\Documents\\GitHub\\test\\07.MultiPacket_can\\CAN_SEND\\lib\\ACAN2517FD\\ACAN2517FD.cpp" 3 4
+                                                                       __null
+# 836 "C:\\Users\\hongkerous2619\\Documents\\GitHub\\test\\07.MultiPacket_can\\CAN_SEND\\lib\\ACAN2517FD\\ACAN2517FD.cpp"
+                                                                           ) ? 
+# 836 "C:\\Users\\hongkerous2619\\Documents\\GitHub\\test\\07.MultiPacket_can\\CAN_SEND\\lib\\ACAN2517FD\\ACAN2517FD.cpp" 3 4
+                                                                               __null 
+# 836 "C:\\Users\\hongkerous2619\\Documents\\GitHub\\test\\07.MultiPacket_can\\CAN_SEND\\lib\\ACAN2517FD\\ACAN2517FD.cpp"
+                                                                                    : mCallBackFunctionArray [filterIndex] ;
+    if (
+# 837 "C:\\Users\\hongkerous2619\\Documents\\GitHub\\test\\07.MultiPacket_can\\CAN_SEND\\lib\\ACAN2517FD\\ACAN2517FD.cpp" 3 4
+       __null 
+# 837 "C:\\Users\\hongkerous2619\\Documents\\GitHub\\test\\07.MultiPacket_can\\CAN_SEND\\lib\\ACAN2517FD\\ACAN2517FD.cpp"
+            != callBackFunction) {
+      callBackFunction (receivedMessage) ;
+    }
+  }
+  return hasReceived ;
+}
+# 861 "C:\\Users\\hongkerous2619\\Documents\\GitHub\\test\\07.MultiPacket_can\\CAN_SEND\\lib\\ACAN2517FD\\ACAN2517FD.cpp"
+  void ACAN2517FD::poll (void) {
+    
+# 862 "C:\\Users\\hongkerous2619\\Documents\\GitHub\\test\\07.MultiPacket_can\\CAN_SEND\\lib\\ACAN2517FD\\ACAN2517FD.cpp" 3
+   __asm__ __volatile__ ("cli" ::: "memory") 
+# 862 "C:\\Users\\hongkerous2619\\Documents\\GitHub\\test\\07.MultiPacket_can\\CAN_SEND\\lib\\ACAN2517FD\\ACAN2517FD.cpp"
+                   ;
+      isr_poll_core () ;
+    
+# 864 "C:\\Users\\hongkerous2619\\Documents\\GitHub\\test\\07.MultiPacket_can\\CAN_SEND\\lib\\ACAN2517FD\\ACAN2517FD.cpp" 3
+   __asm__ __volatile__ ("sei" ::: "memory") 
+# 864 "C:\\Users\\hongkerous2619\\Documents\\GitHub\\test\\07.MultiPacket_can\\CAN_SEND\\lib\\ACAN2517FD\\ACAN2517FD.cpp"
+                 ;
+  }
+# 886 "C:\\Users\\hongkerous2619\\Documents\\GitHub\\test\\07.MultiPacket_can\\CAN_SEND\\lib\\ACAN2517FD\\ACAN2517FD.cpp"
+  void ACAN2517FD::isr (void) {
+    isr_poll_core () ;
+  }
+
+
+
+
+
+
+void ACAN2517FD::isr_poll_core (void) {
+  mSPI.beginTransaction (mSPISettings) ;
+
+
+
+      bool handled = true ;
+        while (handled) {
+        handled = false ;
+        const uint16_t it = readRegister16Assume_SPI_transaction (INT_REGISTER) ;
+        if (mRxInterruptEnabled && ((it & (1 << 1)) != 0)) {
+          receiveInterrupt () ;
+          handled = true ;
+        }
+        if ((it & (1 << 10)) != 0) {
+
+          writeRegister8Assume_SPI_transaction (FIFOSTA_REGISTER (TRANSMIT_FIFO_INDEX), ~ (1 << 4)) ;
+          transmitInterrupt () ;
+          handled = true ;
+        }else if ((it & (1 << 0)) != 0) {
+          transmitInterrupt () ;
+          handled = true ;
+        }
+        if ((it & (1 << 2)) != 0) {
+          writeRegister8Assume_SPI_transaction (INT_REGISTER, ~ (1 << 2)) ;
+          handled = true ;
+        }
+        if ((it & (1 << 3)) != 0) {
+          writeRegister8Assume_SPI_transaction (INT_REGISTER, ~ (1 << 3)) ;
+          handled = true ;
+        }
+        if ((it & (1 << 12)) != 0) {
+          writeRegister8Assume_SPI_transaction (INT_REGISTER + 1, ~ (1 << 4)) ;
+          handled = true ;
+        }
+        if ((it & (1 << 11)) != 0) {
+          handled = true ;
+          if (mHardwareReceiveBufferOverflowCount < 255) {
+            mHardwareReceiveBufferOverflowCount += 1 ;
+          }
+          writeRegister8Assume_SPI_transaction (FIFOSTA_REGISTER (RECEIVE_FIFO_INDEX), ~ (1 << 3)) ;
+        }
+      }
+
+
+
+  mSPI.endTransaction () ;
+}
+
+
+
+void ACAN2517FD::transmitInterrupt (void) {
+  CANFDMessage message ;
+  const bool hasMessage = mDriverTransmitBuffer.remove (message) ;
+  if (hasMessage) {
+    appendInControllerTxFIFO (message) ;
+  }else{
+    uint8_t data8 = 1 << 7 ;
+    data8 |= 1 << 4 ;
+    writeRegister8Assume_SPI_transaction (FIFOCON_REGISTER (TRANSMIT_FIFO_INDEX), data8) ;
+    mHardwareTxFIFOFull = false ;
+  }
+}
+
+
+
+void ACAN2517FD::receiveInterrupt (void) {
+  const uint16_t ramAddress = uint16_t (0x400 + readRegister32Assume_SPI_transaction (FIFOUA_REGISTER (RECEIVE_FIFO_INDEX))) ;
+  CANFDMessage message ;
+
+  uint8_t buffer [74] = {0} ;
+
+  const uint16_t readCommand = (ramAddress & 0x0FFF) | (0b0011 << 12) ;
+  buffer [0] = readCommand >> 8 ;
+  buffer [1] = readCommand & 0xFF ;
+
+  assertCS () ;
+    mSPI.transfer (buffer, 74) ;
+
+    message.id = u32FromBufferAtIndex (buffer, 2) ;
+
+    const uint32_t flags = u32FromBufferAtIndex (buffer, 6) ;
+    static const uint8_t kLength [16] = {0, 1, 2, 3, 4, 5, 6, 7, 8, 12, 16, 20, 24, 32, 48, 64} ;
+    message.len = kLength [flags & 0x0F] ;
+
+    const uint32_t wordCount = (message.len + 3) / 4 ;
+    for (uint32_t i=0 ; i < wordCount ; i++) {
+      message.data32 [i] = u32FromBufferAtIndex (buffer, 10 + 4 * i) ;
+    }
+  deassertCS () ;
+
+  const uint8_t data8 = 1 << 0 ;
+  writeRegister8Assume_SPI_transaction (FIFOCON_REGISTER (RECEIVE_FIFO_INDEX) + 1, data8) ;
+  message.idx = uint8_t ((flags >> 11) & 0x1F) ;
+
+  if ((flags & (1 << 5)) != 0 ) {
+    message.type = CANFDMessage::CAN_REMOTE ;
+  }else if ((flags & (1 << 7)) == 0) {
+    message.type = CANFDMessage::CAN_DATA ;
+  }else if ((flags & (1 << 6)) == 0) {
+    message.type = CANFDMessage::CANFD_NO_BIT_RATE_SWITCH ;
+  }else{
+    message.type = CANFDMessage::CANFD_WITH_BIT_RATE_SWITCH ;
+  }
+
+  message.ext = (flags & (1 << 4)) != 0 ;
+  if (message.ext) {
+    const uint32_t tempID = message.id ;
+    message.id = ((tempID >> 11) & 0x3FFFF) | ((tempID & 0x7FF) << 18) ;
+  }
+
+  mDriverReceiveBuffer.append (message) ;
+
+  if (mDriverReceiveBuffer.isFull ()) {
+    mRxInterruptEnabled = false ;
+    if (mINT != 255) {
+      uint8_t data8 = readRegister8Assume_SPI_transaction (INT_REGISTER + 2) ;
+      data8 &= ~ (1 << 1) ;
+      writeRegister8Assume_SPI_transaction (INT_REGISTER + 2, data8) ;
+    }
+  }
+}
+
+
+
+
+
+void ACAN2517FD::writeRegister32Assume_SPI_transaction (const uint16_t inRegisterAddress,
+                                                        const uint32_t inValue) {
+
+  uint8_t buffer [6] = {0} ;
+
+  const uint16_t writeCommand = (inRegisterAddress & 0x0FFF) | (0b0010 << 12) ;
+  buffer [0] = writeCommand >> 8 ;
+  buffer [1] = writeCommand & 0xFF ;
+
+  enterU32InBufferAtIndex (inValue, buffer, 2) ;
+
+  assertCS () ;
+    mSPI.transfer (buffer, 6) ;
+  deassertCS () ;
+}
+
+
+
+void ACAN2517FD::writeRegister8Assume_SPI_transaction (const uint16_t inRegisterAddress,
+                                                       const uint8_t inValue) {
+
+  uint8_t buffer [3] = {0} ;
+  const uint16_t writeCommand = (inRegisterAddress & 0x0FFF) | (0b0010 << 12) ;
+  buffer [0] = writeCommand >> 8 ;
+  buffer [1] = writeCommand & 0xFF ;
+  buffer [2] = inValue ;
+  assertCS () ;
+    mSPI.transfer (buffer, 3) ;
+  deassertCS () ;
+}
+
+
+
+uint32_t ACAN2517FD::readRegister32Assume_SPI_transaction (const uint16_t inRegisterAddress) {
+
+  uint8_t buffer [6] = {0} ;
+
+  const uint16_t readCommand = (inRegisterAddress & 0x0FFF) | (0b0011 << 12) ;
+  buffer [0] = readCommand >> 8 ;
+  buffer [1] = readCommand & 0xFF ;
+
+  assertCS () ;
+    mSPI.transfer (buffer, 6) ;
+  deassertCS () ;
+
+  const uint32_t result = u32FromBufferAtIndex (buffer, 2) ;
+
+  return result ;
+}
+
+
+
+uint16_t ACAN2517FD::readRegister16Assume_SPI_transaction (const uint16_t inRegisterAddress) {
+
+  uint8_t buffer [4] = {0} ;
+
+  const uint16_t readCommand = (inRegisterAddress & 0x0FFF) | (0b0011 << 12) ;
+  buffer [0] = readCommand >> 8 ;
+  buffer [1] = readCommand & 0xFF ;
+
+  assertCS () ;
+    mSPI.transfer (buffer, 4) ;
+  deassertCS () ;
+
+  const uint16_t result = u16FromBufferAtIndex (buffer, 2) ;
+
+  return result ;
+}
+
+
+
+uint8_t ACAN2517FD::readRegister8Assume_SPI_transaction (const uint16_t inRegisterAddress) {
+
+  uint8_t buffer [3] = {0} ;
+  const uint16_t readCommand = (inRegisterAddress & 0x0FFF) | (0b0011 << 12) ;
+  buffer [0] = readCommand >> 8;
+  buffer [1] = readCommand & 0xFF;
+  assertCS () ;
+    mSPI.transfer(buffer, 3) ;
+  deassertCS () ;
+  return buffer [2] ;
+}
+
+
+
+
+
+void ACAN2517FD::writeRegister8 (const uint16_t inRegisterAddress, const uint8_t inValue) {
+  mSPI.beginTransaction (mSPISettings) ;
+
+
+
+      
+# 1113 "C:\\Users\\hongkerous2619\\Documents\\GitHub\\test\\07.MultiPacket_can\\CAN_SEND\\lib\\ACAN2517FD\\ACAN2517FD.cpp" 3
+     __asm__ __volatile__ ("cli" ::: "memory") 
+# 1113 "C:\\Users\\hongkerous2619\\Documents\\GitHub\\test\\07.MultiPacket_can\\CAN_SEND\\lib\\ACAN2517FD\\ACAN2517FD.cpp"
+                     ;
+
+      writeRegister8Assume_SPI_transaction (inRegisterAddress, inValue) ;
+
+
+
+      
+# 1119 "C:\\Users\\hongkerous2619\\Documents\\GitHub\\test\\07.MultiPacket_can\\CAN_SEND\\lib\\ACAN2517FD\\ACAN2517FD.cpp" 3
+     __asm__ __volatile__ ("sei" ::: "memory") 
+# 1119 "C:\\Users\\hongkerous2619\\Documents\\GitHub\\test\\07.MultiPacket_can\\CAN_SEND\\lib\\ACAN2517FD\\ACAN2517FD.cpp"
+                   ;
+
+  mSPI.endTransaction () ;
+}
+
+
+
+uint8_t ACAN2517FD::readRegister8 (const uint16_t inRegisterAddress) {
+  mSPI.beginTransaction (mSPISettings) ;
+
+
+
+      
+# 1131 "C:\\Users\\hongkerous2619\\Documents\\GitHub\\test\\07.MultiPacket_can\\CAN_SEND\\lib\\ACAN2517FD\\ACAN2517FD.cpp" 3
+     __asm__ __volatile__ ("cli" ::: "memory") 
+# 1131 "C:\\Users\\hongkerous2619\\Documents\\GitHub\\test\\07.MultiPacket_can\\CAN_SEND\\lib\\ACAN2517FD\\ACAN2517FD.cpp"
+                     ;
+
+      const uint8_t result = readRegister8Assume_SPI_transaction (inRegisterAddress) ;
+
+
+
+      
+# 1137 "C:\\Users\\hongkerous2619\\Documents\\GitHub\\test\\07.MultiPacket_can\\CAN_SEND\\lib\\ACAN2517FD\\ACAN2517FD.cpp" 3
+     __asm__ __volatile__ ("sei" ::: "memory") 
+# 1137 "C:\\Users\\hongkerous2619\\Documents\\GitHub\\test\\07.MultiPacket_can\\CAN_SEND\\lib\\ACAN2517FD\\ACAN2517FD.cpp"
+                   ;
+
+  mSPI.endTransaction () ;
+  return result ;
+}
+
+
+
+uint16_t ACAN2517FD::readRegister16 (const uint16_t inRegisterAddress) {
+  mSPI.beginTransaction (mSPISettings) ;
+
+
+
+      
+# 1150 "C:\\Users\\hongkerous2619\\Documents\\GitHub\\test\\07.MultiPacket_can\\CAN_SEND\\lib\\ACAN2517FD\\ACAN2517FD.cpp" 3
+     __asm__ __volatile__ ("cli" ::: "memory") 
+# 1150 "C:\\Users\\hongkerous2619\\Documents\\GitHub\\test\\07.MultiPacket_can\\CAN_SEND\\lib\\ACAN2517FD\\ACAN2517FD.cpp"
+                     ;
+
+      const uint16_t result = readRegister16Assume_SPI_transaction (inRegisterAddress) ;
+
+
+
+      
+# 1156 "C:\\Users\\hongkerous2619\\Documents\\GitHub\\test\\07.MultiPacket_can\\CAN_SEND\\lib\\ACAN2517FD\\ACAN2517FD.cpp" 3
+     __asm__ __volatile__ ("sei" ::: "memory") 
+# 1156 "C:\\Users\\hongkerous2619\\Documents\\GitHub\\test\\07.MultiPacket_can\\CAN_SEND\\lib\\ACAN2517FD\\ACAN2517FD.cpp"
+                   ;
+
+  mSPI.endTransaction () ;
+  return result ;
+}
+
+
+
+void ACAN2517FD::writeRegister32 (const uint16_t inRegisterAddress, const uint32_t inValue) {
+  mSPI.beginTransaction (mSPISettings) ;
+
+
+
+      
+# 1169 "C:\\Users\\hongkerous2619\\Documents\\GitHub\\test\\07.MultiPacket_can\\CAN_SEND\\lib\\ACAN2517FD\\ACAN2517FD.cpp" 3
+     __asm__ __volatile__ ("cli" ::: "memory") 
+# 1169 "C:\\Users\\hongkerous2619\\Documents\\GitHub\\test\\07.MultiPacket_can\\CAN_SEND\\lib\\ACAN2517FD\\ACAN2517FD.cpp"
+                     ;
+
+      writeRegister32Assume_SPI_transaction (inRegisterAddress, inValue) ;
+
+
+
+      
+# 1175 "C:\\Users\\hongkerous2619\\Documents\\GitHub\\test\\07.MultiPacket_can\\CAN_SEND\\lib\\ACAN2517FD\\ACAN2517FD.cpp" 3
+     __asm__ __volatile__ ("sei" ::: "memory") 
+# 1175 "C:\\Users\\hongkerous2619\\Documents\\GitHub\\test\\07.MultiPacket_can\\CAN_SEND\\lib\\ACAN2517FD\\ACAN2517FD.cpp"
+                   ;
+
+  mSPI.endTransaction () ;
+}
+
+
+
+uint32_t ACAN2517FD::readRegister32 (const uint16_t inRegisterAddress) {
+  mSPI.beginTransaction (mSPISettings) ;
+
+
+
+      
+# 1187 "C:\\Users\\hongkerous2619\\Documents\\GitHub\\test\\07.MultiPacket_can\\CAN_SEND\\lib\\ACAN2517FD\\ACAN2517FD.cpp" 3
+     __asm__ __volatile__ ("cli" ::: "memory") 
+# 1187 "C:\\Users\\hongkerous2619\\Documents\\GitHub\\test\\07.MultiPacket_can\\CAN_SEND\\lib\\ACAN2517FD\\ACAN2517FD.cpp"
+                     ;
+
+      const uint32_t result = readRegister32Assume_SPI_transaction (inRegisterAddress) ;
+
+
+
+      
+# 1193 "C:\\Users\\hongkerous2619\\Documents\\GitHub\\test\\07.MultiPacket_can\\CAN_SEND\\lib\\ACAN2517FD\\ACAN2517FD.cpp" 3
+     __asm__ __volatile__ ("sei" ::: "memory") 
+# 1193 "C:\\Users\\hongkerous2619\\Documents\\GitHub\\test\\07.MultiPacket_can\\CAN_SEND\\lib\\ACAN2517FD\\ACAN2517FD.cpp"
+                   ;
+
+  mSPI.endTransaction () ;
+  return result ;
+}
+
+
+
+
+
+ACAN2517FDSettings::OperationMode ACAN2517FD::currentOperationMode (void) {
+  const uint8_t mode = readRegister8 (CON_REGISTER + 2) >> 5 ;
+  return ACAN2517FDSettings::OperationMode (mode) ;
+}
+
+
+
+bool ACAN2517FD::recoverFromRestrictedOperationMode (void) {
+   bool recoveryDone = false ;
+   if (currentOperationMode () == ACAN2517FDSettings::RestrictedOperation) {
+
+
+
+    writeRegister8 (CON_REGISTER + 3, mTXBWS_RequestedMode);
+
+    bool wait = true ;
+    const uint32_t startTime = millis () ;
+    while (wait) {
+      const uint8_t actualMode = (readRegister8 (CON_REGISTER + 2) >> 5) & 0x07 ;
+      wait = actualMode != (mTXBWS_RequestedMode & 0x07) ;
+      recoveryDone = !wait ;
+      if (wait && ((millis () - startTime) > 10)) {
+        wait = false ;
+      }
+    }
+  }
+  return recoveryDone ;
+}
+
+
+
+
+
+void ACAN2517FD::setOperationMode (const ACAN2517FDSettings::OperationMode inOperationMode) {
+
+
+  writeRegister8 (CON_REGISTER + 3, uint8_t (inOperationMode));
+}
+
+
+
+void ACAN2517FD::reset2517FD (void) {
+  mSPI.beginTransaction (mSPISettings) ;
+
+
+
+      
+# 1249 "C:\\Users\\hongkerous2619\\Documents\\GitHub\\test\\07.MultiPacket_can\\CAN_SEND\\lib\\ACAN2517FD\\ACAN2517FD.cpp" 3
+     __asm__ __volatile__ ("cli" ::: "memory") 
+# 1249 "C:\\Users\\hongkerous2619\\Documents\\GitHub\\test\\07.MultiPacket_can\\CAN_SEND\\lib\\ACAN2517FD\\ACAN2517FD.cpp"
+                     ;
+
+      assertCS () ;
+        mSPI.transfer16 (0x00) ;
+      deassertCS () ;
+
+
+
+      
+# 1257 "C:\\Users\\hongkerous2619\\Documents\\GitHub\\test\\07.MultiPacket_can\\CAN_SEND\\lib\\ACAN2517FD\\ACAN2517FD.cpp" 3
+     __asm__ __volatile__ ("sei" ::: "memory") 
+# 1257 "C:\\Users\\hongkerous2619\\Documents\\GitHub\\test\\07.MultiPacket_can\\CAN_SEND\\lib\\ACAN2517FD\\ACAN2517FD.cpp"
+                   ;
+
+  mSPI.endTransaction () ;
+}
+# 1269 "C:\\Users\\hongkerous2619\\Documents\\GitHub\\test\\07.MultiPacket_can\\CAN_SEND\\lib\\ACAN2517FD\\ACAN2517FD.cpp"
+bool ACAN2517FD::performSleepModeToConfigurationMode (void) {
+  uint8_t value = readRegister8 (OSC_REGISTER) ;
+  const bool inSleepMode = (value & (1 << 2)) != 0 ;
+  if (inSleepMode) {
+    value &= ~ (1 << 2) ;
+    writeRegister8 (OSC_REGISTER, value) ;
+
+    bool wait = true ;
+    while (wait) {
+      wait = (readRegister8 (OSC_REGISTER + 1) & (1 << 2)) == 0 ;
+    }
+  }
+  return inSleepMode ;
+}
+
+
+
+uint32_t ACAN2517FD::errorCounters (void) {
+  return readRegister32 (TREC_REGISTER) ;
+}
+
+
+
+uint32_t ACAN2517FD::diagInfos (const int inIndex) {
+  return readRegister32 (inIndex ? BDIAG1_REGISTER: BDIAG0_REGISTER) ;
+}
+
+
+
+
+
+void ACAN2517FD::gpioSetMode (const uint8_t inPin, const uint8_t inMode) {
+  if (inPin <= 1) {
+    uint8_t value = readRegister8 (IOCON_REGISTER_00_07) ;
+    if (inMode == 0x0) {
+      value |= (1 << inPin) ;
+      if (inPin == 0) {
+        value &= 3 ;
+      }
+    }else if (inMode == 0x1) {
+      value &= ~ (1 << inPin) ;
+      if (inPin == 0) {
+        value &= 3 ;
+      }
+    }
+    writeRegister8 (IOCON_REGISTER_00_07, value) ;
+  }
+}
+
+
+
+void ACAN2517FD::gpioWrite (const uint8_t inPin, const uint8_t inLevel) {
+  if (inPin <= 1) {
+    uint8_t value = readRegister8 (IOCON_REGISTER_08_15) ;
+    if (inLevel == 0) {
+      value &= ~ (1 << inPin) ;
+    }else{
+      value |= (1 << inPin) ;
+    }
+    writeRegister8 (IOCON_REGISTER_08_15, value) ;
+  }
+}
+
+
+
+bool ACAN2517FD::gpioRead (const uint8_t inPin) {
+  const uint8_t value = readRegister8 (IOCON_REGISTER_16_23) ;
+  return (value >> inPin) & 1 ;
+}
+
+
+
+void ACAN2517FD::configureGPIO0AsXSTBY (void) {
+  uint8_t value = readRegister8 (IOCON_REGISTER_00_07) ;
+  value |= (1 << 6) ;
+  writeRegister8 (IOCON_REGISTER_00_07, value) ;
+}
